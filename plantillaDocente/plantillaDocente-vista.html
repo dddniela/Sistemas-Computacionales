@@ -1,0 +1,29 @@
+<div class="position-relative w-100 overflow-hidden" style="height: 30rem;">
+    <img class="w-100" src="../img/IMG_1298.JPG" alt="">
+    <div class="position-absolute top-50 start-50 translate-middle w-100">
+        <div class="d-flex flex-column justify-content-center align-items-center text-center">
+            <h5 class="text-bold text-warning fs-2">Plantilla Docente</h5>
+            <h5 class="text-bold text-light fs-1">Ingenieria en Sistemas Computacionales</h5>
+        </div>
+    </div>
+</div>
+
+<div class="">
+    <?php
+        $inf = 1;
+        $sup = 6;
+        if(isset($_GET['inferior'])){
+            $inf = $_GET['inferior'];
+            $sup = $_GET['superior'];
+        }
+        $datos = imprimirDatos($inf,$sup);
+        echo $datos;
+    ?>
+</div>
+
+<div class="">
+    <?php
+        $paginacion = generarPaginacion();
+        echo $paginacion;
+    ?>
+</div>
