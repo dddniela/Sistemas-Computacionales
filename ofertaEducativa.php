@@ -1,5 +1,5 @@
 <?php
-require_once 'includes/header.html';
+require_once 'header.html';
 require_once 'ofertaEducativa-controller.php';
 $imprimir1erSemestre = imprimir1erSemestre();
 $imprimir2doSemestre = imprimir2doSemestre();
@@ -13,5 +13,5 @@ $imprimir9noSemestre = imprimir9noSemestre();
 
 $imprimirEspecialidad = imprimirEspecialidad();
 require_once 'ofertaEducativa-vista.html';
-require_once 'includes/footer.html';
+require_once 'footer.html';
 ?>
