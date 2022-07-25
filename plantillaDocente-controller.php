@@ -1,5 +1,5 @@
 <?php
-    require_once "../bd/conexion.php";
+    require_once "bd/conexion.php";
 
     function obtenerInformacion($LimiteInferior, $LimiteSuperior){
         $cn = conexion();
@@ -24,21 +24,21 @@
                 if($cont==1){
                     $Codigo .= "<div class='d-flex flex-row justify-content-center m-2'>";
                 }
-                $Codigo .=  "<div class='d-flex flex-column bg-light rounded mx-3 my-2 p-3' style='width: 23rem;'>
+                $Codigo .=  "<div class='d-flex flex-column gris-zinc rounded mx-3 my-2 p-3' style='width: 23rem;'>
                                 <div class='d-flex flex-row justify-content-center my-2'>
-                                    <img class='rounded-circle p-1 bg-primary' src='../img/hector_trujillo.JPG' alt='' style='width: 10rem; height: 10rem;'>
+                                    <img class='rounded-circle p-1 bg-primary' src='img/hector_trujillo.JPG' alt='' style='width: 10rem; height: 10rem;'>
                                 </div>
                                 <div class='d-flex flex-row justify-content-center mx-2'>
                                     <h5 class='fs-5 fw-bolt'>" .$nombre_maestro. "</h5>
                                 </div>
                                 <div class='d-flex flex-row justify-content-center my-2'>
-                                    <button type='button' class='btn btn-warning fw-bolt' data-bs-toggle='modal' data-bs-target='#ModalDocente".$id_maestro."'>Ver mas</button>
+                                    <button type='button' class='btn amarillo fw-bolt' data-bs-toggle='modal' data-bs-target='#ModalDocente".$id_maestro."'>Ver mas</button>
                                 </div>
                             </div>";
 
                 $Codigo .=   "<div class='modal fade' id='ModalDocente".$id_maestro."' tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>
                                 <div class='modal-dialog modal-lg'>
-                                    <div class='modal-content bg-light'>
+                                    <div class='modal-content gris-zinc'>
                                         
                                         <svg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' role='img' class='cursor-pointer p-1' style='width: 3rem; height: 3rem;' 
                                             preserveAspectRatio='xMidYMid meet' viewBox='0 0 512 512' data-bs-dismiss='modal' aria-label='Close'>
@@ -49,7 +49,7 @@
                                         <div class='modal-body'>
                                             <div class='d-flex flex-row justify-content-center m-2'>
                                                 <div class='d-flex flex-column justify-content-center m-2'>
-                                                    <img class='rounded-circle p-1 bg-primary' src='../img/hector_trujillo.JPG' alt='' style='width: 15rem; height: 15rem;'>
+                                                    <img class='rounded-circle p-1 bg-primary' src='img/hector_trujillo.JPG' alt='' style='width: 15rem; height: 15rem;'>
                                                 </div>
                                                 <div class='d-flex flex-column justify-content-center m-2'>
                                                     <div class='d-flex flex-row bg-warning justify-content-center m-2'>
@@ -99,14 +99,14 @@
         $Paginacion = '';
         $Paginacion .= '<nav aria-label="Page navigation example">';
         $Paginacion .= '<ul class="pagination justify-content-center">';
-        $Paginacion .= '<li class="page-item"><a class="page-link" href="#">Previous</a></li>';
+        $Paginacion .= '<li class="page-item"><a class="page-link" href="#">Anterior</a></li>';
         while($i <= $NumPaginas){
             $Paginacion .= '<li class="page-item"><a class="page-link" href="plantillaDocente.php?inferior='.$LimInferior.'&superior='.$LimSuperior.'">'.$i.'</a></li>';
             $i = $i + 1;
             $LimInferior = $LimInferior + 6;
             $LimSuperior = $LimSuperior + 6;
         }
-        $Paginacion .= '<li class="page-item"><a class="page-link" href="#">Next</a></li>';
+        $Paginacion .= '<li class="page-item"><a class="page-link" href="#">Siguiente</a></li>';
         $Paginacion .= '</ul>';
         $Paginacion .= '</nav>';
 
