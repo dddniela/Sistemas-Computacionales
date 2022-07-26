@@ -13,6 +13,7 @@
         $Codigo = "";
         $cont = 1;
         if($ResultSet->num_rows > 0){
+            $Codigo = "<div class='container'>";
             while($row = $ResultSet->fetch_assoc()){
                 $id_maestro = $row['id_maestro'];
                 $nombre_maestro = $row['nombre_maestro'];
@@ -22,9 +23,10 @@
                 $contacto_maestro = $row['contacto_maestro'];
                 $url_imagen = $row['url_imagen'];
                 if($cont==1){
-                    $Codigo .= "<div class='d-flex flex-row justify-content-center m-2'>";
+                    $Codigo .= "<div class='col'>
+                                <div class='row'>";
                 }
-                $Codigo .=  "<div class='d-flex flex-column gris-zinc rounded mx-3 my-2 p-3' style='width: 23rem;'>
+                $Codigo .=  "<div class='col gris-zinc m-2'>
                                 <div class='d-flex flex-row justify-content-center my-2'>
                                     <img class='rounded-circle p-1 bg-primary' src='img/hector_trujillo.JPG' alt='' style='width: 10rem; height: 10rem;'>
                                 </div>
@@ -35,7 +37,7 @@
                                     <button type='button' class='btn amarillo fw-bolt' data-bs-toggle='modal' data-bs-target='#ModalDocente".$id_maestro."'>Ver mas</button>
                                 </div>
                             </div>";
-
+                
                 $Codigo .=   "<div class='modal fade' id='ModalDocente".$id_maestro."' tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>
                                 <div class='modal-dialog modal-lg'>
                                     <div class='modal-content gris-zinc'>
@@ -47,18 +49,18 @@
                                         </svg>
                                         
                                         <div class='modal-body'>
-                                            <div class='d-flex flex-row justify-content-center m-2'>
-                                                <div class='d-flex flex-column justify-content-center m-2'>
-                                                    <img class='rounded-circle p-1 bg-primary' src='img/hector_trujillo.JPG' alt='' style='width: 15rem; height: 15rem;'>
-                                                </div>
-                                                <div class='d-flex flex-column justify-content-center m-2'>
-                                                    <div class='d-flex flex-row bg-warning justify-content-center m-2'>
-                                                        <h1 class='py-2 fs-4'>$nombre_maestro</h1>
-                                                    </div>
-                                                    <div class='d-flex flex-row justify-content-center m-2'>
-                                                        <p class='text-dark text-center'>$palabras_maestro</p>
+                                            <div class='col'>
+                                            <div class='row justify-content-center m-2'>
+                                                <div class='col justify-content-center m-2'>
+                                                    <div class='d-flex justify-content-center'>
+                                                        <img class='rounded-circle p-1 bg-primary' src='img/hector_trujillo.JPG' alt='' style='width: 15rem; height: 15rem;'>
                                                     </div>
                                                 </div>
+                                                <div class='col-12 col-lg-7 justify-content-center align-middle m-2'>
+                                                    <h1 class='amarillo text-center py-2 fs-4'>$nombre_maestro</h1>         
+                                                    <p class='text-dark text-center'>$palabras_maestro</p>
+                                                </div>
+                                            </div>
                                             </div>
                                             <div class='d-flex flex-row justify-content-center m-2' style='text-align: justify;'>
                                                 <p>$informacion_maestro</p>
@@ -76,9 +78,11 @@
                 $cont = $cont + 1;
                 if($cont==4){
                     $Codigo .= "</div>";
+                    $Codigo .= "</div>";
                     $cont = 1;
                 }
             }
+            $Codigo .= "</div>";
         }
         return $Codigo;
     }

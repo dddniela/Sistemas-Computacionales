@@ -1,9 +1,11 @@
-<div class="position-relative w-100 overflow-hidden">
-    <img class="w-100 img-fluid" src="img/IMG_1298.JPG" alt="">
-    <div class="position-absolute top-50 start-50 translate-middle w-100">
-        <div class="d-flex flex-column justify-content-center align-items-center text-center">
-            <h5 class="text-bold text-warning fs-2 fs-sm-5">Plantilla Docente</h5>
-            <h5 class="text-bold text-light fs-1 fs-sm-6">Ingenieria en Sistemas Computacionales</h5>
+<div class="row">
+    <div class="position-relative w-100 overflow-hidden">
+        <img class="w-100 img-fluid" src="img/IMG_1298.JPG" alt="">
+        <div class="position-absolute top-50 start-50 translate-middle w-100">
+            <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                <h1 class="text-bold text-warning">Plantilla Docente</h1>
+                <h1 class="text-bold text-light">Ingenieria en Sistemas Computacionales</h1>
+            </div>
         </div>
     </div>
 </div>
@@ -20,8 +22,7 @@
         echo $datos;
     ?>
 </div>
-
-<div class="">
+<div class="row">
     <?php
         $paginacion = generarPaginacion();
         echo $paginacion;
