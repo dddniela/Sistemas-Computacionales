@@ -5,6 +5,11 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+/* Configuración general para los bordes*/
+*{
+  box-sizing: border-box;
+}
+
 .amarillo {
   background-color: #facc15;
 }
@@ -123,4 +128,52 @@
 
 .hover-blue:hover{
   background-color: #2563eb;
+}
+
+/* Contenedores */ 
+
+.contenedor{
+    padding: 20px;
+}
+
+.info-box{
+  display: flex;
+  align-items: center;
+}
+
+.info-box img{
+  width:unset;
+  margin-right: 18px;
+}
+
+.info-box p{
+  font-size: 15px;
+}
+
+.icono{
+  width: 30px;
+  height: 30px;
+  display: inline;
+}
+
+.contenedor-informacion{
+  padding: 30px;
+}
+
+.contenedor-informacion p{
+  font-size: 15px;
+}
+
+
+.contenedor-galeria{
+  background-color: #08080a;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+
+@media (max-width: 1200px) {
+  .info-box p{
+    font-size: 12px;
+  }
 }
