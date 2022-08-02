@@ -62,7 +62,7 @@ function imprimir($NumeroSemestre){
     $tabla = "";
 
     if($ResultSet->num_rows > 0){
-        $tabla .= "<div class='row gx-5 row-cols-1 row-cols-lg-3 mx-5'>";
+        $tabla .= "<div class='row justify-content-md-start justify-content-center'>";
         while($row = $ResultSet->fetch_assoc()){
             $id_materia = $row['id_materia'];
             $nombre_materia = $row['nombre_materia'];
@@ -73,16 +73,34 @@ function imprimir($NumeroSemestre){
             $ruta_img = icono($area_materia);
 
     // Cuadro de materia
-            $tabla .= "<div class='col my-3 p-3 justify-content-center'>";
-                $tabla .= "<h5 class='text-white align-self-start rounded-top text-center font-semibold py-3 azul-medio'>$nombre_materia</h5>";
-                $tabla .= "<div class='d-flex align-items-center bg-light'>";
-                    $tabla .= "<img class='h-16 mx-2' src='$ruta_img' alt=''>";
-                    $tabla .= "<p class='text-sm mx-4 my-2'>$descrip_materia</p>";
-                $tabla .= "</div>";
-                $tabla .= "<div class='d-flex p-2 justify-content-center align-items-center bg-light'>";
-                    $tabla .="<button type='button' class='btn btn-warning' data-bs-toggle='modal' data-bs-target='#modalReticula" .$id_materia ."'>
-                                Ver más </button>";
-                 $tabla .= "</div>";
+            $tabla .= "<div class='col-lg-4 col-md-6 col-sm-9 col-8 p-4 h-100 justify-content-center rounded-3'>";
+                #$tabla .= "<div class='col h-100 px-2 m-2 bg-light'>";
+                    $tabla .= "<div class='row azul-medio'>";
+                        $tabla .= "<div class='d-flex justify-content-center'>";
+                            $tabla .= "<h5 class='text-white align-self-start rounded-top text-center font-semibold py-3'>$nombre_materia</h5>";
+                        $tabla .= "</div>";
+                    $tabla .= "</div>";
+                    $tabla .= "<div class='row bg-light'>";
+                        $tabla .= "<div class='col-md-3 col-12 justify-content-center align-items-center'>";
+                            $tabla .= "<div class='d-flex flex-row justify-content-center align-items-center h-100'>";
+                                $tabla .= "<img class='h-16 mx-2 p-1' src='$ruta_img' alt=''>";
+                            $tabla .= "</div>";
+                        $tabla .= "</div>";
+                        $tabla .= "<div class='col-md-9 col-12 justify-content-center align-items-center'>";
+                            $tabla .= "<div class='d-flex flex-row justify-content-center align-items-center h-100'>";
+                                $tabla .= "<p class='text-sm mx-4 my-2' style='text-align: justify;'>$descrip_materia</p>";
+                            $tabla .= "</div>";
+                        $tabla .= "</div>";
+                    #$tabla .= "</div>";  
+                    #$tabla .= "<div class='row bg-light'>";
+                        $tabla .= "<div class='col-12 my-2 justify-content-center'>";
+                            $tabla .= "<div class='d-flex p-2 justify-content-center align-items-center'>";
+                                $tabla .="<button type='button' class='btn btn-warning' data-bs-toggle='modal' data-bs-target='#modalReticula" .$id_materia ."'>
+                                        Ver más </button>";
+                            $tabla .= "</div>";
+                        $tabla .= "</div>";
+                    $tabla .= "</div>";  
+                #$tabla .= "</div>"; 
             $tabla .= "</div>";
     
     //modal de la materia

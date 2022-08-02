@@ -177,3 +177,22 @@
     font-size: 12px;
   }
 }
+
+.video{
+  width: 600px;
+  height: 300px;
+}
+
+@media (max-width: 1050px) {
+  .video{
+    width: 450px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 750px) {
+  .video{
+    width: 300px;
+    height: 150px;
+  }
+}

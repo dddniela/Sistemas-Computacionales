@@ -57,7 +57,7 @@
                                                                 <h1 class='amarillo text-center py-2 fs-4'>$nombre_maestro</h1> 
                                                             </div>      
                                                             <div class='row'>
-                                                                <p class='text-dark text-center'>$palabras_maestro</p>
+                                                                <p class='text-dark' style='text-align: justify;'>$palabras_maestro</p>
                                                             </div>     
                                                         </div>
                                                     </div>

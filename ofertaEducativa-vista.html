@@ -1,13 +1,14 @@
-<!-- <div class="position-relative h-75 w-full overflow-hidden">
-    <div class="position-absolute top-50 start-50 translate-middle">
-        <img src="img/IMG_1234.JPG" class="h-auto w-full " alt="">
+<div class="row">
+    <div class="position-relative w-100 overflow-hidden">
+        <img class="w-100 img-fluid" src="img/IMG_1234.JPG" alt="">
+        <div class="position-absolute top-50 start-50 translate-middle w-100">
+            <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                <h1 class="text-bold text-warning">Oferta Educativa</h1>
+                <h1 class="text-bold text-light">Ingenieria en Sistemas Computacionales</h1>
+            </div>
+        </div>
     </div>
-    <div class="d-flex flex-column justify-content-center text-center">
-        <h5 class="text-2xl text-warning font-bold mb-4">Oferta Educativa</h5>
-        <p class="text-3xl font-semibold text-white m-4">Ingeniería en Sistemas Computacionales
-        </p>
-    </div>
-</div> -->
+</div>
 
 <!-- reticula de materias -->
 <div class="w-full">
@@ -53,77 +54,98 @@
     </ul>
     <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="tab-semestre1" role="tabpanel" aria-labelledby="tab-semestre1-tab">
-            <?php
-                if(isset($imprimir1erSemestre)){
-                    echo $imprimir1erSemestre;
-                }
-            ?>
+            <div class="container">
+                <?php
+                    if(isset($imprimir1erSemestre)){
+                        echo $imprimir1erSemestre;
+                    }
+                ?>
+            </div>  
         </div>
         <div class="tab-pane fade" id="tab-semestre2" role="tabpanel" aria-labelledby="tab-semestre2-tab">
-            <?php
-                if(isset($imprimir2doSemestre)){
-                    echo $imprimir2doSemestre;
-                }
-            ?>
+            <div class="container">
+                <?php
+                    if(isset($imprimir2doSemestre)){
+                        echo $imprimir2doSemestre;
+                    }
+                ?>
+            </div>
         </div>
         <div class="tab-pane fade" id="tab-semestre3" role="tabpanel" aria-labelledby="tab-semestre3-tab">
-            <?php
-                if(isset($imprimir3erSemestre)){
-                    echo $imprimir3erSemestre;
-                }
-            ?>
+            <div class="container">
+                <?php
+                    if(isset($imprimir3erSemestre)){
+                        echo $imprimir3erSemestre;
+                    }
+                ?>
+            </div> 
         </div>
         <div class="tab-pane fade" id="tab-semestre4" role="tabpanel" aria-labelledby="tab-semestre4-tab">
-            <?php
-                if(isset($imprimir4toSemestre)){
-                    echo $imprimir4toSemestre;
-                }
-            ?>
+            <div class="container">
+                <?php
+                    if(isset($imprimir4toSemestre)){
+                        echo $imprimir4toSemestre;
+                    }
+                ?>
+            </div>
         </div>
         <div class="tab-pane fade" id="tab-semestre5" role="tabpanel" aria-labelledby="tab-semestre5-tab">
-            <?php
-                if(isset($imprimir5toSemestre)){
-                    echo $imprimir5toSemestre;
-                }
-            ?>
+            <div class="container">
+                <?php
+                    if(isset($imprimir5toSemestre)){
+                        echo $imprimir5toSemestre;
+                    }
+                ?>
+            </div>
         </div>
         <div class="tab-pane fade" id="tab-semestre6" role="tabpanel" aria-labelledby="tab-semestre6-tab">
-            <?php
-                if(isset($imprimir6toSemestre)){
-                    echo $imprimir6toSemestre;
-                }
-            ?>
+            <div class="container">
+                <?php
+                    if(isset($imprimir6toSemestre)){
+                        echo $imprimir6toSemestre;
+                    }
+                ?>
+            </div>
         </div>
         <div class="tab-pane fade" id="tab-semestre7" role="tabpanel" aria-labelledby="tab-semestre7-tab">
-            <?php
-                if(isset($imprimir7moSemestre)){
-                    echo $imprimir7moSemestre;
-                }
-            ?>
+            <div class="container">
+                <?php
+                    if(isset($imprimir7moSemestre)){
+                        echo $imprimir7moSemestre;
+                    }
+                ?>
+            </div>
         </div>
         <div class="tab-pane fade" id="tab-semestre8" role="tabpanel" aria-labelledby="tab-semestre8-tab">
-            <?php
-                if(isset($imprimir8voSemestre)){
-                    echo $imprimir8voSemestre;
-                }
-            ?>
+            <div class="container">
+                <?php
+                    if(isset($imprimir8voSemestre)){
+                        echo $imprimir8voSemestre;
+                    }
+                ?>
+            </div>
+            
         </div>
         <div class="tab-pane fade" id="tab-semestre9" role="tabpanel" aria-labelledby="tab-semestre9-tab">
-            <?php
-                if(isset($imprimir9noSemestre)){
-                    echo $imprimir9noSemestre;
-                }
-            ?>
+            <div class="container">
+                <?php
+                    if(isset($imprimir9noSemestre)){
+                        echo $imprimir9noSemestre;
+                    }
+                ?>
+            </div>  
         </div>
     </div>
 
 <!-- desarrollo profesional  -->
 <div class="bg-light">
-    <div class="row row-cols-2 g-0 py-5 gap-4">
-        <div class="row d-flex justify-content-center text-center">
-            <img src="img/IMG_0579.JPG" class="w-75 h-auto" alt="">
+    <div class="row g-0 py-5">
+        <div class="col-lg-6 col-12 justify-content-center text-center">
+            <div class="d-flex justify-content-center align-items-center w-100 h-100">
+                <img src="img/IMG_0579.JPG" class="w-75 h-auto py-3" alt="">
+            </div>   
         </div>
-        <div class="row px-4 text-black">
+        <div class="col-lg-6 col-12 px-4 text-black">
             <h2 class="font-bold text-2xl text-center">Desarrollo profesional de la carrera</h2>
             <p class="text-xl" style="text-align: justify">La carrera de ingeniería en sistemas computaciones ofrece un
                 desarrollo
@@ -148,8 +170,8 @@
 <!-- creditos complementarios -->
 <div class="azul-cielo pt-5">
     <div class="gris-zinc">
-        <div class="row row-cols-2 g-0 py-5 gap-4">
-            <div class="row px-4 text-black">
+        <div class="row g-0 py-5">
+            <div class="col-lg-6 col-12 px-4 text-black">
                 <h2 class="font-bold text-2xl text-center">Créditos complementarios</h2>
                 <p class="text-xl" style="text-align: justify">
                     Son todas aquellas actividades que realiza el estudiante en beneficio de su formación integral con
@@ -157,15 +179,17 @@
                     objetivo de complementar su formación y desarrollo de competencia profesionales
                 </p>
                 <p class="text-xl" style="text-align: justify">
-                    Las actividades complementarias pueden ser: tutorías, actividades extraescolares, proyectos de
-                    investigación o integradores,participación en eventos académicos, productividad labral,
-                    emprendedurismo,
-                    fomento a la cultura, construcción de prototipos y desarrollo tecnológico, conservación al medio
-                    ambiente, fomento a la cultura, entre otras.
+                        Las actividades complementarias pueden ser: tutorías, actividades extraescolares, proyectos de
+                        investigación o integradores,participación en eventos académicos, productividad labral,
+                        emprendedurismo,
+                        fomento a la cultura, construcción de prototipos y desarrollo tecnológico, conservación al medio
+                        ambiente, fomento a la cultura, entre otras.
                 </p>
             </div>
-            <div class="row d-flex justify-content-center text-center">
-                <img src="img/IMG_0579.JPG" class="w-75 h-auto" alt="">
+            <div class="col-lg-6 col-12">
+                <div class="row d-flex justify-content-center text-center w-100 h-100">
+                    <img src="img/IMG_0579.JPG" class="w-75 h-auto py-3" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -174,11 +198,13 @@
 <!-- especialidad -->
 <div class="azul-cielo pt-5">
     <div class="bg-dark">
-        <div class="row row-cols-2 g-0 py-5 gap-4">
-            <div class="row d-flex justify-content-center text-center">
-                <img src="img/IMG_0579.JPG" class="w-75 h-auto" alt="">
+        <div class="row g-0 py-5">
+            <div class="col-lg-6 col-12 justify-content-center text-center">
+                <div class="row d-flex justify-content-center text-center w-100 h-100">
+                    <img src="img/IMG_0579.JPG" class="w-75 h-auto py-3" alt="">
+                </div>  
             </div>
-            <div class="row px-4 text-black">
+            <div class="col-lg-6 col-12 px-4 text-black">
                 <h2 class="font-bold text-2xl text-center text-warning ">Especialidad</h2>
                 <p class="text-xl text-white" style="text-align: justify">La Especialidad es el espacio dentro de un
                     plan de estudios, constituido por un conjunto de
@@ -209,8 +235,8 @@
 <!-- Servicio social -->
 <div class="azul-cielo pt-5">
     <div class="bg-light">
-        <div class="row row-cols-2 g-0 py-5 gap-4">
-            <div class="row px-4 text-black">
+        <div class="row g-0 py-5">
+            <div class="col-lg-6 col-12 px-4 text-black">
                 <h2 class="font-bold text-2xl text-center">Servicio Social</h2>
                 <p class="text-xl" style="text-align: justify">Se entiende por servicio social el trabajo de
                     carácter temporal y obligatorio, que institucionalmente
@@ -226,8 +252,10 @@
                     </ul>
                 </div>
             </div>
-            <div class="row d-flex justify-content-center text-center">
-                <img src="img/IMG_0579.JPG" class="w-75 h-auto" alt="">
+            <div class="col-lg-6 col-12 justify-content-center text-center">
+                <div class="row d-flex justify-content-center text-center w-100 h-100">
+                    <img src="img/IMG_0579.JPG" class="w-75 h-auto py-3" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -265,8 +293,8 @@
             </div>
         </div>
         <div class="bg-light">
-            <div class="row row-cols-2 g-0 py-5 gap-4">
-                <div class="row px-4 text-black">
+            <div class="row g-0 py-5">
+                <div class="col-lg-6 col-12 px-4 text-black">
                     <h2 class="font-bold text-2xl text-center">Requisitos</h2>
                     <p class="text-xl" style="text-align: justify">
                         El valor curricular para la Residencia Profesional es de 10 créditos, y su duración queda
@@ -282,8 +310,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="row d-flex justify-content-center text-center">
-                    <img src="img/IMG_0579.JPG" class="w-75 h-auto" alt="">
+                <div class="col-lg-6 col-12 justify-content-center text-center">
+                    <div class="row d-flex justify-content-center text-center w-100 h-100">
+                        <img src="img/IMG_0579.JPG" class="w-75 h-auto py-3" alt="">
+                    </div>
                 </div>
             </div>
         </div>
