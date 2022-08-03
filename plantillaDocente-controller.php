@@ -64,14 +64,25 @@
                                                 </div>
                                             </div>
                                             </div>
-                                            <div class='d-flex flex-row justify-content-center m-2' style='text-align: justify;'>
-                                                <p>$informacion_maestro</p>
+                                            <div class='d-flex flex-row justify-content-start m-2' style='text-align: justify;'>
+                                                <div class='col-12'>
+                                                    <strong>Informacion academica:</strong> <br>
+                                                    $informacion_maestro
+                                                </div> 
                                             </div>
-                                            <div class='d-flex flex-row justify-content-center m-2' style='text-align: justify;'>
-                                                <p>$materias_maestro</p>
+                                            <div class='d-flex flex-row justify-content-start mx-2' style='text-align: justify;'>
+                                                <strong>Materias que ha impartido:</strong>
                                             </div>
-                                            <div class='d-flex flex-row justify-content-center m-2'>
-                                                <p>$contacto_maestro</p>
+                                            <div class='d-flex flex-row justify-content-start mx-2 mb-2' style='text-align: justify;'>
+                                                <div class='col-12'>
+                                                    $materias_maestro
+                                                </div>   
+                                            </div>
+                                            <div class='d-flex flex-row justify-content-start m-2'>
+                                                <p>
+                                                <strong>Información de contacto:</strong> <br>
+                                                $contacto_maestro
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -88,7 +99,7 @@
         $ResultSet = $cn->query($sqlSelect);
         $NumRows = $ResultSet->num_rows;
         $NumPaginas = $NumRows / 6;
-        $Residuo = $NumPaginas % 6;
+        $Residuo = $NumRows % 6;
         if($Residuo > 0){
             $NumPaginas = $NumPaginas + 1;
         }
@@ -98,14 +109,30 @@
         $Paginacion = '';
         $Paginacion .= '<nav aria-label="Page navigation example">';
         $Paginacion .= '<ul class="pagination justify-content-center">';
-        $Paginacion .= '<li class="page-item"><a class="page-link" href="#">Anterior</a></li>';
+        if(isset($_GET['inferior'])){
+            if($_GET['inferior'] == 1){
+                $Paginacion .= '<li class="page-item disabled"><a class="page-link" href="#">Anterior</a></li>';
+            } else{
+                $Paginacion .= '<li class="page-item"><a class="page-link" href="#">Anterior</a></li>';
+            } 
+        } else{
+            $Paginacion .= '<li class="page-item disabled"><a class="page-link" href="#">Anterior</a></li>';
+        }
         while($i <= $NumPaginas){
             $Paginacion .= '<li class="page-item"><a class="page-link" href="plantillaDocente.php?inferior='.$LimInferior.'&superior='.$LimSuperior.'">'.$i.'</a></li>';
             $i = $i + 1;
             $LimInferior = $LimInferior + 6;
             $LimSuperior = $LimSuperior + 6;
         }
-        $Paginacion .= '<li class="page-item"><a class="page-link" href="#">Siguiente</a></li>';
+        if(isset($_GET['superior'])){
+            if($_GET['superior'] >= $NumRows){
+                $Paginacion .= '<li class="page-item disabled"><a class="page-link" href="#">Siguiente</a></li>';
+            } else{
+                $Paginacion .= '<li class="page-item"><a class="page-link" href="#">Siguiente</a></li>';
+            } 
+        } else{
+            $Paginacion .= '<li class="page-item"><a class="page-link" href="#">Siguiente</a></li>';
+        }
         $Paginacion .= '</ul>';
         $Paginacion .= '</nav>';
 
