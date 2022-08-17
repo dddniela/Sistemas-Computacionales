@@ -128,7 +128,16 @@ INSERT INTO `materia` (`id_materia`, `nombre_materia`, `area_materia`, `semestre
 (43, 'Administración de redes', 'Redes', '8', 'Configura y administra servicios de red para el uso eficiente y confiable de la infraestructura tecnológica de la organización.', 0, '...', '...'),
 (44, 'Taller de investigación II', 'Investigacion', '8', 'Consolida el protocolo para ejecutar la investigación y obtener productos para su exposición, defensa y gestión de su transcendencia.', 0, '...', '...'),
 (45, 'Programación web', 'Web', '8', 'Desarrolla aplicaciones web dinámicas del lado cliente y del servidor, considerando la conectividad a orígenes de datos, la interconectividad entre aplicaciones y cómputo en la nube.', 0, '...', '...'),
-(46, 'Inteligencia artificial', 'IA', '9', 'Conocer los principios y el desarrollo de la Inteligencia Artificial, identificando sus\r\naplicaciones (robótica, visión computacional, lógica difusa, redes neuronales y\r\nprocesamiento de lenguaje natural) para emplearlas en el diseño e implementación\r\nde sistemas inteligentes que faciliten las tareas del ser humano.', 0, '...', '...');
+(46, 'Inteligencia artificial', 'IA', '9', 'Conocer los principios y el desarrollo de la Inteligencia Artificial, identificando sus\r\naplicaciones (robótica, visión computacional, lógica difusa, redes neuronales y\r\nprocesamiento de lenguaje natural) para emplearlas en el diseño e implementación\r\nde sistemas inteligentes que faciliten las tareas del ser humano.', 0, '...', '...'),
+(47, 'Taller de Sistemas Concurrentes 1', 'Especialidad', '7', 'Capacidad de organización del hardware para obtener un equipo de altas prestaciones acorde con los diferentes requerimientos que tenga el usuario o empresa.', 0, '...', '...'),
+(48, 'Computo Paralelo', 'Especialidad', '7', 'El alumno deberá saber aplicar los conceptos adquiridos en las materias de programación secuencial vistas al inicio de la carrera, para diseñar y desarrollar sistemas concurrentes de alta demanda de recursos.', 0, '...', '...'),
+(49, 'Taller de Sistemas Concurrentes 2', 'Especialidad', '8', 'Toma de decisión para elegir el mejor software para ambientes virtuales de acuerdo a las necesidades del usuario o empresa.', 0, '...', '...'),
+(50, 'Concurrencia con GPUS en Videojuegos', 'Especialidad', '8', 'Identificar y definir los diferentes elementos (personajes, guion, escenarios, roles) que requiere un videojuego en computadora.', 0, '...', '...'),
+(51, 'Transacciones Computacionales con Blockchain', 'Especialidad', '9', 'Capacidad de organización del hardware para obtener un equipo de altas prestaciones acorde con los diferentes requerimientos que tenga el usuario o empresa.', 0, '...', '...'),
+(52, 'Bases de Datos Distribuidas', 'Especialidad', '9', 'Conocer y aplicar la filosofía de manejo de Base de Datos Distribuidas.', 0, '...', '...');
+
+
+
 
 --
 -- Índices para tablas volcadas
