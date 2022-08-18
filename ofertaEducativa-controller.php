@@ -182,7 +182,7 @@ function imprimirEspecialidad(){
                 $tabla .= "<h5 class='text-white align-self-start rounded-top text-center font-semibold py-3 azul-medio'>$nombre_materia</h5>";
                 $tabla .= "<div class='d-flex align-items-center bg-light'>";
                     $tabla .= "<img class='h-16 mx-2' src='$ruta_img' alt=''>";
-                    $tabla .= "<p class='text-sm mx-4 my-2'>$descrip_materia</p>";
+                    $tabla .= "<p class='text-sm mx-4 my-2' style='text-align: justify;'>$descrip_materia</p>";
                 $tabla .= "</div>";
                 $tabla .= "<div class='d-flex p-2 justify-content-center align-items-center bg-light'>";
                     $tabla .="<button type='button' class='btn btn-warning' data-bs-toggle='modal' data-bs-target='#modalReticula" .$id_materia ."'>
