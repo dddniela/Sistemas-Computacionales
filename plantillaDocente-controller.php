@@ -24,10 +24,10 @@
                 $Codigo .=  "<div class='col-lg-4 col-md-6 col-sm-9 col-8 my-2'>
                                 <div class='d-flex flex-column gris-zinc rounded-3'>
                                     <div class='d-flex flex-row justify-content-center my-2'>
-                                        <img class='rounded-circle p-1 bg-primary' src='img/hector_trujillo.JPG' alt='' style='width: 10rem; height: 10rem;'>
+                                        <img class='rounded-circle p-1 bg-primary' src='img/Docentes/".$url_imagen ."' alt='' style='width: 10rem; height: 10rem;'>
                                     </div>
                                     <div class='d-flex flex-row justify-content-center mx-2'>
-                                        <h5 class='fs-5 fw-bolt'>" .$nombre_maestro. "</h5>
+                                        <h5 class='fs-5 fw-bolt'>" .$nombre_maestro."</h5>
                                     </div>
                                     <div class='d-flex flex-row justify-content-center my-2'>
                                         <button type='button' class='btn amarillo fw-bolt' data-bs-toggle='modal' data-bs-target='#ModalDocente".$id_maestro."'>Ver mas</button>
@@ -47,7 +47,7 @@
                                             <div class='row justify-content-center m-2'>
                                                 <div class='col-7 col-lg-auto justify-content-center m-2'>
                                                     <div class='d-flex justify-content-center'>
-                                                        <img class='rounded-circle p-1 bg-primary' src='img/hector_trujillo.JPG' alt='' style='width: 15rem; height: 15rem;'>
+                                                        <img class='rounded-circle p-1 bg-primary' src='img/Docentes/".$url_imagen."' alt='' style='width: 15rem; height: 15rem;'>
                                                     </div>
                                                 </div>
                                                 <div class='col-12 col-lg-7 justify-content-center align-items-center m-2'>
@@ -78,12 +78,14 @@
                                                     $materias_maestro
                                                 </div>   
                                             </div>
-                                            <div class='d-flex flex-row justify-content-start m-2'>
-                                                <p>
-                                                <strong>Información de contacto:</strong> <br>
-                                                $contacto_maestro
-                                                </p>
+                                            <div class='d-flex flex-row justify-content-start mx-2' style='text-align: justify;'>
+                                                <strong>Información de contacto:</strong> 
                                             </div>
+                                            <div class='d-flex flex-row justify-content-start mx-2 mb-2' style='text-align: justify;'>
+                                                <div class='col-12'>
+                                                    $contacto_maestro
+                                                </div>   
+                                        </div>
                                         </div>
                                     </div>
                                 </div>
