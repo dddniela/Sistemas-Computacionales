@@ -81,7 +81,7 @@ function imprimir($NumeroSemestre){
                             $tabla .= "<h5 class='text-white align-self-start rounded-top text-center font-semibold py-3'>$nombre_materia</h5>";
                         $tabla .= "</div>";
                     $tabla .= "</div>";
-                    $tabla .= "<div class='row bg-light'>";
+                    $tabla .= "<div class='row bg-light overflow-hidden' style='height: 110px;'>";
                         $tabla .= "<div class='col-md-3 col-12 justify-content-center align-items-center'>";
                             $tabla .= "<div class='d-flex flex-row justify-content-center align-items-center h-100'>";
                                 $tabla .= "<img class='h-16 mx-2 p-1' src='$ruta_img' alt=''>";
@@ -92,8 +92,8 @@ function imprimir($NumeroSemestre){
                                 $tabla .= "<p class='text-sm mx-4 my-2' style='text-align: justify;'>$descrip_materia</p>";
                             $tabla .= "</div>";
                         $tabla .= "</div>";
-                    #$tabla .= "</div>";  
-                    #$tabla .= "<div class='row bg-light'>";
+                    $tabla .= "</div>";  
+                    $tabla .= "<div class='row bg-light'>";
                         $tabla .= "<div class='col-12 my-2 justify-content-center'>";
                             $tabla .= "<div class='d-flex p-2 justify-content-center align-items-center'>";
                                 $tabla .="<button type='button' class='btn btn-warning' data-bs-toggle='modal' data-bs-target='#modalReticula" .$id_materia ."'>
@@ -163,57 +163,6 @@ function imprimir9noSemestre(){
     return imprimir("9");
 }
 
-/*function imprimirEspecialidad(){
-    $cn = conexion();
-    $sqlQ = "SELECT * FROM materia where area_materia='Especialidad'";
-    $ResultSet = $cn->query($sqlQ); 
-   
-    $tabla = "";
-
-    if($ResultSet->num_rows > 0){
-        $tabla .= "<div class='row gx-5 row-cols-1 row-cols-lg-3 mx-5'>";
-        while($row = $ResultSet->fetch_assoc()){
-            $id_materia = $row['id_materia'];
-            $nombre_materia = $row['nombre_materia'];
-            $descrip_materia = $row['descripcion_materia'];
-            $area_materia = $row['area_materia'];
-            $ruta_img = icono($area_materia);
-
-            $tabla .= "<div class='col my-3 p-3 justify-content-center'>";
-                $tabla .= "<h5 class='text-white align-self-start rounded-top text-center font-semibold py-3 azul-medio'>$nombre_materia</h5>";
-                $tabla .= "<div class='d-flex align-items-center bg-light'>";
-                    $tabla .= "<img class='h-16 mx-2' src='$ruta_img' alt=''>";
-                    $tabla .= "<p class='text-sm mx-4 my-2' style='text-align: justify;'>$descrip_materia</p>";
-                $tabla .= "</div>";
-                $tabla .= "<div class='d-flex p-2 justify-content-center align-items-center bg-light'>";
-                    $tabla .="<button type='button' class='btn btn-warning' data-bs-toggle='modal' data-bs-target='#modalReticula" .$id_materia ."'>
-                                Ver más </button>";
-                 $tabla .= "</div>";
-            $tabla .= "</div>";
-
-            #modal de la materia
-            $tabla .="  <div class='modal fade' id='modalReticula" .$id_materia ."' tabindex='-1' aria-labelledby='modal" .$id_materia ."' aria-hidden='true'>
-            <div class='modal-dialog modal-lg'>
-              <div class='modal-content'>
-                <div class='modal-header azul-medio'>
-                  <h5 class='modal-title text-white font-semibold' id='modal" .$id_materia ."'>" .$nombre_materia ."</h5>
-                  <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
-                </div>
-                <div class='modal-body'>"
-                  .$descrip_materia
-                ."</div>
-              </div>
-            </div>
-          </div>";
-        }
-        $tabla .= "</div>";
-    }
-
-    return $tabla;
-    
-    $cn->close();
-}*/
-
 function imprimirEspecialidad(){
     $cn = conexion();
     $sqlQ = "SELECT * FROM materia where area_materia='Especialidad'";
@@ -241,7 +190,7 @@ function imprimirEspecialidad(){
                             $tabla .= "<h5 class='text-white align-self-start rounded-top text-center font-semibold py-3'>$nombre_materia</h5>";
                         $tabla .= "</div>";
                     $tabla .= "</div>";
-                    $tabla .= "<div class='row bg-light h-100'>";
+                    $tabla .= "<div class='row bg-light overflow-hidden' style='height: 110px;'>";
                         $tabla .= "<div class='col-md-3 col-12 justify-content-center align-items-center'>";
                             $tabla .= "<div class='d-flex flex-row justify-content-center align-items-center h-100'>";
                                 $tabla .= "<img class='h-16 mx-2 p-1' src='$ruta_img[$i]' alt=''>";
@@ -252,8 +201,8 @@ function imprimirEspecialidad(){
                                 $tabla .= "<p class='text-sm mx-4 my-2' style='text-align: justify;'>$descrip_materia</p>";
                             $tabla .= "</div>";
                         $tabla .= "</div>";
-                    #$tabla .= "</div>";  
-                    #$tabla .= "<div class='row bg-light'>";
+                    $tabla .= "</div>";  
+                    $tabla .= "<div class='row bg-light'>";
                         $tabla .= "<div class='col-12 my-2 justify-content-center'>";
                             $tabla .= "<div class='d-flex p-2 justify-content-center align-items-center'>";
                                 $tabla .="<button type='button' class='btn btn-warning' data-bs-toggle='modal' data-bs-target='#modalEspecialidad" .$id_materia ."'>
