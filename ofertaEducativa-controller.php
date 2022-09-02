@@ -82,9 +82,9 @@ function imprimir($NumeroSemestre){
                         $tabla .= "</div>";
                     $tabla .= "</div>";
                     $tabla .= "<div class='row bg-light overflow-hidden' style='height: 110px;'>";
-                        $tabla .= "<div class='col-md-3 col-12 justify-content-center align-items-center'>";
-                            $tabla .= "<div class='d-flex flex-row justify-content-center align-items-center h-100'>";
-                                $tabla .= "<img class='h-16 mx-2 p-1' src='$ruta_img' alt=''>";
+                        $tabla .= "<div class='col-md-3 col-12 justify-content-center align-items-start'>";
+                            $tabla .= "<div class='d-flex flex-row justify-content-center align-items-start h-100'>";
+                                $tabla .= "<img class='h-16 p-1 mt-4 ms-4' src='$ruta_img' alt=''>";
                             $tabla .= "</div>";
                         $tabla .= "</div>";
                         $tabla .= "<div class='col-md-9 col-12 justify-content-center align-items-center'>";
@@ -113,7 +113,7 @@ function imprimir($NumeroSemestre){
                     <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
                   </div>
                   <div class='modal-body'>
-                    <div class='d-flex justify-content-center mb-4'>"
+                    <div class='d-flex justify-content-center mb-4' style='text-align: justify;'>"
                         .$descrip_materia. 
                     "</div>
                     <div class='d-flex justify-content-center my-2'>
@@ -200,9 +200,9 @@ function imprimirEspecialidad(){
                         $tabla .= "</div>";
                     $tabla .= "</div>";
                     $tabla .= "<div class='row bg-light overflow-hidden' style='height: 110px;'>";
-                        $tabla .= "<div class='col-md-3 col-12 justify-content-center align-items-center'>";
-                            $tabla .= "<div class='d-flex flex-row justify-content-center align-items-center h-100'>";
-                                $tabla .= "<img class='h-16 mx-2 p-1' src='$ruta_img[$i]' alt=''>";
+                        $tabla .= "<div class='col-md-3 col-12 justify-content-center align-items-start'>";
+                            $tabla .= "<div class='d-flex flex-row justify-content-center align-items-start h-100'>";
+                                $tabla .= "<img class='h-16 ms-4 mt-4 p-1' src='$ruta_img[$i]' alt=''>";
                             $tabla .= "</div>";
                         $tabla .= "</div>";
                         $tabla .= "<div class='col-md-9 col-12 justify-content-center align-items-center'>";
