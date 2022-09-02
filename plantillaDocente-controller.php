@@ -97,7 +97,7 @@
 
     function generarPaginacion(){
         $cn = conexion();
-        $sqlSelect = "SELECT * FROM maestro";
+        $sqlSelect = "SELECT * FROM maestro ORDER BY nombre_maestro ASC";
         $ResultSet = $cn->query($sqlSelect);
         $NumRows = $ResultSet->num_rows;
         $NumPaginas = $NumRows / 6;
