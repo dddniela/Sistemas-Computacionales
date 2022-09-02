@@ -196,3 +196,29 @@
     height: 150px;
   }
 }
+
+.video-reticula{
+  width: 560px;
+  height: 315px;
+}
+
+@media (max-width: 991px) {
+  .video-reticula{
+    width: 450px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 520px) {
+  .video-reticula{
+    width: 395px;
+    height: 140x;
+  }
+}
+
+@media (max-width: 400px) {
+  .video-reticula{
+    width: 250px;
+    height: auto;
+  }
+}

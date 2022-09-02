@@ -56,7 +56,7 @@ function icono($Area){
 
 function imprimir($NumeroSemestre){
     $cn = conexion();
-    $sqlQ = "SELECT * FROM materia where semestre_materia='$NumeroSemestre'";
+    $sqlQ = "SELECT * FROM materia where semestre_materia='$NumeroSemestre' and especialidad_materia=0";
     $ResultSet = $cn->query($sqlQ); 
    
     $tabla = "";
@@ -76,9 +76,9 @@ function imprimir($NumeroSemestre){
     // Cuadro de materia
             $tabla .= "<div class='col-lg-4 col-md-6 col-sm-9 col-8 p-4 h-100 justify-content-center rounded-3'>";
                 #$tabla .= "<div class='col h-100 px-2 m-2 bg-light'>";
-                    $tabla .= "<div class='row azul-medio'>";
-                        $tabla .= "<div class='d-flex justify-content-center'>";
-                            $tabla .= "<h5 class='text-white align-self-start rounded-top text-center font-semibold py-3'>$nombre_materia</h5>";
+                    $tabla .= "<div class='row azul-medio' style='height: 88px;'>";
+                        $tabla .= "<div class='d-flex justify-content-center h-100'>";
+                            $tabla .= "<h5 class='text-white align-self-center rounded-top text-center font-semibold py-3'>$nombre_materia</h5>";
                         $tabla .= "</div>";
                     $tabla .= "</div>";
                     $tabla .= "<div class='row bg-light overflow-hidden' style='height: 110px;'>";
@@ -112,9 +112,18 @@ function imprimir($NumeroSemestre){
                     <h5 class='modal-title text-white font-semibold' id='modal" .$id_materia ."'>" .$nombre_materia ."</h5>
                     <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
                   </div>
-                  <div class='modal-body'>"
-                    .$descrip_materia
-                  ."</div>
+                  <div class='modal-body'>
+                    <div class='d-flex justify-content-center mb-4'>"
+                        .$descrip_materia. 
+                    "</div>
+                    <div class='d-flex justify-content-center my-2'>
+                        <iframe class='aspect-video video-reticula' 
+                        src='".$url_materia."' 
+                        title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; 
+                        clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>
+                        </iframe>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>";
@@ -185,9 +194,9 @@ function imprimirEspecialidad(){
             // Cuadro de materia
             $tabla .= "<div class='col-lg-4 col-md-6 col-sm-9 col-8 p-4 h-100 justify-content-center rounded-3'>";
                 #$tabla .= "<div class='col h-100 px-2 m-2 bg-light'>";
-                    $tabla .= "<div class='row azul-medio'>";
-                        $tabla .= "<div class='d-flex justify-content-center'>";
-                            $tabla .= "<h5 class='text-white align-self-start rounded-top text-center font-semibold py-3'>$nombre_materia</h5>";
+                    $tabla .= "<div class='row azul-medio' style='height: 88px;'>";
+                        $tabla .= "<div class='d-flex justify-content-center align-items-center h-100'>";
+                            $tabla .= "<h5 class='text-white align-self-center rounded-top text-center font-semibold'>$nombre_materia</h5>";
                         $tabla .= "</div>";
                     $tabla .= "</div>";
                     $tabla .= "<div class='row bg-light overflow-hidden' style='height: 110px;'>";
