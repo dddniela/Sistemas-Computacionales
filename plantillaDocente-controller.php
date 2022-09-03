@@ -3,7 +3,7 @@
 
     function obtenerInformacion($LimiteInferior, $LimiteSuperior){
         $cn = conexion();
-        $sqlSelect = "SELECT * FROM maestro WHERE id_maestro>='$LimiteInferior' AND id_maestro<='$LimiteSuperior'";
+        $sqlSelect = "SELECT * FROM maestro WHERE id_maestro>='$LimiteInferior' AND id_maestro<='$LimiteSuperior' ORDER BY nombre_maestro ASC";
         $ResultSet = $cn->query($sqlSelect);
         return $ResultSet;
     }
