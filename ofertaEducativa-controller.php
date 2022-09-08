@@ -123,6 +123,10 @@ function imprimir($NumeroSemestre){
                         clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>
                         </iframe>
                     </div>
+                    <div class='d-flex p-2 justify-content-center align-items-center'>
+                        <a target='_blank' href='".$url_programa."'><button type='button' class='btn btn-warning''>Descargar programa</button></a>
+                        
+                    </div>
                   </div>
                 </div>
               </div>
