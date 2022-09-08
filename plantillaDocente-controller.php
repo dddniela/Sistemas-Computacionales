@@ -149,7 +149,7 @@
                 $Paginacion .= '<li class="page-item"><a class="page-link" href="plantillaDocente.php?inferior='.$LI.'&superior='.$LS.'">Siguiente</a></li>';
             } 
         } else{
-            $Paginacion .= '<li class="page-item"><a class="page-link" href="#">Siguiente</a></li>';
+            $Paginacion .= '<li class="page-item"><a class="page-link" href="plantillaDocente.php?inferior=7&superior=12">Siguiente</a></li>';
         }
         $Paginacion .= '</ul>';
         $Paginacion .= '</nav>';
