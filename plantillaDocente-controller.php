@@ -115,13 +115,27 @@
             if($_GET['inferior'] == 1){
                 $Paginacion .= '<li class="page-item disabled"><a class="page-link" href="#">Anterior</a></li>';
             } else{
-                $Paginacion .= '<li class="page-item"><a class="page-link" href="#">Anterior</a></li>';
+                $LI = $_GET['inferior'] - 6;
+                $LS = $_GET['superior'] - 6;
+                $Paginacion .= '<li class="page-item"><a class="page-link" href="plantillaDocente.php?inferior='.$LI.'&superior='.$LS.'">Anterior</a></li>';
             } 
         } else{
             $Paginacion .= '<li class="page-item disabled"><a class="page-link" href="#">Anterior</a></li>';
         }
         while($i <= $NumPaginas){
-            $Paginacion .= '<li class="page-item"><a class="page-link" href="plantillaDocente.php?inferior='.$LimInferior.'&superior='.$LimSuperior.'">'.$i.'</a></li>';
+            if(isset($_GET['superior'])){
+                if($LimSuperior == $_GET['superior']){
+                    $Paginacion .= '<li class="page-item active"><a class="page-link" href="plantillaDocente.php?inferior='.$LimInferior.'&superior='.$LimSuperior.'">'.$i.'</a></li>';
+                }else{
+                    $Paginacion .= '<li class="page-item"><a class="page-link" href="plantillaDocente.php?inferior='.$LimInferior.'&superior='.$LimSuperior.'">'.$i.'</a></li>';
+                }
+            }else{
+                if($i == 1){
+                    $Paginacion .= '<li class="page-item active"><a class="page-link" href="plantillaDocente.php?inferior='.$LimInferior.'&superior='.$LimSuperior.'">'.$i.'</a></li>';
+                }else{
+                    $Paginacion .= '<li class="page-item"><a class="page-link" href="plantillaDocente.php?inferior='.$LimInferior.'&superior='.$LimSuperior.'">'.$i.'</a></li>';
+                }   
+            }
             $i = $i + 1;
             $LimInferior = $LimInferior + 6;
             $LimSuperior = $LimSuperior + 6;
@@ -130,7 +144,9 @@
             if($_GET['superior'] >= $NumRows){
                 $Paginacion .= '<li class="page-item disabled"><a class="page-link" href="#">Siguiente</a></li>';
             } else{
-                $Paginacion .= '<li class="page-item"><a class="page-link" href="#">Siguiente</a></li>';
+                $LI = $_GET['inferior'] + 6;
+                $LS = $_GET['superior'] + 6;
+                $Paginacion .= '<li class="page-item"><a class="page-link" href="plantillaDocente.php?inferior='.$LI.'&superior='.$LS.'">Siguiente</a></li>';
             } 
         } else{
             $Paginacion .= '<li class="page-item"><a class="page-link" href="#">Siguiente</a></li>';
