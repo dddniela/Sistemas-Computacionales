@@ -356,3 +356,20 @@
         </div>
     </div>
 </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+   
+    function youtubePlay(btn) {
+        var id = $(btn).data("id");
+        var videoReticula = $(btn).data("videoreticula"+id);
+        var theModal = $(btn).data("bs-target"),
+            videoSRCauto = videoReticula + "?autoplay=1";
+
+            $(theModal + ' iframe').attr('src', videoSRCauto);
+            $(theModal + ' button.btn-close').click(function() {
+            $(theModal + ' iframe').attr('src', videoReticula);
+            });
+    }
+</script>

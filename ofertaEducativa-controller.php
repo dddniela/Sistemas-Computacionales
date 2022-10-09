@@ -96,8 +96,11 @@ function imprimir($NumeroSemestre){
                     $tabla .= "<div class='row bg-light'>";
                         $tabla .= "<div class='col-12 my-2 justify-content-center'>";
                             $tabla .= "<div class='d-flex p-2 justify-content-center align-items-center'>";
-                                $tabla .="<button type='button' class='btn btn-warning' data-bs-toggle='modal' data-bs-target='#modalReticula" .$id_materia ."'>
-                                        Ver más </button>";
+                                $tabla .="<button type='button' class='btn btn-warning' data-bs-toggle='modal'
+                                data-bs-target='#modalReticula" .$id_materia ."' 
+                                data-videoReticula" .$id_materia ."= \"" .$url_materia ."\" 
+                                data-id=\"" .$id_materia ."\" onclick='youtubePlay(this)'>
+                                Ver más </button>";
                             $tabla .= "</div>";
                         $tabla .= "</div>";
                     $tabla .= "</div>";  
@@ -117,7 +120,7 @@ function imprimir($NumeroSemestre){
                         .$descrip_materia. 
                     "</div>
                     <div class='d-flex justify-content-center my-2'>
-                        <iframe class='aspect-video video-reticula' 
+                        <iframe class='aspect-video video-reticula' id='videoReticula" .$id_materia ."'
                         src='".$url_materia."' 
                         title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; 
                         clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>
@@ -249,5 +252,3 @@ function imprimirEspecialidad(){
     
     $cn->close();
 }
-
-?>
