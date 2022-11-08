@@ -240,6 +240,17 @@ function imprimirEspecialidad(){
                   <div class='modal-body'>"
                     .$descrip_materia
                   ."</div>
+                  <div class='d-flex justify-content-center my-2'>
+                        <iframe class='aspect-video video-reticula' id='videoReticula" .$id_materia ."'
+                        src='".$url_materia."' 
+                        title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; 
+                        clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class='d-flex p-2 justify-content-center align-items-center'>
+                        <a target='_blank' href='".$url_programa."'><button type='button' class='btn btn-warning''>Descargar programa</button></a>
+                        
+                    </div>
                 </div>
               </div>
             </div>";
