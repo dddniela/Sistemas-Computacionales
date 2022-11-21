@@ -97,9 +97,13 @@ function imprimir($NumeroSemestre){
                         $tabla .= "<div class='col-12 my-2 justify-content-center'>";
                             $tabla .= "<div class='d-flex p-2 justify-content-center align-items-center'>";
                                 $tabla .="<button type='button' class='btn btn-warning' data-bs-toggle='modal'
-                                data-bs-target='#modalReticula" .$id_materia ."' 
-                                data-videoReticula" .$id_materia ."= \"" .$url_materia ."\" 
-                                data-id=\"" .$id_materia ."\" onclick='youtubePlay(this)'>
+                                data-bs-target='#modalReticula' 
+                                data-materia = \"" .$nombre_materia ."\" 
+                                data-videoMateria = \"" .$url_materia ."\" 
+                                data-descMateria = \"" .$descrip_materia ."\" 
+                                data-urlMateria = \"" .$url_programa ."\" 
+                                data-id=\"" .$id_materia ."\" 
+                                onclick='youtubePlay(this)'>
                                 Ver más </button>";
                             $tabla .= "</div>";
                         $tabla .= "</div>";
@@ -108,32 +112,32 @@ function imprimir($NumeroSemestre){
             $tabla .= "</div>";
     
     //modal de la materia
-          $tabla .="  <div class='modal fade' id='modalReticula" .$id_materia ."' tabindex='-1' aria-labelledby='modal" .$id_materia ."' aria-hidden='true'>
-              <div class='modal-dialog modal-lg'>
-                <div class='modal-content'>
-                  <div class='modal-header azul-medio'>
-                    <h5 class='modal-title text-white font-semibold' id='modal" .$id_materia ."'>" .$nombre_materia ."</h5>
-                    <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
-                  </div>
-                  <div class='modal-body'>
-                    <div class='d-flex justify-content-center mb-4' style='text-align: justify;'>"
-                        .$descrip_materia. 
-                    "</div>
-                    <div class='d-flex justify-content-center my-2'>
-                        <iframe class='aspect-video video-reticula' id='videoReticula" .$id_materia ."'
-                        src='".$url_materia."' 
-                        title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; 
-                        clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>
-                        </iframe>
-                    </div>
-                    <div class='d-flex p-2 justify-content-center align-items-center'>
-                        <a target='_blank' href='".$url_programa."'><button type='button' class='btn btn-warning''>Descargar programa</button></a>
+        //   $tabla .="  <div class='modal fade' id='modalReticula" .$id_materia ."' tabindex='-1' aria-labelledby='modal" .$id_materia ."' aria-hidden='true'>
+        //       <div class='modal-dialog modal-lg'>
+        //         <div class='modal-content'>
+        //           <div class='modal-header azul-medio'>
+        //             <h5 class='modal-title text-white font-semibold' id='modal" .$id_materia ."'>" .$nombre_materia ."</h5>
+        //             <button type='button' class='btn-close text-white' data-bs-dismiss='modal' aria-label='Close'></button>
+        //           </div>
+        //           <div class='modal-body'>
+        //             <div class='d-flex justify-content-center mb-4' style='text-align: justify;'>"
+        //                 .$descrip_materia. 
+        //             "</div>
+        //             <div class='d-flex justify-content-center my-2'>
+        //                 <iframe class='aspect-video video-reticula' id='videoReticula" .$id_materia ."'
+        //                 src='".$url_materia."' 
+        //                 title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; 
+        //                 clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>
+        //                 </iframe>
+        //             </div>
+        //             <div class='d-flex p-2 justify-content-center align-items-center'>
+        //                 <a target='_blank' href='".$url_programa."'><button type='button' class='btn btn-warning''>Descargar programa</button></a>
                         
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>";
+        //             </div>
+        //           </div>
+        //         </div>
+        //       </div>
+        //     </div>";
         }
         $tabla .= "</div>";
     }

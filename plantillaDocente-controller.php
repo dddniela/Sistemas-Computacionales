@@ -27,7 +27,7 @@
                                         <img class='rounded-circle p-1 bg-primary' src='img/Docentes/".$url_imagen ."' alt='' style='width: 10rem; height: 10rem;'>
                                     </div>
                                     <div class='d-flex flex-row justify-content-center mx-2'>
-                                        <h5 class='fs-5 fw-bolt'>" .$nombre_maestro."</h5>
+                                        <h5 class='fs-5 fw-bolt font-bold'>" .$nombre_maestro."</h5>
                                     </div>
                                     <div class='d-flex flex-row justify-content-center my-2'>
                                         <button type='button' class='btn amarillo fw-bolt' data-bs-toggle='modal' data-bs-target='#ModalDocente".$id_maestro."'>Ver mas</button>

@@ -136,6 +136,35 @@
             </div>
         </div>
     </div>
+
+    <div class='modal fade' id='modalReticula' tabindex='-1' aria-labelledby='modalReticula' aria-hidden='true'>
+        <div class='modal-dialog modal-lg'>
+            <div class='modal-content'>
+                <div class='modal-header azul-medio'>
+                    <h5 class='modal-title text-white font-semibold' id='modalTitulo'></h5>
+                    <button type='button' class='btn-close text-white' data-bs-dismiss='modal'
+                        aria-label='Close'></button>
+                </div>
+                <div class='modal-body'>
+                    <div class='d-flex justify-content-center mb-4' style='text-align: justify;'>
+                        <p id="descReticula"></p>
+                    </div>
+                    <div class='d-flex justify-content-center my-2'>
+                        <iframe class='aspect-video video-reticula' id='videoReticula' src=''
+                            title='YouTube video player' frameborder='0'
+                            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class='d-flex p-2 justify-content-center align-items-center'>
+                        <a target='_blank' href='' id="urlReticula"><button type='button' class='btn btn-warning''>Descargar programa</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
     <div class="justify-content-center text-center">
         <p><a class="botonPrincipal w-auto btn font-bold" target="_blank" href="https://bit.ly/3MbTdA6">Descargar Retícula</a></p>
     </div>
@@ -360,16 +389,41 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script>
-   
+    const modalReticula = document.getElementById('modalReticula');
+    
+    modalReticula.addEventListener('show.bs.modal',
+        event => {
+            // Button that triggered the modal
+            const button = event.relatedTarget;
+
+            // se obtienen los atributos que se encuentran en el botón de 'Ver más'
+            const id = button.getAttribute('data-id');
+            const materia = button.getAttribute('data-materia');
+            const videoReticula = button.getAttribute('data-videoMateria');
+            const descripcion = button.getAttribute('data-descMateria');
+            const url = button.getAttribute('data-urlMateria');
+
+            // se obtienen los elementos por su ID y se cambian los valores.
+            document.getElementById("modalTitulo").innerHTML = `${materia}`;
+            document.getElementById("descReticula").innerHTML = `${descripcion}`;
+            $("#videoReticula iframe").attr('src', videoReticula);
+            $("#urlReticula").attr('href', url);
+            
+        });
+
+        $("#modalReticula").on('hidden.bs.modal', function (e) {
+    $("#modalReticula iframe").attr("src", '');
+});
+
     function youtubePlay(btn) {
         var id = $(btn).data("id");
-        var videoReticula = $(btn).data("videoreticula"+id);
+        var videoReticula = $(btn).data("videomateria");
         var theModal = $(btn).data("bs-target"),
             videoSRCauto = videoReticula + "?autoplay=1";
 
-            $(theModal + ' iframe').attr('src', videoSRCauto);
-            $(theModal + ' button.btn-close').click(function() {
+        $(theModal + ' iframe').attr('src', videoSRCauto);
+        $(theModal + ' button.btn-close').click(function () {
             $(theModal + ' iframe').attr('src', videoReticula);
-            });
+        });
     }
 </script>
