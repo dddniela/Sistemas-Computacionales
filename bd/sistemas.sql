@@ -29,12 +29,12 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `maestro` (
   `id_maestro` int(11) NOT NULL,
-  `nombre_maestro` varchar(50) NOT NULL,
+  `nombre_maestro` varchar(150) NOT NULL,
   `palabras_maestro` text NOT NULL,
   `informacion_maestro` text NOT NULL,
   `materias_maestro` text NOT NULL,
   `contacto_maestro` text NOT NULL,
-  `url_imagen` varchar(20) NOT NULL
+  `url_imagen` varchar(150) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -88,13 +88,13 @@ INSERT INTO `maestro` (`id_maestro`, `nombre_maestro`, `palabras_maestro`, `info
 
 CREATE TABLE `materia` (
   `id_materia` int(11) NOT NULL,
-  `nombre_materia` varchar(50) NOT NULL,
-  `area_materia` varchar(20) NOT NULL,
-  `semestre_materia` varchar(20) NOT NULL,
+  `nombre_materia` varchar(150) NOT NULL,
+  `area_materia` varchar(150) NOT NULL,
+  `semestre_materia` varchar(150) NOT NULL,
   `descripcion_materia` text NOT NULL,
   `especialidad_materia` tinyint(1) NOT NULL,
-  `url_materia` varchar(70) NOT NULL,
-  `url_programa` varchar(70) NOT NULL
+  `url_materia` varchar(150) NOT NULL,
+  `url_programa` varchar(150) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
