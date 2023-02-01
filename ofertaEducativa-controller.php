@@ -74,21 +74,21 @@ function imprimir($NumeroSemestre){
             $ruta_img = icono($area_materia);
 
     // Cuadro de materia
-            $tabla .= "<div class='col-lg-4 col-md-6 col-sm-9 col-8 p-4 h-100 justify-content-center rounded-3'>";
+            $tabla .= "<div class='col-lg-4 col-md-6 col-sm-9 col-9 p-4 h-100 justify-content-center rounded-3'>";
                 #$tabla .= "<div class='col h-100 px-2 m-2 bg-light'>";
                     $tabla .= "<div class='row azul-medio' style='height: 88px;'>";
                         $tabla .= "<div class='d-flex justify-content-center h-100'>";
                             $tabla .= "<h5 class='text-white align-self-center rounded-top text-center font-semibold py-3'>$nombre_materia</h5>";
                         $tabla .= "</div>";
                     $tabla .= "</div>";
-                    $tabla .= "<div class='row bg-light overflow-hidden' style='height: 110px;'>";
+                    $tabla .= "<div class='row bg-light overflow-hidden d-none d-sm-flex' style='height: 110px;'>";
                         $tabla .= "<div class='col-md-3 col-12 justify-content-center align-items-start'>";
                             $tabla .= "<div class='d-flex flex-row justify-content-center align-items-start h-100'>";
                                 $tabla .= "<img class='h-16 p-1 mt-4 ms-4' src='$ruta_img' alt=''>";
                             $tabla .= "</div>";
                         $tabla .= "</div>";
                         $tabla .= "<div class='col-md-9 col-12 justify-content-center align-items-center'>";
-                            $tabla .= "<div class='d-flex flex-row justify-content-center align-items-center h-100'>";
+                            $tabla .= "<div class='d-flex flex-row justify-content-center align-items-center h-100 text-wrap'>";
                                 $tabla .= "<p class='text-sm mx-4 my-2' style='text-align: justify;'>$descrip_materia</p>";
                             $tabla .= "</div>";
                         $tabla .= "</div>";
@@ -110,34 +110,6 @@ function imprimir($NumeroSemestre){
                     $tabla .= "</div>";  
                 #$tabla .= "</div>"; 
             $tabla .= "</div>";
-    
-    //modal de la materia
-        //   $tabla .="  <div class='modal fade' id='modalReticula" .$id_materia ."' tabindex='-1' aria-labelledby='modal" .$id_materia ."' aria-hidden='true'>
-        //       <div class='modal-dialog modal-lg'>
-        //         <div class='modal-content'>
-        //           <div class='modal-header azul-medio'>
-        //             <h5 class='modal-title text-white font-semibold' id='modal" .$id_materia ."'>" .$nombre_materia ."</h5>
-        //             <button type='button' class='btn-close text-white' data-bs-dismiss='modal' aria-label='Close'></button>
-        //           </div>
-        //           <div class='modal-body'>
-        //             <div class='d-flex justify-content-center mb-4' style='text-align: justify;'>"
-        //                 .$descrip_materia. 
-        //             "</div>
-        //             <div class='d-flex justify-content-center my-2'>
-        //                 <iframe class='aspect-video video-reticula' id='videoReticula" .$id_materia ."'
-        //                 src='".$url_materia."' 
-        //                 title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; 
-        //                 clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen>
-        //                 </iframe>
-        //             </div>
-        //             <div class='d-flex p-2 justify-content-center align-items-center'>
-        //                 <a target='_blank' href='".$url_programa."'><button type='button' class='btn btn-warning''>Descargar programa</button></a>
-                        
-        //             </div>
-        //           </div>
-        //         </div>
-        //       </div>
-        //     </div>";
         }
         $tabla .= "</div>";
     }
@@ -203,21 +175,21 @@ function imprimirEspecialidad(){
             $url_programa = $row['url_programa'];
 
             // Cuadro de materia
-            $tabla .= "<div class='col-lg-4 col-md-6 col-sm-9 col-8 p-4 h-100 justify-content-center rounded-3'>";
+            $tabla .= "<div class='col-lg-4 col-md-6 col-sm-9 col-9 p-4 h-100 justify-content-center rounded-3'>";
                 #$tabla .= "<div class='col h-100 px-2 m-2 bg-light'>";
                     $tabla .= "<div class='row azul-medio' style='height: 88px;'>";
                         $tabla .= "<div class='d-flex justify-content-center align-items-center h-100'>";
                             $tabla .= "<h5 class='text-white align-self-center rounded-top text-center font-semibold'>$nombre_materia</h5>";
                         $tabla .= "</div>";
                     $tabla .= "</div>";
-                    $tabla .= "<div class='row bg-light overflow-hidden' style='height: 110px;'>";
+                    $tabla .= "<div class='row bg-light overflow-hidden d-none d-sm-flex' style='height: 110px;'>";
                         $tabla .= "<div class='col-md-3 col-12 justify-content-center align-items-start'>";
                             $tabla .= "<div class='d-flex flex-row justify-content-center align-items-start h-100'>";
                                 $tabla .= "<img class='h-16 ms-4 mt-4 p-1' src='$ruta_img[$i]' alt=''>";
                             $tabla .= "</div>";
                         $tabla .= "</div>";
                         $tabla .= "<div class='col-md-9 col-12 justify-content-center align-items-center'>";
-                            $tabla .= "<div class='d-flex flex-row justify-content-center align-items-center h-100'>";
+                            $tabla .= "<div class='d-flex flex-row justify-content-center align-items-center h-100 text-wrap'>";
                                 $tabla .= "<p class='text-sm mx-4 my-2' style='text-align: justify;'>$descrip_materia</p>";
                             $tabla .= "</div>";
                         $tabla .= "</div>";
@@ -225,7 +197,14 @@ function imprimirEspecialidad(){
                     $tabla .= "<div class='row bg-light'>";
                         $tabla .= "<div class='col-12 my-2 justify-content-center'>";
                             $tabla .= "<div class='d-flex p-2 justify-content-center align-items-center'>";
-                                $tabla .="<button type='button' class='btn btn-warning' data-bs-toggle='modal' data-bs-target='#modalEspecialidad" .$id_materia ."'>
+                                $tabla .="<button type='button' class='btn btn-warning' data-bs-toggle='modal' 
+                                data-bs-target='#modalReticula' 
+                                data-materia = \"" .$nombre_materia ."\" 
+                                data-videoMateria = \"" .$url_materia ."\" 
+                                data-descMateria = \"" .$descrip_materia ."\" 
+                                data-urlMateria = \"" .$url_programa ."\" 
+                                data-id=\"" .$id_materia ."\" 
+                                onclick='youtubePlay(this)'>
                                         Ver más </button>";
                             $tabla .= "</div>";
                         $tabla .= "</div>";
