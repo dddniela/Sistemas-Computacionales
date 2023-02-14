@@ -297,10 +297,25 @@
   color:#FFFFFF;;
 }
 
+.imagen-docentes{
+  width: 10rem;
+  height: 10rem;
+}
 
+.imagen-docentes:hover{
+  width: 11rem;
+  height: 11rem;
+}
 
+.imagen-docentesModal{
+  width: 15rem;
+  height: 15rem;
+}
 
-
+.imagen-docentesModal:hover{
+  width: 16rem;
+  height: 16rem;
+}
 
 /* Contenedores */ 
 
@@ -339,10 +354,18 @@
 
 .contenedor-galeria{
   background-color: #08080a;
-  padding: 30px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
+.contenedor-galeria:hover .tituloSeccionOscura{
+  color: #facc15;
+}
+
+.contenedor-galeria:hover .separadorSeccionOscura{
+  width: 100px;
+  margin: 24px auto 28px auto;
+  background: #facc15;
+}
 
 @media (max-width: 1200px) {
   .info-box p{
