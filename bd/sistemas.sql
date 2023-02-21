@@ -21,6 +21,20 @@ SET time_zone = "+00:00";
 -- Base de datos: `sistemas`
 --
 
+CREATE TABLE `comunidad` (
+  `id_comunidad` int(11) NOT NULL,
+  `nombre_comunidad` varchar(250) NOT NULL,
+  `logo_comunidad` varchar(250) NOT NULL,
+  `quienesSomos_comunidad` text NOT NULL,
+  `queHacemos_comunidad` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+--
+-- Volcado de datos para la tabla `comunidad`
+--
+
+INSERT INTO `comunidad` (`id_comunidad`, `nombre_comunidad`, `logo_comunidad`, `quienesSomos_comunidad`, `queHacemos_comunidad`) VALUES
+(1, 'Comunidad de Ingeniería en Sistemas', 'CIS-logos.webp', 'Somos una comunidad estudiantil que colabora en la formación y capacitación del estudiante para potenciar los conocimientos adquiridos en clase y desarrollar habilidades que actualmente se encuentran en pleno auge en el mundo laboral.\r\n\r\nNuestra misión es brindar conocimiento y actividades en pro de la comunidad estudiantil. Alentando al estudiante a lo largo de su carrera ofreciendo competencias, talleres, ponencias y cursos que mejoren sus habilidades dentro del área de Tecnologías de información.', '<ul>\n    <li>\n        Eventos. Como parte de la comunidad estudiantil colaboramos con el Instituto Tecnológico de Veracruz en la\n        elaboración y realización de eventos con temáticas que involucren tópicos de nuestra área cuyo conocimientos y\n        experiencias pueden ser aprovechada por los estudiantes.\n    </li>\n    <li>\n        Cursos. La comunidad de ingeniería en sistemas busca la forma de apoyar a la búsqueda de permisos, salones y en\n        que condiciones se imparte.\n    </li>\n    <li> Talleres. En el mismo caso que los cursos, los talleres son en su mayoría prácticos, por lo que si buscas \n        impartir algo ligero o un poco aislado de la retícula de la carrera anímate a impartirlo. Mismo caso que el anterior las condiciones, permisos, la comunidad se encarga de administrar todo eso.\n    </li>\n    <li>\n        Desarrollo de software. La comunidad busca potenciar los proyectos de sus miembros y estudiantes en general que\n        busquen destacarse por medio de proyectos en el cual si lo hacen individualmente o como parte de la comunidad\n        todos tendrán sus respectivos créditos.\n    </li>\n</ul>'),
+(2, 'Club de Programación Competitiva', 'CPC-logo.webp', 'El Club de Programación Competitiva es una comunidad estudiantil enfocada en el desarrollo de habilidades para el análisis y la resolución de problemas computacionales a través del uso del pensamiento lógico-matemático y la implementación de algoritmos y estructuras de datos. El club nace como continuación al antiguo proyecto de la CEPC (Comunidad Estudiantil de Programación Competitiva) para impulsar y ayudar a los alumnos a obtener los conocimientos y las habilidades necesarias para alcanzar una carrera exitosa en la industria del desarrollo de software, a nivel local, nacional e internacional.', 'El club realiza actividades tales como difundir convocatorias relacionadas con pasantías en empresas de tecnología, concursos de programación, conferencias, cursos, talleres o bootcamps externos a la institución; de igual manera, organizar nuestros propios eventos de este tipo; y además llevar a cabo sesiones de entrenamiento y mentorías sobre tópicos especializados de algoritmos y estructuras de datos entre los miembros del club al mismo tiempo que se brinda apoyo y orientación para la resolución de problemas alojados en plataformas de juez en línea.');
 -- --------------------------------------------------------
 
 --

@@ -6,49 +6,49 @@ function icono($Area){
     $ruta_img = "";
     switch($Area){
         case 'Programacion':
-            $ruta_img = 'img/iconos/programacion.png';
+            $ruta_img = 'img/iconos/programacion.PNG';
             break;
         case 'Asignaturas Comunes':
-            $ruta_img = 'img/iconos/asignaturas-comunes.png';
+            $ruta_img = 'img/iconos/asignaturas-comunes.PNG';
             break;
         case 'Redes':
-            $ruta_img = 'img/iconos/redes.png';
+            $ruta_img = 'img/iconos/redes.PNG';
             break;
         case 'Bases de datos':
-            $ruta_img = 'img/iconos/bases-datos.png';
+            $ruta_img = 'img/iconos/bases-datos.PNG';
             break;
         case 'Electronica':
-            $ruta_img = 'img/iconos/electronica.png';
+            $ruta_img = 'img/iconos/electronica.PNG';
             break;
         case 'Ingenieria':
-            $ruta_img = 'img/iconos/ingenieria.png';
+            $ruta_img = 'img/iconos/ingenieria.PNG';
             break;
         case 'Sistemas operativos':
-            $ruta_img = 'img/iconos/sistemasop.png';
+            $ruta_img = 'img/iconos/sistemasop.PNG';
         break;
         case 'Calculo':
-            $ruta_img = 'img/iconos/calculo.png';
+            $ruta_img = 'img/iconos/calculo.PNG';
         break;
         case 'Estadistica':
-            $ruta_img = 'img/iconos/estadistica.png';
+            $ruta_img = 'img/iconos/estadistica.PNG';
         break;
         case 'Automatas':
-            $ruta_img = 'img/iconos/automatas.png';
+            $ruta_img = 'img/iconos/automatas.PNG';
         break;
         case 'Investigacion':
-            $ruta_img = 'img/iconos/investigacion.png';
+            $ruta_img = 'img/iconos/investigacion.PNG';
         break;
         case 'Matematicas Aplicada':
-            $ruta_img = 'img/iconos/algebra.png';
+            $ruta_img = 'img/iconos/algebra.PNG';
         break;
         case 'Web':
-            $ruta_img = 'img/iconos/programacion-web.png';
+            $ruta_img = 'img/iconos/programacion-web.PNG';
         break;
         case 'Administracion':
-            $ruta_img = 'img/iconos/administracion.png';
+            $ruta_img = 'img/iconos/administracion.PNG';
         break;
         case 'IA':
-            $ruta_img = 'img/iconos/inteligencia-artificial.png';
+            $ruta_img = 'img/iconos/inteligencia-artificial.PNG';
         break;
     }
     return $ruta_img;
@@ -74,42 +74,40 @@ function imprimir($NumeroSemestre){
             $ruta_img = icono($area_materia);
 
     // Cuadro de materia
-            $tabla .= "<div class='col-lg-4 col-md-6 col-sm-9 col-9 p-4 h-100 justify-content-center rounded-3'>";
-                #$tabla .= "<div class='col h-100 px-2 m-2 bg-light'>";
-                    $tabla .= "<div class='row azul-medio' style='height: 88px;'>";
-                        $tabla .= "<div class='d-flex justify-content-center h-100'>";
-                            $tabla .= "<h5 class='text-white align-self-center rounded-top text-center font-semibold py-3'>$nombre_materia</h5>";
-                        $tabla .= "</div>";
-                    $tabla .= "</div>";
-                    $tabla .= "<div class='row bg-light overflow-hidden d-none d-sm-flex' style='height: 110px;'>";
-                        $tabla .= "<div class='col-md-3 col-12 justify-content-center align-items-start'>";
-                            $tabla .= "<div class='d-flex flex-row justify-content-center align-items-start h-100'>";
-                                $tabla .= "<img class='h-16 p-1 mt-4 ms-4' src='$ruta_img' alt=''>";
-                            $tabla .= "</div>";
-                        $tabla .= "</div>";
-                        $tabla .= "<div class='col-md-9 col-12 justify-content-center align-items-center'>";
-                            $tabla .= "<div class='d-flex flex-row justify-content-center align-items-center h-100 text-wrap'>";
-                                $tabla .= "<p class='text-sm mx-4 my-2' style='text-align: justify;'>$descrip_materia</p>";
-                            $tabla .= "</div>";
-                        $tabla .= "</div>";
-                    $tabla .= "</div>";  
-                    $tabla .= "<div class='row bg-light'>";
-                        $tabla .= "<div class='col-12 my-2 justify-content-center'>";
-                            $tabla .= "<div class='d-flex p-2 justify-content-center align-items-center'>";
-                                $tabla .="<button type='button' class='btn btn-warning' data-bs-toggle='modal'
+            $tabla .= "<div class='col-lg-4 col-md-6 col-sm-9 col-9 p-4 h-100 justify-content-center rounded-3'>
+                    <div class='row azul-medio' style='height: 88px;'>
+                        <div class='d-flex justify-content-center h-100'>
+                            <h5 class='text-white align-self-center rounded-top text-center font-semibold py-3'>$nombre_materia</h5>
+                        </div>
+                    </div>
+                    <div class='row bg-light overflow-hidden d-none d-sm-flex' style='height: 110px;'>
+                        <div class='col-md-3 col-12 justify-content-center align-items-start'>
+                            <div class='d-flex flex-row justify-content-center align-items-start h-100'>
+                                <img class='h-16 p-1 mt-4 ms-4' src='$ruta_img' alt=''>
+                            </div>
+                        </div>
+                        <div class='col-md-9 col-12 justify-content-center align-items-center'>
+                            <div class='d-flex flex-row justify-content-center align-items-center h-100 text-wrap'>
+                                <p class='text-sm mx-4 my-2' style='text-align: justify;'>$descrip_materia</p>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class='row bg-light'>
+                        <div class='col-12 my-2 justify-content-center'>
+                            <div class='d-flex p-2 justify-content-center align-items-center'>
+                               <button type='button' class='btn btn-warning' data-bs-toggle='modal'
                                 data-bs-target='#modalReticula' 
-                                data-materia = \"" .$nombre_materia ."\" 
-                                data-videoMateria = \"" .$url_materia ."\" 
-                                data-descMateria = \"" .$descrip_materia ."\" 
-                                data-urlMateria = \"" .$url_programa ."\" 
-                                data-id=\"" .$id_materia ."\" 
-                                onclick='youtubePlay(this)'>
-                                Ver más </button>";
-                            $tabla .= "</div>";
-                        $tabla .= "</div>";
-                    $tabla .= "</div>";  
-                #$tabla .= "</div>"; 
-            $tabla .= "</div>";
+                                        data-materia ='$nombre_materia' 
+                                        data-videoMateria ='$url_materia' 
+                                        data-descMateria ='$descrip_materia'
+                                        data-urlMateria ='$url_programa'
+                                        data-id='$id_materia'
+                                        onclick='youtubePlay(this)'>
+                                        Ver más </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>";
         }
         $tabla .= "</div>";
     }
@@ -164,7 +162,7 @@ function imprimirEspecialidad(){
 
     if($ResultSet->num_rows > 0){
         $tabla .= "<div class='row justify-content-md-start h-100 justify-content-center'>";
-        $ruta_img = ['img/iconos/concurrentes.png','img/iconos/distribuidas.png','img/iconos/concurrentes.png','img/iconos/distribuidas.png','img/iconos/blockchain.png','img/iconos/distribuidas.png'];
+        $ruta_img = ['img/iconos/concurrentes.PNG','img/iconos/distribuidas.PNG','img/iconos/concurrentes.PNG','img/iconos/distribuidas.PNG','img/iconos/blockchain.PNG','img/iconos/distribuidas.PNG'];
         $i = 0;
         while($row = $ResultSet->fetch_assoc()){
             $id_materia = $row['id_materia'];
@@ -209,7 +207,6 @@ function imprimirEspecialidad(){
                             $tabla .= "</div>";
                         $tabla .= "</div>";
                     $tabla .= "</div>";  
-                #$tabla .= "</div>"; 
             $tabla .= "</div>";
     
             //modal de la materia
