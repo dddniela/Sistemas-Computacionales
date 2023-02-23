@@ -1,32 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/itver-logo.png" />
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/style.css">
-    <title>Ingeniería en Sistemas Computacionales</title>
-</head>
 
 <body class="">
 
     <div class="row g-0">
         <div class="col-5 col-sm-auto">
             <div class="d-flex align-items-center justify-content-start w-100 h-100">
-                <img class="img-fluid" src="img/sep-logo.PNG" alt="SEP-logo">
+                <img class="img-fluid" src="../img/sep-logo.PNG" alt="SEP-logo">
             </div>
         </div>
         <div class="col-2 col-sm-auto">
             <div class="d-flex align-items-center justify-content-start w-100 h-100">
-                <img class="img-fluid" src="img/tecnm-logo.PNG" alt="TECNM-logo">
+                <img class="img-fluid" src="../img/tecnm-logo.PNG" alt="TECNM-logo">
             </div>
         </div>
         <div class="col-1 col-sm-auto">
             <div class="d-flex align-items-center justify-content-start h-100">
-                <img class="img-fluid" src="img/itver-logo.PNG" alt="ITVER-logo" class="itver">
+                <img class="img-fluid" src="../img/itver-logo.PNG" alt="ITVER-logo" class="itver">
             </div>
         </div>
     </div>
@@ -41,22 +29,22 @@
             <div class="collapse navbar-collapse font-bold" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item hover-blue">
-                        <a class="nav-link active text-white" aria-current="page" href="index.php">Inicio</a>
+                        <a class="nav-link active text-white" aria-current="page" href="?option=0">Inicio</a>
                     </li>
                     <li class="nav-item hover-blue">
-                        <a class="nav-link text-white" href="perfilProfesional.php">Perfil de Egreso</a>
+                        <a class="nav-link text-white" href="?option=1">Perfil de Egreso</a>
                     </li>
                     <li class="nav-item hover-blue">
-                        <a class="nav-link text-white" href="plantillaDocente.php">Plantilla Docente</a>
+                        <a class="nav-link text-white" href="?option=2">Plantilla Docente</a>
                     </li>
                     <li class="nav-item hover-blue">
-                        <a class="nav-link text-white" href="ofertaEducativa.php">Mapa Curricular</a>
+                        <a class="nav-link text-white" href="?option=3">Mapa Curricular</a>
                     </li>
                     <li class="nav-item hover-blue">
-                        <a class="nav-link text-white" href="conocenos.php">Conócenos</a>
+                        <a class="nav-link text-white" href="?option=4">Conócenos</a>
                     </li>
                     <li class="nav-item hover-blue">
-                        <a class="nav-link text-white" href="comunidades.php">Comunidades</a>
+                        <a class="nav-link text-white" href="?option=5">Comunidades</a>
                     </li>
                     <li class="nav-item hover-blue dropdown">
                         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

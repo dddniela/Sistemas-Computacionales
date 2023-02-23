@@ -1,6 +1,6 @@
 <div class="row g-0">
   <div class="position-relative w-100 overflow-hidden">
-    <img class="w-100 img-fluid" src="img/IMG_3889.webp" alt="" />
+    <img class="w-100 img-fluid" src="../img/IMG_3889.webp" alt="" />
     <div class="position-absolute top-50 start-50 translate-middle w-100">
       <div
         class="d-flex flex-column justify-content-center align-items-center text-center"
@@ -17,13 +17,16 @@
 <div class="container my-2">
   <div class="row justify-content-md-start justify-content-center">
     <?php
+  
+    
             $inf = 1;
-            $sup = 6;
+            $sup = 9;
             if(isset($_GET['inferior'])){
                 $inf = $_GET['inferior'];
                 $sup = $_GET['superior'];
             }
-            $datos = imprimirDatos($inf,$sup);
+            
+            $datos = $docente->imprimirDatos($inf,$sup);
             echo $datos;
         ?>
   </div>
@@ -31,7 +34,7 @@
 
 <div class="row g-0 my-2">
   <?php
-        $paginacion = generarPaginacion();
+        $paginacion = $docente->generarPaginacion();
         echo $paginacion;
     ?>
 </div>

@@ -1,6 +1,6 @@
 <div class="row g-0">
     <div class="position-relative w-100 overflow-hidden">
-        <img class="w-100 img-fluid" src="img/IMG_3884.webp" alt="">
+        <img class="w-100 img-fluid" src="../img/IMG_3884.webp" alt="">
         <div class="position-absolute top-50 start-50 translate-middle w-100">
             <div class="d-flex flex-column justify-content-center align-items-center text-center">
                 <h1 class="fw-bold text-warning">Mapa Curricular</h1>
@@ -110,72 +110,72 @@
         <div class="tab-pane fade show active" id="tab-semestre1" role="tabpanel" aria-labelledby="tab-semestre1-tab">
             <div class="container">
                 <?php
-                    if(isset($imprimir1erSemestre)){
-                        echo $imprimir1erSemestre;
-                    }
+                 
+                        echo $materia->imprimir1erSemestre();
+                  
                 ?>
             </div>
         </div>
         <div class="tab-pane fade" id="tab-semestre2" role="tabpanel" aria-labelledby="tab-semestre2-tab">
             <div class="container">
                 <?php
-                    if(isset($imprimir2doSemestre)){
-                        echo $imprimir2doSemestre;
-                    }
+                   
+                        echo $materia->imprimir2doSemestre();
+                    
                 ?>
             </div>
         </div>
         <div class="tab-pane fade" id="tab-semestre3" role="tabpanel" aria-labelledby="tab-semestre3-tab">
             <div class="container">
                 <?php
-                    if(isset($imprimir3erSemestre)){
-                        echo $imprimir3erSemestre;
-                    }
+
+                        echo $materia->imprimir3erSemestre();
+
                 ?>
             </div>
         </div>
         <div class="tab-pane fade" id="tab-semestre4" role="tabpanel" aria-labelledby="tab-semestre4-tab">
             <div class="container">
                 <?php
-                    if(isset($imprimir4toSemestre)){
-                        echo $imprimir4toSemestre;
-                    }
+
+                        echo $materia->imprimir4toSemestre();
+
                 ?>
             </div>
         </div>
         <div class="tab-pane fade" id="tab-semestre5" role="tabpanel" aria-labelledby="tab-semestre5-tab">
             <div class="container">
                 <?php
-                    if(isset($imprimir5toSemestre)){
-                        echo $imprimir5toSemestre;
-                    }
+
+                        echo $materia->imprimir5toSemestre();
+
                 ?>
             </div>
         </div>
         <div class="tab-pane fade" id="tab-semestre6" role="tabpanel" aria-labelledby="tab-semestre6-tab">
             <div class="container">
                 <?php
-                    if(isset($imprimir6toSemestre)){
-                        echo $imprimir6toSemestre;
-                    }
+
+                        echo $materia->imprimir6toSemestre();
+
                 ?>
             </div>
         </div>
         <div class="tab-pane fade" id="tab-semestre7" role="tabpanel" aria-labelledby="tab-semestre7-tab">
             <div class="container">
                 <?php
-                    if(isset($imprimir7moSemestre)){
-                        echo $imprimir7moSemestre;
-                    }
+
+                        echo $materia->imprimir7moSemestre();
+
                 ?>
             </div>
         </div>
         <div class="tab-pane fade" id="tab-semestre8" role="tabpanel" aria-labelledby="tab-semestre8-tab">
             <div class="container">
                 <?php
-                    if(isset($imprimir8voSemestre)){
-                        echo $imprimir8voSemestre;
-                    }
+
+                        echo $materia->imprimir8voSemestre();
+
                 ?>
             </div>
 
@@ -183,9 +183,9 @@
         <div class="tab-pane fade" id="tab-semestre9" role="tabpanel" aria-labelledby="tab-semestre9-tab">
             <div class="container">
                 <?php
-                    if(isset($imprimir9noSemestre)){
-                        echo $imprimir9noSemestre;
-                    }
+
+                        echo $materia->imprimir9noSemestre();
+
                 ?>
             </div>
         </div>
@@ -211,7 +211,7 @@
                         </iframe>
                     </div>
                     <div class='d-flex p-2 justify-content-center align-items-center'>
-                        <a target='_blank' href='' id="urlReticula"><button type='button' class='btn btn-warning'>Descargar programa</button></a>
+                        <a target='_blank' href='' id="urlReticula"><button type='button' class='btn btn-warning''>Descargar programa</button></a>
                 </div>
             </div>
         </div>
@@ -229,7 +229,7 @@
     <div class="row g-0 py-5 align-items-center">
         <div class="col-lg-6 col-12 justify-content-center text-center">
             <div class="d-flex justify-content-center align-items-center w-100 h-100">
-                <img src="img/ITVER-8.webp" class="w-75 h-auto py-3" alt="">
+                <img src="../img/ITVER-8.webp" class="w-75 h-auto py-3" alt="">
             </div>
         </div>
         <div class="col-lg-6 col-12 px-4 text-black">
@@ -259,7 +259,7 @@
     </div>
 </div>
 
-<!-- creditos complementarios -->
+<!-- Créditos complementarios -->
 <div class="azul-cielo pt-5">
     <div class="gris-zinc">
         <div class="row g-0 py-5 align-items-center">
@@ -280,7 +280,7 @@
             </div>
             <div class="col-lg-6 col-12">
                 <div class="row g-0 d-flex justify-content-center text-center w-100 h-100">
-                    <img src="img/IMG_3394.webp" class="w-75 h-auto py-3" alt="">
+                    <img src="../img/IMG_3394.webp" class="w-75 h-auto py-3" alt="">
                 </div>
             </div>
         </div>
@@ -293,7 +293,7 @@
         <div class="row g-0 py-5 align-items-center">
             <div class="col-lg-6 col-12 justify-content-center text-center">
                 <div class="row g-0 d-flex justify-content-center text-center w-100 h-100">
-                    <img src="img/IMG_0579.webp" class="w-75 h-auto py-3" alt="">
+                    <img src="../img/IMG_0579.webp" class="w-75 h-auto py-3" alt="">
                 </div>
             </div>
             <div class="col-lg-6 col-12 px-4 text-black">
@@ -318,9 +318,9 @@
         <div class="bg-zinc-300" id="tab-especialidad">
             <div class="container">
                 <?php
-                    if(isset($imprimirEspecialidad)){
-                        echo $imprimirEspecialidad;
-                    }
+                   
+                        echo $materia->imprimirEspecialidad();
+                    
                 ?>
             </div>
         </div>
@@ -349,7 +349,7 @@
             </div>
             <div class="col-lg-6 col-12 justify-content-center text-center">
                 <div class="row g-0 d-flex justify-content-center text-center w-100 h-100">
-                    <img src="img/IMG_0579.webp" class="w-75 h-auto py-3" alt="">
+                    <img src="../img/IMG_0579.webp" class="w-75 h-auto py-3" alt="">
                 </div>
             </div>
         </div>
@@ -359,7 +359,7 @@
 <!-- Sección: Residencias Profesionales. Información relevante acerca de las residencias profesionales. -->
 <div class="azul-cielo pt-5">
     <div class="bg-dark">
-        <img src="img/IMG_0337.webp" class="w-full" alt="">
+        <img src="../img/IMG_0337.webp" class="w-full" alt="">
         <div class="px-4 text-black my-3">
             <h2 class="font-bold text-2xl text-center text-warning">Residencias Profesionales</h2>
             <p class="text-xl text-white" style="text-align: justify">Las residencias profesionales permiten al
@@ -374,15 +374,15 @@
         <div class="bg-light row rows-cols-3 g-0 py-2">
             <h2 class="text-center text-warning font-bold text-xl">Beneficios</h2>
             <div class="col-sm text-center">
-                <img class="h-20 items-center my-4" src="img/icon1.PNG" alt="">
+                <img class="h-20 items-center my-4" src="../img/icon1.PNG" alt="">
                 <p>Participar o emprender proyectos en el ámbito profesional</p>
             </div>
             <div class="col-sm text-center">
-                <img class="h-20 items-center my-4" src="img/icon2.PNG" alt="">
+                <img class="h-20 items-center my-4" src="../img/icon2.PNG" alt="">
                 <p>Adquirir experiencia profesional</p>
             </div>
             <div class="col-sm text-center">
-                <img class="h-20 items-center my-4" src="img/icon3.PNG" alt="">
+                <img class="h-20 items-center my-4" src="../img/icon3.PNG" alt="">
                 <p>Poner en prácticas los conocimientos adquiridos en el aula</p>
             </div>
         </div>
@@ -406,7 +406,7 @@
                 </div>
                 <div class="col-lg-6 col-12 justify-content-center text-center">
                     <div class="row d-flex justify-content-center text-center w-100 h-100">
-                        <img src="img/IMG_0579.webp" class="w-75 h-auto py-3" alt="">
+                        <img src="../img/IMG_0579.webp" class="w-75 h-auto py-3" alt="">
                     </div>
                 </div>
             </div>
@@ -420,7 +420,7 @@
         <div class="row g-0 py-5 align-items-center">
             <div class="col-lg-6 col-12 justify-content-center text-center">
                 <div class="row g-0 d-flex justify-content-center text-center w-100 h-100">
-                    <img src="img/IMG_1245.webp" class="w-75 h-auto py-3" alt="">
+                    <img src="../img/IMG_1245.webp" class="w-75 h-auto py-3" alt="">
                 </div>
             </div>
             <div class="col-lg-6 col-12 px-4 text-black">
@@ -455,7 +455,7 @@
             </div>
             <div class="col-lg-6 col-12">
                 <div class="row g-0 d-flex justify-content-center text-center w-100 h-100">
-                    <img src="img/IMG_0456.webp" class="w-75 h-auto py-3" alt="">
+                    <img src="../img/IMG_3886.webp" class="w-75 h-auto py-3" alt="">
                 </div>
             </div>
         </div>
@@ -465,7 +465,7 @@
 <!-- Titulación --> 
 <div class="azul-cielo pt-5">
     <div class="bg-dark">
-        <img src="img/ITVER-7.webp" class="w-full" alt="">
+        <img src="../img/ITVER-7.webp" class="w-full" alt="">
         <div class="px-4 text-black my-3">
             <h2 class="font-bold text-2xl text-center text-warning">Titulación</h2>
             <p class="text-xl text-white" style="text-align: justify">La titulación integral es la validación de las competencias (conocimientos, habilidades y actitudes)
@@ -475,17 +475,17 @@
         <div class="bg-light row rows-cols-3 g-0 py-2">
             <!-- <h2 class="text-center text-warning font-bold text-xl">Beneficios</h2> -->
             <div class="col-sm text-center">
-                <img class="h-20 items-center my-4" src="img/icon1.PNG" alt="">
+                <img class="h-20 items-center my-4" src="../img/icon1.PNG" alt="">
                 <p class="px-5">Residencia Profesional, Proyecto de Investigación y/o Desarrollo
                     Tecnológico, Proyecto Integrador, Proyecto Productivo.</p>
             </div>
             <div class="col-sm text-center">
-                <img class="h-20 items-center my-4" src="img/icon2.PNG" alt="">
-                <p>Proyecto de Innovación Tecnológica, royecto de Emprendedurismo, Proyecto Integral
+                <img class="h-20 items-center my-4" src="../img/icon2.PNG" alt="">
+                <p>Proyecto de Innovación Tecnológica, proyecto de Emprendedurismo, Proyecto Integral
                     de Educación Dual, Estancia, Tesis o Tesina</p>
             </div>
             <div class="col-sm text-center">
-                <img class="h-20 items-center my-4" src="img/icon3.PNG" alt="">
+                <img class="h-20 items-center my-4" src="../img/icon3.PNG" alt="">
                  <p class="px-5">O por la obtención de un Testimonio de Desempeño Satisfactorio o
                     Sobresaliente en el Examen General de Egreso de Licenciatura (EGEL) del
                     Centro Nacional de Evaluación para la Educación Superior, A. C. (CENEVAL).</p>
@@ -495,7 +495,7 @@
             <div class="row g-0 py-5 align-items-center">
                 <div class="col-lg-6 col-12 justify-content-center text-center">
                     <div class="row d-flex justify-content-center text-center w-100 h-100">
-                        <img src="img/Servicio social-3.webp" class="h-auto py-3" alt="">
+                        <img src="../img/Servicio social-3.webp" class="h-auto py-3" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 col-12 px-4 text-black">
@@ -544,7 +544,7 @@
             </div>
             <div class="col-lg-6 col-12">
                 <div class="row g-0 d-flex justify-content-center text-center w-100 h-100">
-                    <img src="img/centroIdiomas.webp" class="w-75 h-auto py-3" alt="">
+                    <img src="../img/centroIdiomas.webp" class="w-75 h-auto py-3" alt="">
                 </div>
             </div>
         </div>

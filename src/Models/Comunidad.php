@@ -1,10 +1,87 @@
 <?php
-    require_once "bd/conexion.php";
+
+require_once "Conexion.php";
+
+class Comunidad
+{
+    private $id_comunidad;
+    private $nombre_comunidad;
+    private $logo_comunidad;
+    private $quienesSomos_comunidad;
+    private $queHacemos_comunidad;
+    private $connection;
+
+    public function setConnection($conn)
+    {
+        $this->connection = $conn;
+    }
+
+    public function setId($id)
+    {
+        $this->agentID = $id;
+    }
+
+    public function getId()
+    {
+        return $this->id_comunidad;
+    }
+
+    public function setNombreComunidad($nombre_comunidad)
+    {
+        $this->nombre_comunidad = $nombre_comunidad;
+    }
+
+    public function getNombreComunidad()
+    {
+        return $this->nombre_comunidad;
+    }
+
+    public function setLogoComunidad($logo_comunidad)
+    {
+        $this->logo_comunidad = $logo_comunidad;
+    }
+
+    public function getLogoComunidad()
+    {
+        return $this->logo_comunidad;
+    }
+
+    public function setQuienesSomosComunidad($quienesSomos_comunidad)
+    {
+        $this->quienesSomos_comunidad = $quienesSomos_comunidad;
+    }
+
+    public function getQuienesSomosComunidad()
+    {
+        return $this->quienesSomos_comunidad;
+    }
+
+    public function setQueHacemosComunidad($queHacemos_comunidad)
+    {
+        $this->queHacemos_comunidad = $queHacemos_comunidad;
+    }
+
+    public function getQueHacemosComunidad()
+    {
+        return $this->queHacemos_comunidad;
+    }
+
+    public function getComunidades(){
+        $docentes = array();
+        $sql = 'SELECT * FROM comunidad ORDER BY nombre_comunidad ASC';
+        $comunidades = mysqli_query($this->connection,$sql);
+        return $comunidades;
+    }
+
+    function obtenerInformacion(){
+        $cn = $this->connection;
+        $sql = 'SELECT * FROM comunidad ORDER BY nombre_comunidad ASC';
+        $comunidades = mysqli_query($this->connection,$sql);
+        return $comunidades;
+    }
 
     function imprimirDatos(){
-        $cn = conexion();
-        $sqlQuery = "SELECT * FROM comunidad ORDER BY nombre_comunidad ASC";
-        $ResultSet = $cn->query($sqlQuery); 
+        $ResultSet = $this->obtenerInformacion();
        
         $tabla = "";
             
@@ -19,7 +96,7 @@
                 $tabla .=  "<div class='col-lg-4 col-md-6 col-sm-9 col-8 my-2'>
                                 <div class='d-flex flex-column gris-zinc rounded-3'>
                                     <div class='d-flex flex-row justify-content-center my-2'>
-                                        <img class='rounded-circle p-1 bg-primary imagen-docentes' src='img/Comunidades/$logo_comunidad' alt=''>
+                                        <img class='rounded-circle p-1 bg-primary imagen-docentes' src='../img/Comunidades/$logo_comunidad' alt=''>
                                     </div>
                                     <div class='d-flex flex-row justify-content-center mx-2'>
                                         <h5 class='fs-5 fw-bolt font-bold'>$nombre_comunidad</h5>
@@ -42,7 +119,7 @@
                                             <div class='row justify-content-center m-2'>
                                                 <div class='col-7 col-lg-auto justify-content-center m-2'>
                                                     <div class='d-flex justify-content-center'>
-                                                        <img class='rounded-circle p-1 bg-primary imagen-docentesModal' src='img/Comunidades/$logo_comunidad' alt=''>
+                                                        <img class='rounded-circle p-1 bg-primary imagen-docentesModal' src='../img/Comunidades/$logo_comunidad' alt=''>
                                                     </div>
                                                 </div>
                                                 <div class='col-12 col-lg-7 justify-content-center align-items-center m-2'>
@@ -76,4 +153,4 @@
         }
         return $tabla;
     }
-?>
+}

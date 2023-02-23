@@ -188,6 +188,29 @@
 
 /*General*/
 
+.tituloSeccionAmarillo{
+  color: #ffc107;
+  transition-duration: 0.5s;
+}
+
+.separadorSeccionAmarillo{
+  width: 60px;
+  height: 4px;
+  background: #18181b;
+  margin: 16px auto 24px auto;
+  transition-duration: 0.5s;
+}
+
+.seccionSistemasAmarillo:hover .tituloSeccionAmarillo{
+  color: #18181b;
+}
+
+.seccionSistemasAmarillo:hover .separadorSeccionAmarillo{
+  width: 100px;
+  margin: 24px auto 28px auto;
+  background: #ffc107;
+}
+
 .tituloSeccion{
   color: #18181b;
   transition-duration: 0.5s;

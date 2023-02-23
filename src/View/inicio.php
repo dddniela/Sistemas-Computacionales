@@ -10,30 +10,30 @@
 
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="img/ITVER-1.webp" class="d-block w-100 align-middle" width="100%" height="100%">
+        <img src="../img/ITVER-1.webp" class="d-block w-100 align-middle" width="100%" height="100%">
         <div class="container">
           <div class="carousel-caption d-flex flex-column">
             <h1 class="tituloPrincipal text-center font-bold m-2">Ingeniería en Sistemas Computacionales</h1>
             <h2 class="subtituloPrincipal text-center font-bold">Desarrolla nuevos horizontes</h1>
-              <p><a class="botonPrincipal btn font-bold d-none d-md-inline-flex" href="ofertaEducativa.php">Explorar</a>
+              <p><a class="botonPrincipal btn font-bold d-none d-md-inline-flex" href="?pag=3">Explorar</a>
               </p>
           </div>
         </div>
       </div>
 
       <div class="carousel-item">
-        <img src="img/IMG_3929.webp" class="d-block w-100 align-middle" width="100%" height="100%">
+        <img src="../img/IMG_3929.webp" class="d-block w-100 align-middle" width="100%" height="100%">
         <div class="container">
           <div class="carousel-caption">
             <h1 class="tituloPrincipal text-center font-bold m-2">Ingeniería en Sistemas Computacionales</h1>
             <h2 class="subtituloPrincipal text-center font-bold">Aprende nuevas tecnologías</h1>
-              <p><a class="botonPrincipal btn font-bold d-none d-md-inline-flex" href="Conocenos.php">Explorar</a></p>
+              <p><a class="botonPrincipal btn font-bold d-none d-md-inline-flex" href="?option=4">Explorar</a></p>
           </div>
         </div>
       </div>
 
       <div class="carousel-item">
-        <img src="img/IMG_1891.webp" class="d-block w-100 align-middle" width="100%" height="100%">
+        <img src="../img/IMG_1891.webp" class="d-block w-100 align-middle" width="100%" height="100%">
         <div class="container">
           <div class="carousel-caption">
             <h1 class="tituloPrincipal text-center font-bold m-2">Ingeniería en Sistemas Computacionales</h1>
@@ -61,7 +61,7 @@
   <div class="row px-2 g-0">
     <div class="col-lg-6 col-12 p-2 shadow-sm">
       <div class="d-flex justify-content-center align-items-center w-100 h-100">
-        <img src="img/Servicio social-3.webp" class="img-fluid rounded" alt="">
+        <img src="../img/Servicio social-3.webp" class="img-fluid rounded" alt="">
       </div>
     </div>
 
@@ -78,7 +78,7 @@
               permitiendo el desarrollo y la creación de nuevas aplicaciones o sistemas que puedan ser de ayuda
               para una empresa y la sociedad en general.
             </p>
-            <a class="btn btn-warning font-bold" href="ofertaEducativa.php" role="button">¡Saber más!</a>
+            <a class="btn btn-warning font-bold" href="?option=3" role="button">¡Saber más!</a>
           </div>
         </div>
       </div>
@@ -95,8 +95,8 @@
   <div class="row g-0">
     <div class="col-lg-4 col-sm-6 text-center p-3">
       <div class="area shadow-sm p-4">
-        <a href="ofertaEducativa.php">
-          <img class="imagenArea items-center" src="img/topicos/programacion-icono.PNG" alt="">
+        <a href="?option=3.php">
+          <img class="imagenArea items-center" src="../img/topicos/programacion-icono.PNG" alt="">
         </a>
         <h3 class="tituloArea text-center font-bold text-xl">Desarrollo de Software</h3>
         <p class="textoArea">Desarrolla programas a través de diferentes lenguajes de programación.</p>
@@ -105,8 +105,8 @@
 
     <div class="col-lg-4 col-sm-6 text-center p-3">
       <div class="area shadow-sm p-4">
-        <a href="ofertaEducativa.php">
-          <img class="imagenArea items-center" src="img/topicos/ing-software-icono.PNG" alt="">
+        <a href="?option=3">
+          <img class="imagenArea items-center" src="../img/topicos/ing-software-icono.PNG" alt="">
         </a>
         <h3 class="tituloArea text-center font-bold text-xl">Ingeniería de Software</h3>
         <p class="textoArea">Aplica metodologías ágiles para el desarrollo eficiente de proyectos de software.</p>
@@ -115,8 +115,8 @@
 
     <div class="col-lg-4 col-sm-6 text-center p-3">
       <div class="area shadow-sm p-4">
-        <a href="ofertaEducativa.php">
-          <img class="imagenArea items-center" src="img/topicos/admon-bd-icono.PNG" alt="">
+        <a href="?option=3.php">
+          <img class="imagenArea items-center" src="../img/topicos/admon-bd-icono.PNG" alt="">
         </a>
         <h3 class="tituloArea text-center font-bold text-xl">Administración de Bases de Datos</h3>
         <p class="textoArea">Gestiona y almacena el flujo de datos de información de un sistema informático.</p>
@@ -125,8 +125,8 @@
 
     <div class="col-lg-4 col-sm-6 text-center p-3">
       <div class="area shadow-sm p-4">
-        <a href="ofertaEducativa.php">
-          <img class="imagenArea items-center" src="img/topicos/programacion-web-icono.PNG" alt="">
+        <a href="?option=3">
+          <img class="imagenArea items-center" src="../img/topicos/programacion-web-icono.PNG" alt="">
         </a>
         <h3 class="tituloArea text-center font-bold text-xl">Programación web</h3>
         <p class="textoArea">Crea y desarrolla aplicaciones y sitios web para brindar soluciones a las empresas.</p>
@@ -135,8 +135,8 @@
 
     <div class="col-lg-4 col-sm-6 text-center p-3">
       <div class="area shadow-sm p-4">
-        <a href="ofertaEducativa.php">
-          <img class="imagenArea items-center" src="img/topicos/admon-red-icono.PNG" alt="">
+        <a href="?option=3">
+          <img class="imagenArea items-center" src="../img/topicos/admon-red-icono.PNG" alt="">
         </a>
         <h3 class="tituloArea text-center font-bold text-xl">Redes y Telecomunicaciones</h3>
         <p class="textoArea">Permite la interconexión entre distintos equipos de cómputo de forma física o virtual.</p>
@@ -145,8 +145,8 @@
 
     <div class="col-lg-4 col-sm-6 text-center p-3">
       <div class="area shadow-sm p-4">
-        <a href="ofertaEducativa.php">
-          <img class="imagenArea items-center" src="img/topicos/inteligencia-artificial-icono.PNG" alt="">
+        <a href="?option=3">
+          <img class="imagenArea items-center" src="../img/topicos/inteligencia-artificial-icono.PNG" alt="">
         </a>
         <h3 class="tituloArea text-center font-bold text-xl">Inteligencia Artificial</h3>
         <p class="textoArea">Aprende los fundamentos sobre sistemas informáticos de última generación.</p>
@@ -179,7 +179,7 @@
               herramientas de aprendizaje y apoyo didáctico tanto para los
               docentes como los alumnos.
             </p>
-            <a class="btn btn-warning font-bold" href="conocenos.php#Instalaciones" role="button">Ver más</a>
+            <a class="btn btn-warning font-bold" href="?option=4" role="button">Ver más</a>
           </div>
         </div>
       </div>
@@ -187,7 +187,7 @@
 
     <div class="col-lg-6 col-sm-12 p-2 shadow-sm">
       <div class="d-flex justify-content-center align-items-center w-100 h-100">
-        <img src="img/IMG_2102.webp" class="img-fluid rounded p-1" alt="">
+        <img src="../img/IMG_2102.webp" class="img-fluid rounded p-1" alt="">
       </div>
     </div>
   </div>
@@ -202,22 +202,22 @@
       <div class="contenedor-galeria bg-light">
         <div class="row g-0">
           <div class="col-4 px-2">
-            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="./img/Docentes/abelardoRodriguezLeon.webp"
+            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="../img/Docentes/abelardoRodriguezLeon.webp"
               alt="">
             <img class="img-fluid w-100 shadow-1-strong rounded m-2"
-              src="./img/Docentes/juliaGuadalupeTrujilloSalamanca.webp" alt="">
+              src="../img/Docentes/juliaGuadalupeTrujilloSalamanca.webp" alt="">
           </div>
 
           <div class="col-4 px-2">
-            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="./img/Docentes/bereniceLagunesPadilla.webp"
+            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="../img/Docentes/bereniceLagunesPadilla.webp"
               alt="">
-            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="./img/Docentes/rafaelRiveraLopez.webp" alt="">
+            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="../img/Docentes/rafaelRiveraLopez.webp" alt="">
           </div>
 
           <div class="col-4 px-2">
-            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="./img/Docentes/ernestoGarciaPerez.webp"
+            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="../img/Docentes/ernestoGarciaPerez.webp"
               alt="">
-            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="./img/Docentes/normaFaviolaGarciaGomez.webp"
+            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="../img/Docentes/normaFaviolaGarciaGomez.webp"
               alt="">
           </div>
 
@@ -240,7 +240,7 @@
               aulas. Son profesionales que tienen la facultad de transformar vidas, de impactar a las futuras
               generaciones de estudiantes.
             </p>
-            <a class="btn btn-warning font-bold" href="plantillaDocente.php" role="button">Explorar maestros</a>
+            <a class="btn btn-warning font-bold" href="?op=2" role="button">Explorar maestros</a>
           </div>
 
         </div>
@@ -262,21 +262,21 @@
 
           <div class="col-lg-4 col-sm-6 text-center p-3 shadow-sm area">
             <a href="http://gestion.itver.edu.mx/servicio-social/">
-              <img class="img-fluid w-100 shadow-1-strong rounded mb-4 p-1" src="./img/IMG_1223.webp" alt="">
+              <img class="img-fluid w-100 shadow-1-strong rounded mb-4 p-1" src="../img/IMG_1223.webp" alt="">
             </a>
             <h3 class="tituloArea text-center font-bold text-xl">Servicio social</h3>
           </div>
 
           <div class="col-lg-4 col-sm-6 text-center p-3 shadow-sm area">
             <a href="http://www.veracruz.tecnm.mx/">
-              <img class="img-fluid w-100 shadow-1-strong rounded mb-4  p-1" src="./img/ITVER-9.webp" alt="">
+              <img class="img-fluid w-100 shadow-1-strong rounded mb-4  p-1" src="../img/ITVER-9.webp" alt="">
             </a>
             <h3 class="tituloArea text-center font-bold text-xl">TECNM Campus Veracruz</h3>
           </div>
 
           <div class="col-lg-4 col-sm-6 text-center p-3 shadow-sm area">
             <a href="http://www.veracruz.tecnm.mx/">
-              <img class="img-fluid w-100 shadow-1-strong rounded mb-4  p-1" src="./img/IMG_1245.webp" alt="">
+              <img class="img-fluid w-100 shadow-1-strong rounded mb-4  p-1" src="../img/IMG_1245.webp" alt="">
             </a>
             <h3 class="tituloArea text-center font-bold text-xl">Comunidad de Ingeniería en Sistemas</h3>
           </div>
@@ -308,24 +308,24 @@
         <a class="mx-2" href="https://www.tecnm.mx/" target="_blank" style="text-decoration: none;">
           <div class="d-flex flex-column justify-content-center">
             <img class="img-fluid shadow-1-strong rounded mb-4 p-1" style="height: 40px"
-              src="./img/iconos/tecnm-logo.PNG" alt="">
+              src="../img/iconos/tecnm-logo.PNG" alt="">
           </div>
         </a>
         <a class="mx-2" href="https://www.facebook.com/TecNMmx" target="_blank" style="text-decoration: none;">
           <div class="d-flex flex-row justify-content-center">
-            <img class="img-fluid shadow-1-strong rounded mb-4 p-1" style="height: 40px" src="./img/iconos/facebook.PNG"
+            <img class="../img-fluid shadow-1-strong rounded mb-4 p-1" style="height: 40px" src="../img/iconos/facebook.PNG"
               alt="">
           </div>
         </a>
         <a class="mx-2" href="https://twitter.com/TecNM_MX" target="_blank" style="text-decoration: none;">
           <div class="d-flex flex-row justify-content-center">
-            <img class="img-fluid shadow-1-strong rounded mb-4 p-1" style="height: 40px" src="./img/iconos/twitter.PNG"
+            <img class="../img-fluid shadow-1-strong rounded mb-4 p-1" style="height: 40px" src="../img/iconos/twitter.PNG"
               alt="">
           </div>
         </a>
         <a class="mx-2" href="https://www.youtube.com/user/SNESTMX" target="_blank" style="text-decoration: none;">
           <div class="d-flex flex-row justify-content-center">
-            <img class="img-fluid shadow-1-strong rounded mb-4 p-1" style="height: 40px" src="./img/iconos/youtube.PNG"
+            <img class="../img-fluid shadow-1-strong rounded mb-4 p-1" style="height: 40px" src="../img/iconos/youtube.PNG"
               alt="">
           </div>
         </a>
@@ -337,25 +337,25 @@
         <a class="mx-2" href="https://www.veracruz.tecnm.mx/index.php" target="_blank" style="text-decoration: none;">
           <div class="d-flex flex-row justify-content-center">
             <img class="img-fluid shadow-1-strong rounded mb-4 p-1" style="height: 40px"
-              src="./img/iconos/itver-logo.PNG" alt="">
+              src="../img/iconos/itver-logo.PNG" alt="">
           </div>
         </a>
         <a class="mx-2" href="https://www.facebook.com/ITVeracruz" target="_blank" style="text-decoration: none;">
           <div class="d-flex flex-row justify-content-center">
-            <img class="img-fluid shadow-1-strong rounded mb-4 p-1" style="height: 40px" src="./img/iconos/facebook.PNG"
+            <img class="img-fluid shadow-1-strong rounded mb-4 p-1" style="height: 40px" src="../img/iconos/facebook.PNG"
               alt="">
           </div>
         </a>
         <a class="mx-2" href="https://twitter.com/tvitver" target="_blank" style="text-decoration: none;">
           <div class="d-flex flex-row justify-content-center">
-            <img class="img-fluid shadow-1-strong rounded mb-4 p-1" style="height: 40px" src="./img/iconos/twitter.PNG"
+            <img class="img-fluid shadow-1-strong rounded mb-4 p-1" style="height: 40px" src="../img/iconos/twitter.PNG"
               alt="">
           </div>
         </a>
         <a class="mx-2" href="https://www.youtube.com/channel/UCVBkOP_rj5ulvlriG88jTzA" target="_blank"
           style="text-decoration: none;">
           <div class="d-flex flex-row justify-content-center">
-            <img class="img-fluid shadow-1-strong rounded mb-4 p-1" style="height: 40px" src="./img/iconos/youtube.PNG"
+            <img class="img-fluid shadow-1-strong rounded mb-4 p-1" style="height: 40px" src="../img/iconos/youtube.PNG"
               alt="">
           </div>
         </a>
@@ -368,7 +368,7 @@
       <a class="mx-2" href="https://www.facebook.com/profile.php?id=100065327956621" target="_blank"
         style="text-decoration: none;">
         <div class="d-flex flex-row justify-content-center">
-          <img class="img-fluid shadow-1-strong rounded mb-4 p-1" style="width: 40px" src="./img/iconos/facebook.PNG"
+          <img class="img-fluid shadow-1-strong rounded mb-4 p-1" style="width: 40px" src="../img/iconos/facebook.PNG"
             alt="">
         </div>
       </a>
