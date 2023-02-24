@@ -285,7 +285,7 @@
 }
 
 .area{
-  background:#FFFFFF;
+  background:#ececec;
   transition-duration: 0.5s;
 }
 
@@ -312,6 +312,15 @@
   margin-bottom: 10px;
 }
 
+.tituloAreaDocente{
+  height: 50px;
+  color: #18181b;
+}
+
+.area:hover .tituloAreaDocente{
+  color:#facc15;
+}
+
 .area:hover .tituloArea{
   color:#facc15;
 }
@@ -323,6 +332,7 @@
 .imagen-docentes{
   width: 10rem;
   height: 10rem;
+  transition-duration: 0.5s;
 }
 
 .imagen-docentes:hover{
@@ -333,6 +343,7 @@
 .imagen-docentesModal{
   width: 15rem;
   height: 15rem;
+  transition-duration: 0.5s;
 }
 
 .imagen-docentesModal:hover{
@@ -439,4 +450,9 @@
     width: 250px;
     height: auto;
   }
+}
+
+.img-normalizada{
+	width: 100%;
+	object-fit: cover;
 }

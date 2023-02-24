@@ -115,19 +115,34 @@ class Docente
                 $materias_docente = $row['materias_docente'];
                 $contacto_docente = $row['contacto_docente'];
                 $url_imagen = $row['url_imagen'];
-                $Codigo .=  "<div class='col-lg-4 col-md-6 col-sm-9 col-9 my-2'>
-                                <div class='d-flex flex-column gris-zinc rounded-3'>
-                                    <div class='d-flex flex-row justify-content-center my-2'>
+                $Codigo .= "<div class='col-lg-4 col-sm-6 text-center p-3'>
+                                <div class='area shadow-sm p-4 rounded-3'>
+                                    <div class='d-flex flex-row justify-content-center my-1'>
                                         <img class='rounded-circle p-1 bg-primary imagen-docentes' src='../img/Docentes/".$url_imagen ."' alt=''>
                                     </div>
-                                    <div class='d-flex flex-row justify-content-center mx-2'>
-                                        <h5 class='fs-5 fw-bolt font-bold'>" .$nombre_docente."</h5>
+                                    <div class='d-flex flex-row justify-content-center'>
+                                        <h3 class='tituloAreaDocente text-center font-bold text-xl'>$nombre_docente</h3>
                                     </div>
-                                    <div class='d-flex flex-row justify-content-center my-2'>
-                                        <button type='button' class='btn amarillo fw-bolt' data-bs-toggle='modal' data-bs-target='#ModalDocente".$id_docente."'>Ver mas</button>
+                                    <div class='d-flex flex-row justify-content-center'>
+                                        <button type='button' class='btn btn-warning font-bold' data-bs-toggle='modal' data-bs-target='#ModalDocente".$id_docente."'>Ver mas</button>
                                     </div>
                                 </div>
                             </div>";
+
+                //Código antiguo de tarjeta
+                /*"<div class='col-lg-4 col-md-6 col-sm-9 col-9 my-2'>
+                        <div class='d-flex flex-column gris-zinc rounded-3'>
+                            <div class='d-flex flex-row justify-content-center my-2'>
+                                <img class='rounded-circle p-1 bg-primary imagen-docentes' src='../img/Docentes/".$url_imagen ."' alt=''>
+                            </div>
+                            <div class='d-flex flex-row justify-content-center mx-2'>
+                                <h5 class='fs-5 fw-bolt font-bold'>" .$nombre_docente."</h5>
+                            </div>
+                            <div class='d-flex flex-row justify-content-center my-2'>
+                                <button type='button' class='btn amarillo fw-bolt' data-bs-toggle='modal' data-bs-target='#ModalDocente".$id_docente."'>Ver mas</button>
+                             </div>
+                    </div>
+                </div>";*/
                 
                 $Codigo .=   "<div class='modal fade' id='ModalDocente".$id_docente."' tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>
                                 <div class='modal-dialog modal-lg'>
