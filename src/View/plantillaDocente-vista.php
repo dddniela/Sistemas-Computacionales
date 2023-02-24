@@ -20,7 +20,7 @@
   
     
             $inf = 1;
-            $sup = 9;
+            $sup = 12;
             if(isset($_GET['inferior'])){
                 $inf = $_GET['inferior'];
                 $sup = $_GET['superior'];

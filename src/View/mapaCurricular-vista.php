@@ -220,7 +220,7 @@
 
 
     <div class="justify-content-center text-center">
-        <p><a class="botonPrincipal w-auto btn font-bold" target="_blank" href="https://bit.ly/3MbTdA6">Descargar Retícula</a></p>
+        <p><a class="botonPrincipal w-auto btn font-bold" target="_blank" href="https://bit.ly/3XZfkOu">Descargar Retícula</a></p>
     </div>
 
 </div>
@@ -293,7 +293,7 @@
         <div class="row g-0 py-5 align-items-center">
             <div class="col-lg-6 col-12 justify-content-center text-center">
                 <div class="row g-0 d-flex justify-content-center text-center w-100 h-100">
-                    <img src="../img/IMG_0579.webp" class="w-75 h-auto py-3" alt="">
+                    <img src="../img/Servicio social-3.webp" class="w-100 h-auto py-3" alt="">
                 </div>
             </div>
             <div class="col-lg-6 col-12 px-4 text-black">
@@ -349,7 +349,7 @@
             </div>
             <div class="col-lg-6 col-12 justify-content-center text-center">
                 <div class="row g-0 d-flex justify-content-center text-center w-100 h-100">
-                    <img src="../img/IMG_0579.webp" class="w-75 h-auto py-3" alt="">
+                    <img src="../img/gestionVinculacion.webp" class="w-75 h-auto py-3" alt="">
                 </div>
             </div>
         </div>
@@ -406,7 +406,7 @@
                 </div>
                 <div class="col-lg-6 col-12 justify-content-center text-center">
                     <div class="row d-flex justify-content-center text-center w-100 h-100">
-                        <img src="../img/IMG_0579.webp" class="w-75 h-auto py-3" alt="">
+                        <img src="../img/gestionVinculacion.webp" class="w-75 h-auto py-3" alt="">
                     </div>
                 </div>
             </div>
@@ -495,7 +495,7 @@
             <div class="row g-0 py-5 align-items-center">
                 <div class="col-lg-6 col-12 justify-content-center text-center">
                     <div class="row d-flex justify-content-center text-center w-100 h-100">
-                        <img src="../img/Servicio social-3.webp" class="h-auto py-3" alt="">
+                        <img src="../img/titulacion.webp" class="h-auto py-3" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 col-12 px-4 text-black">

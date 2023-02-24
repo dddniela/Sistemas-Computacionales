@@ -194,14 +194,14 @@ class Docente
         $sqlSelect = "SELECT * FROM docente ORDER BY nombre_docente ASC";
         $ResultSet = $cn->query($sqlSelect);
         $NumRows = $ResultSet->num_rows;
-        $NumPaginas = $NumRows / 9;
-        $Residuo = $NumRows % 9;
+        $NumPaginas = $NumRows / 12;
+        $Residuo = $NumRows % 12;
         if($Residuo > 0){
             $NumPaginas = $NumPaginas + 1;
         }
         $i = 1;
         $LimInferior = 1;
-        $LimSuperior = 9;
+        $LimSuperior = 12;
         $Paginacion = '';
         $Paginacion .= '<nav aria-label="Page navigation example">';
         $Paginacion .= '<ul class="pagination justify-content-center">';
@@ -209,8 +209,8 @@ class Docente
             if($_GET['inferior'] == 1){
                 $Paginacion .= '<li class="page-item disabled"><a class="page-link" href="#">Anterior</a></li>';
             } else{
-                $LI = $_GET['inferior'] - 9;
-                $LS = $_GET['superior'] - 9;
+                $LI = $_GET['inferior'] - 12;
+                $LS = $_GET['superior'] - 12;
                 $Paginacion .= '<li class="page-item"><a class="page-link" href="?option=2&inferior='.$LI.'&superior='.$LS.'">Anterior</a></li>';
             } 
         } else{
@@ -231,15 +231,15 @@ class Docente
                 }   
             }
             $i = $i + 1;
-            $LimInferior = $LimInferior + 9;
-            $LimSuperior = $LimSuperior + 9;
+            $LimInferior = $LimInferior + 12;
+            $LimSuperior = $LimSuperior + 12;
         }
         if(isset($_GET['superior'])){
             if($_GET['superior'] >= $NumRows){
                 $Paginacion .= '<li class="page-item disabled"><a class="page-link" href="#">Siguiente</a></li>';
             } else{
-                $LI = $_GET['inferior'] + 8;
-                $LS = $_GET['superior'] + 9;
+                $LI = $_GET['inferior'] + 12;
+                $LS = $_GET['superior'] + 12;
                 $Paginacion .= '<li class="page-item"><a class="page-link" href="?option=2&inferior='.$LI.'&superior='.$LS.'">Siguiente</a></li>';
             } 
         } else{
