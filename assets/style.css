@@ -5,11 +5,7 @@
   --bs-body-font-family: 'Montserrat', sans-serif!important;;
 }
 
-/* Configuración general para los bordes*/
-*{
-  box-sizing: border-box;
-}
-
+/*Paleta de colores*/
 .amarillo {
   background-color: #facc15;
 }
@@ -26,10 +22,6 @@
   background-color: #1d4ed8;
 }
 
-.texto-azul-medio {
-  color: #1d4ed8;
-}
-
 .azul-oscuro {
   background-color: #1e40af;
 }
@@ -40,6 +32,15 @@
 
 .negro-zinc {
   background-color: #18181b;
+}
+
+/* Configuración general para los bordes*/
+*{
+  box-sizing: border-box;
+}
+
+.texto-azul-medio {
+  color: #1d4ed8;
 }
 
 .h-auto {
@@ -129,9 +130,87 @@
 .hover-blue:hover{
   background-color: #232157;
 }
-/***Inicio/Index***/
 
-/*Portada*/
+/** Titulos & textos **/
+
+/*Título de las portadas*/
+.mainTitle{
+  color: #facc15;
+  font-size: 30px;
+  transition-duration: 0.5s;
+}
+
+/*Subtítulo de las portadas*/
+.mainSubtitle{
+  color: #FFFFFF;
+  font-size: 25px;
+  transition-duration: 0.5s;
+}
+
+.sectionTitle{
+  color: #18181b;
+  transition-duration: 0.5s;
+}
+
+.lightSection:hover .sectionTitle{
+  color: #1d4ed8;
+}
+
+.sectionSeparator{
+  width: 60px;
+  height: 4px;
+  background: #18181b;
+  margin: 16px auto 24px auto;
+  transition-duration: 0.5s;
+}
+
+.lightSection:hover .sectionSeparator{
+  width: 100px;
+  margin: 24px auto 28px auto;
+  background: #1d4ed8;
+}
+
+.titleDarkSection{
+  color: #FFFFFF;
+  transition-duration: 0.5s;
+}
+
+.darkSection:hover .titleDarkSection{
+  color: #facc15;
+}
+
+.darkSectionSeparator{
+  width: 60px;
+  height: 4px;
+  background: #FFFFFF;
+  margin: 16px auto 24px auto;
+  transition-duration: 0.5s;
+}
+
+.darkSection:hover .darkSectionSeparator{
+  width: 100px;
+  margin: 24px auto 28px auto;
+  background: #facc15;
+}
+
+.areaTitle{
+  color: #18181b;
+}
+
+.areaText{
+  color: #18181b;
+}
+
+.area:hover .areaTitle{
+  color:#facc15;
+}
+
+.area:hover .areaText{
+  color:#FFFFFF;;
+}
+
+
+/*Eliminar*/
 .tituloPrincipal{
   color: #facc15;
   font-size: 30px;
@@ -144,34 +223,82 @@
   transition-duration: 0.5s;
 }
 
-.botonPrincipal{
+/** Secciones o áreas **/
+.area{
+  background:#ececec;
+  transition-duration: 0.5s;
+}
+
+.area:hover{
+  background:#18181b; 
+}
+
+.galleryContainer{
+  background-color: #08080a;
+  margin-top: 30px;
+}
+
+/** Imágenes **/
+.areaImage{
+  height: 80px;
+  transition-duration: 0.5s;
+  margin-bottom: 10px;
+}
+
+.area:hover .areaImage{
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+/** Botones **/
+
+/*Botón para la portada principal */
+.mainButton{
   background-color: #1d4ed8;
   color: #FFFFFF;
   width: 120px;
   height: 50px;
   font-size: 20px;
+  text-align: center;
+  transition-duration: 0.5s;
+}
+
+.mainButton:hover{
+  background-color: #facc15;
+  color: #18181b;
+}
+
+/*.botonPrincipal{
+  background-color: #1d4ed8;
+  color: #FFFFFF;
+  width: 120px;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
   transition-duration: 0.5s;
 }
 
 .botonPrincipal:hover{
   background-color: #facc15;
   color: #18181b;
-}
+}*/
+
+/** Media Queries **/
 
 @media (max-width: 600px) {
-  .tituloPrincipal{
+  .mainTitle{
     color: #facc15;
     font-size: 20px;
     transition-duration: 0.5s;
   }
 
-  .subtituloPrincipal{
+  .mainSubtitle{
     color: #FFFFFF;
     font-size: 15px;
     transition-duration: 0.5s;
   }
 
-  .botonPrincipal{
+  .mainButton{
     background-color: #1d4ed8;
     color: #FFFFFF;
     width: 80px;
@@ -180,7 +307,7 @@
     transition-duration: 0.5s;
   }
   
-  .botonPrincipal:hover{
+  .mainButton:hover{
     background-color: #facc15;
     color: #18181b;
   }
@@ -284,14 +411,6 @@
   background: #1d4ed8;
 }
 
-.area{
-  background:#ececec;
-  transition-duration: 0.5s;
-}
-
-.area:hover{
-  background:#18181b; 
-}
 
 .imagenArea{
   height: 80px;
