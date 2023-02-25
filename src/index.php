@@ -27,7 +27,8 @@ $comunidad->setConnection($conn->getDB());
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Ingenieria, Sistemas, Sistemas Computacionales">
     <meta name="author" content="Daniela Castro Rodriguez, Irving Josue Naranjo Paredes, Angel Sánchez Domínguez, 
-    Gabriel Escobar Medina, Nancy Daniela Mendez Arpidez, Marco Gabriel Cortes Toledo, Yelitza Magali Rosas Jimenez">
+    Gabriel Escobar Medina, Nancy Daniela Mendez Arpidez, Marco Gabriel Cortes Toledo, Yelitza Magali Rosas Jimenez,
+    Ángel Manuel Sandria Pérez, Karla Mariana Cordova Vasquez, Iván de Jesús Agame Malpica">
     <link rel="icon" href="../img/itver-logo.png"/>
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">

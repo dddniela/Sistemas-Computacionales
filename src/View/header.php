@@ -1,20 +1,36 @@
 
 <body class="">
 
-    <div class="row g-0">
-        <div class="col-5 col-sm-auto">
-            <div class="d-flex align-items-center justify-content-start w-100 h-100">
-                <img class="img-fluid" src="../img/sep-logo.PNG" alt="SEP-logo">
+    <div class="row g-0 align-items-center">
+        <div class="col-2 col-sm-auto">
+            <div class="d-flex w-100 h-100">
+                <a href="https://www.gob.mx/" target="_blank">
+                    <img class="img-fluid" src="../img/logo-educacion.svg" alt="SEP-logo">
+                </a>
             </div>
         </div>
         <div class="col-2 col-sm-auto">
-            <div class="d-flex align-items-center justify-content-start w-100 h-100">
-                <img class="img-fluid" src="../img/tecnm-logo.PNG" alt="TECNM-logo">
+            <div style="max-width: 18rem;">
+                    <img class="img-fluid" src="../img/linea-vertical-separador-logos.svg" alt="SEP-logo">
             </div>
         </div>
-        <div class="col-1 col-sm-auto">
-            <div class="d-flex align-items-center justify-content-start h-100">
-                <img class="img-fluid" src="../img/itver-logo.PNG" alt="ITVER-logo" class="itver">
+        <div class="col-2 col-sm-auto">
+            <div class="d-flex w-100 h-100">
+                <a href="https://www.tecnm.mx/" target="_blank">
+                    <img class="img-fluid" src="../img/logo-tecnm.svg" alt="TECNM-logo">
+                </a>
+            </div>
+        </div>
+        <div class="col-2 col-sm-auto">
+            <div style="max-width: 18rem;">
+                <img class="img-fluid" src="../img/linea-vertical-separador-logos.svg" alt="SEP-logo">
+            </div>
+        </div>
+        <div class="col-2 col-sm-auto">
+            <div class="d-flex px-2 w-100 h-auto">
+                <a href="https://www.veracruz.tecnm.mx/index.php" target="_blank">
+                    <img class="img-fluid" src="../img/itver-logo.PNG" alt="ITVER-logo" class="itver">
+                </a>
             </div>
         </div>
     </div>
