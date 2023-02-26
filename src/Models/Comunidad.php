@@ -93,9 +93,7 @@ class Comunidad
                 $queHacemos_comunidad = $row['queHacemos_comunidad'];
                 $fotosComunidad = $row['fotosComunidad'];
                 $array = explode ( ',', $fotosComunidad );
-                $foto1 = $array[0];
-                $foto2 = $array[1];
-                
+                $num = count($array);
                 $tabla .=  "<div class='col-lg-4 col-sm-6 text-center p-3'>
                                 <div class='area shadow-sm p-4 rounded-3'>
                                     <div class='d-flex flex-row justify-content-center my-2'>
@@ -149,21 +147,24 @@ class Comunidad
                                                     </div> 
                                                     $queHacemos_comunidad
                                                 </div> 
-                                            </div>
-
-                                            <div class='d-flex flex-row justify-content-start m-2' style='text-align: justify;'>
+                                            </div>";
+                        if(count($array) != 1 ){
+                                $foto1 = count($array) != 0 ? $array[0] : 0;
+                                $foto2 = count($array) != 0 ? $array[1] : 0;
+                                $tabla .=  "<div class='d-flex flex-row justify-content-start m-2' style='text-align: justify;'>
                                                 <div class='col-12'>
                                                     <div class='row'>
                                                         <div class='col-lg-6'>
-                                                            <img class='img-normalizada shadow-1-strong rounded mb-4' src='img/$foto1' alt='' />  
+                                                            <img class='img-normalizada shadow-1-strong rounded mb-4' src='img/Comunidades/$foto1' alt='' />  
                                                         </div>     
                                                         <div class='col-lg-6'>
-                                                            <img class='img-normalizada shadow-1-strong rounded mb-4' src='img/$foto2' alt='' />  
+                                                            <img class='img-normalizada shadow-1-strong rounded mb-4' src='img/Comunidades/$foto2' alt='' />  
                                                         </div>
                                                     </div> 
                                                 </div> 
-                                            </div>                                            
-                                        </div>
+                                            </div>";       
+                        }                                     
+                            $tabla .=   "</div>
                                     </div>
                                 </div>
                             </div>";
