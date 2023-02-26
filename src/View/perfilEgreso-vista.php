@@ -1,7 +1,7 @@
 <!-- Portada -->
 <div class="row g-0">
     <div class="position-relative w-100 overflow-hidden">
-        <img class="w-100 img-fluid" src="../img/IMG_1891.webp" alt="">
+        <img class="w-100 img-fluid" src="img/IMG_1891.webp" alt="">
         <div class="position-absolute top-50 start-50 translate-middle w-100">
             <div class="d-flex flex-column justify-content-center align-items-center text-center">
                 <h1 class="fw-bold text-warning">Perfil de Egreso</h1>
@@ -17,7 +17,7 @@
   <div class="row px-2 g-0">
     <div class="col-lg-6 col-12 p-2 shadow-sm">
       <div class="d-flex justify-content-center align-items-center w-100 h-100">
-        <img src="../img/../img/IMG_1245.webp" class="img-fluid rounded" alt="">
+        <img src="img/IMG_1245.webp" class="img-fluid rounded" alt="">
       </div>
     </div>
 
@@ -55,7 +55,7 @@
                     <div class="col-lg-4 col-sm-6 text-center p-3">
                         <div class="area shadow-sm p-4">
                             <a href="ofertaEducativa.php">
-                                <img class="imagenArea items-center" src="../img/iconos/ingenieria.PNG" alt="">
+                                <img class="imagenArea items-center" src="img/iconos/ingenieria.PNG" alt="">
                             </a>
                             <p class="textoArea">Implementa aplicaciones computacionales para solucionar problemas de
                                 diversos contextos,
@@ -66,7 +66,7 @@
                     <div class="col-lg-4 col-sm-6 text-center p-3">
                         <div class="area shadow-sm p-4">
                             <a href="ofertaEducativa.php">
-                                <img class="imagenArea items-center" src="../img/topicos/ing-software-icono.PNG" alt="">
+                                <img class="imagenArea items-center" src="img/topicos/ing-software-icono.PNG" alt="">
                             </a>
                             <p class="textoArea">Diseña, desarrolla y aplica modelos computacionales para solucionar
                                 problemas, mediante
@@ -77,7 +77,7 @@
                     <div class="col-lg-4 col-sm-6 text-center p-3">
                         <div class="area shadow-sm p-4">
                             <a href="ofertaEducativa.php">
-                                <img class="imagenArea items-center" src="../img/topicos/admon-bd-icono.PNG" alt="">
+                                <img class="imagenArea items-center" src="img/topicos/admon-bd-icono.PNG" alt="">
                             </a>
                             <p class="textoArea">Diseña e implementa interfaces para la implementación y automatización
                                 de sistemas de hardware y
@@ -88,7 +88,7 @@
                     <div class="col-lg-4 col-sm-6 text-center p-3">
                         <div class="area shadow-sm p-4">
                             <a href="ofertaEducativa.php">
-                                <img class="imagenArea items-center" src="../img/topicos/programacion-web-icono.PNG"
+                                <img class="imagenArea items-center" src="img/topicos/programacion-web-icono.PNG"
                                     alt="">
                             </a>
                             <p class="textoArea">Coordina y participa en equipos multidisciplinarios para la aplicación
@@ -100,7 +100,7 @@
                     <div class="col-lg-4 col-sm-6 text-center p-3">
                         <div class="area shadow-sm p-4">
                             <a href="ofertaEducativa.php">
-                                <img class="imagenArea items-center" src="../img/iconos/distribuidas.PNG" alt="">
+                                <img class="imagenArea items-center" src="img/iconos/distribuidas.PNG" alt="">
                             </a>
                             <p class="textoArea">Diseña, implementa y administra bases de datos optimizando los recursos
                                 disponibles,
@@ -111,7 +111,7 @@
                     <div class="col-lg-4 col-sm-6 text-center p-3">
                         <div class="area shadow-sm p-4">
                             <a href="ofertaEducativa.php">
-                                <img class="imagenArea items-center" src="../img/iconos/administracion.PNG" alt="">
+                                <img class="imagenArea items-center" src="img/iconos/administracion.PNG" alt="">
                             </a>
                             <p class="textoArea">Desarrolla y administra software para apoyar la productividad y
                                 competitividad de las
@@ -126,7 +126,7 @@
         </div>
         <div class="col-lg-6 col-12 justify-content-center text-center">
             <div class="d-flex justify-content-center align-items-center w-100 h-100">
-                <img src="../img/IMG_08.PNG" class="w-75 h-auto py-3" alt="">
+                <img src="img/IMG_08.PNG" class="w-75 h-auto py-3" alt="">
             </div>
         </div>
     </div>
@@ -142,28 +142,28 @@
         </div>
         <div class="col-lg-4 px-2">
             <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage1">
-                <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="../img/IMG_1713.webp" alt="">
+                <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/IMG_1713.webp" alt="">
             </a>
             <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage2">
-                <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="../img/IMG_2102.webp" alt="">
+                <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/IMG_2102.webp" alt="">
             </a>
         </div>
 
         <div class="col-lg-4 px-2">
             <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage3">
-                <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="../img/IMG_1110.webp" alt="">
+                <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/IMG_1110.webp" alt="">
             </a>
             <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage4">
-                <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="../img/IMG_0323.webp" alt="">
+                <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/IMG_0323.webp" alt="">
             </a>
         </div>
 
         <div class="col-lg-4 px-2">
             <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage5">
-                <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="../img/IMG_0579.webp" alt="">
+                <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/IMG_0579.webp" alt="">
             </a>
             <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage6">
-                <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="../img/IMG_0456.webp" alt="">
+                <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/IMG_0456.webp" alt="">
             </a>
         </div>
     </div>
@@ -175,7 +175,7 @@
 <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage1">
     <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content bg-transparent text-white text-center">
-            <img src="../img/IMG_1713.webp" alt="">
+            <img src="img/IMG_1713.webp" alt="">
             <p>Laboratorio de Servidores</p>
         </div>
     </div>
@@ -185,7 +185,7 @@
 <div tabindex="-1" aria-labelledby="modalImage2" aria-hidden="true" class="modal fade" id="modalImage2">
     <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content bg-transparent text-white text-center">
-            <img src="../img/IMG_2102.webp" alt="">
+            <img src="img/IMG_2102.webp" alt="">
             <p>Edificio U - Laboratorio de Sistemas</p>
         </div>
     </div>
@@ -195,7 +195,7 @@
 <div tabindex="-1" aria-labelledby="modalImage3" aria-hidden="true" class="modal fade" id="modalImage3">
     <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content bg-transparent text-white text-center">
-            <img src="../img/IMG_1110.webp" alt="">
+            <img src="img/IMG_1110.webp" alt="">
             <p>Pantallas en el Laboratorio de Servidores</p>
         </div>
     </div>
@@ -205,7 +205,7 @@
 <div tabindex="-1" aria-labelledby="modalImage4" aria-hidden="true" class="modal fade" id="modalImage4">
     <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content bg-transparent text-white text-center">
-            <img src="../img/IMG_0323.webp" alt="">
+            <img src="img/IMG_0323.webp" alt="">
             <p>Pasillo del edificio E</p>
         </div>
     </div>
@@ -215,7 +215,7 @@
 <div tabindex="-1" aria-labelledby="modalImage5" aria-hidden="true" class="modal fade" id="modalImage5">
     <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content bg-transparent text-white text-center">
-            <img src="../img/IMG_0579.webp" alt="">
+            <img src="img/IMG_0579.webp" alt="">
             <p>Edificio E</p>
         </div>
     </div>
@@ -225,7 +225,7 @@
 <div tabindex="-1" aria-labelledby="modalImage6" aria-hidden="true" class="modal fade" id="modalImage6">
     <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content bg-transparent text-white text-center">
-            <img src="../img/IMG_0456.webp" alt="">
+            <img src="img/IMG_0456.webp" alt="">
             <p>Atardecer frente al edificio U</p>
         </div>
     </div>

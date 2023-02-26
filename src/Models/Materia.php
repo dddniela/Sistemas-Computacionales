@@ -23,49 +23,49 @@ function icono($Area){
     $ruta_img = "";
     switch($Area){
         case 'Programacion':
-            $ruta_img = '../img/iconos/programacion.PNG';
+            $ruta_img = 'img/iconos/programacion.PNG';
             break;
         case 'Asignaturas Comunes':
-            $ruta_img = '../img/iconos/asignaturas-comunes.PNG';
+            $ruta_img = 'img/iconos/asignaturas-comunes.PNG';
             break;
         case 'Redes':
-            $ruta_img = '../img/iconos/redes.PNG';
+            $ruta_img = 'img/iconos/redes.PNG';
             break;
         case 'Bases de datos':
-            $ruta_img = '../img/iconos/bases-datos.PNG';
+            $ruta_img = 'img/iconos/bases-datos.PNG';
             break;
         case 'Electronica':
-            $ruta_img = '../img/iconos/electronica.PNG';
+            $ruta_img = 'img/iconos/electronica.PNG';
             break;
         case 'Ingenieria':
-            $ruta_img = '../img/iconos/ingenieria.PNG';
+            $ruta_img = 'img/iconos/ingenieria.PNG';
             break;
         case 'Sistemas operativos':
-            $ruta_img = '../img/iconos/sistemasop.PNG';
+            $ruta_img = 'img/iconos/sistemasop.PNG';
         break;
         case 'Calculo':
-            $ruta_img = '../img/iconos/calculo.PNG';
+            $ruta_img = 'img/iconos/calculo.PNG';
         break;
         case 'Estadistica':
-            $ruta_img = '../img/iconos/estadistica.PNG';
+            $ruta_img = 'img/iconos/estadistica.PNG';
         break;
         case 'Automatas':
-            $ruta_img = '../img/iconos/automatas.PNG';
+            $ruta_img = 'img/iconos/automatas.PNG';
         break;
         case 'Investigacion':
-            $ruta_img = '../img/iconos/investigacion.PNG';
+            $ruta_img = 'img/iconos/investigacion.PNG';
         break;
         case 'Matematicas Aplicada':
-            $ruta_img = '../img/iconos/algebra.PNG';
+            $ruta_img = 'img/iconos/algebra.PNG';
         break;
         case 'Web':
-            $ruta_img = '../img/iconos/programacion-web.PNG';
+            $ruta_img = 'img/iconos/programacion-web.PNG';
         break;
         case 'Administracion':
-            $ruta_img = '../img/iconos/administracion.PNG';
+            $ruta_img = 'img/iconos/administracion.PNG';
         break;
         case 'IA':
-            $ruta_img = '../img/iconos/inteligencia-artificial.PNG';
+            $ruta_img = 'img/iconos/inteligencia-artificial.PNG';
         break;
     }
     return $ruta_img;
@@ -179,7 +179,7 @@ function imprimirEspecialidad(){
 
     if($ResultSet->num_rows > 0){
         $tabla .= "<div class='row justify-content-md-start h-100 justify-content-center'>";
-        $ruta_img = ['../img/iconos/concurrentes.png','../img/iconos/distribuidas.png','../img/iconos/concurrentes.png','../img/iconos/distribuidas.png','../img/iconos/blockchain.png','../img/iconos/distribuidas.png'];
+        $ruta_img = ['img/iconos/concurrentes.png','img/iconos/distribuidas.png','img/iconos/concurrentes.png','img/iconos/distribuidas.png','img/iconos/blockchain.png','img/iconos/distribuidas.png'];
         $i = 0;
         while($row = $ResultSet->fetch_assoc()){
             $id_materia = $row['id_materia'];

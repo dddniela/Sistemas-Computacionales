@@ -127,11 +127,17 @@
   font-weight: 700;
 }
 
-.hover-blue:hover{
-  background-color: #232157;
+.hover-blue{
+  color: #ffffff;
 }
 
-/** Titulos & textos **/
+.hover-blue:hover{
+  background-color: #232157;
+  color: #ffffff;
+  transition-duration: 0.5s;
+}
+
+/** Títulos & textos **/
 
 /*Título de las portadas*/
 .mainTitle{
@@ -248,6 +254,10 @@
 .area:hover .areaImage{
   height: 100px;
   margin-bottom: 10px;
+}
+
+.bg-gob {
+  background-color: #0B211C;
 }
 
 /** Botones **/

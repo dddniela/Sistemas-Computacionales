@@ -82,8 +82,6 @@ class Comunidad
 
     function imprimirDatos(){
         $ResultSet = $this->obtenerInformacion();
-    
-
         $tabla = "";
             
         if($ResultSet->num_rows > 0){
@@ -98,11 +96,10 @@ class Comunidad
                 $foto1 = $array[0];
                 $foto2 = $array[1];
                 
-                // $url_imagen = $row['url_imagen'];
                 $tabla .=  "<div class='col-lg-4 col-sm-6 text-center p-3'>
                                 <div class='area shadow-sm p-4 rounded-3'>
                                     <div class='d-flex flex-row justify-content-center my-2'>
-                                        <img class='rounded-circle p-1 bg-primary imagen-docentes' src='../img/Comunidades/$logo_comunidad' alt=''>
+                                        <img class='rounded-circle p-1 bg-primary imagen-docentes' src='img/Comunidades/$logo_comunidad' alt=''>
                                     </div>
                                     <div class='d-flex flex-row justify-content-center mx-2'>
                                         <h3 class='tituloAreaDocente text-center font-bold text-xl'>$nombre_comunidad</h3>
@@ -111,24 +108,7 @@ class Comunidad
                                         <button type='button' class='btn btn-warning font-bold' data-bs-toggle='modal' data-bs-target='#ModalComunidad".$id_comunidad."'>Ver mas</button>
                                     </div>
                                 </div>
-                            </div>";
-
-                //Código antiguo de la tarjeta
-                /*"<div class='col-lg-4 col-md-6 col-sm-9 col-8 my-2'>
-                    <div class='d-flex flex-column gris-zinc rounded-3'>
-                        <div class='d-flex flex-row justify-content-center my-2'>
-                            <img class='rounded-circle p-1 bg-primary imagen-docentes' src='../img/Comunidades/$logo_comunidad' alt=''>
-                        </div>
-                        <div class='d-flex flex-row justify-content-center mx-2'>
-                                <h5 class='fs-5 fw-bolt font-bold'>$nombre_comunidad</h5>
-                        </div>
-                        <div class='d-flex flex-row justify-content-center my-2'>
-                            <button type='button' class='btn amarillo fw-bolt' data-bs-toggle='modal' data-bs-target='#ModalComunidad".$id_comunidad."'>Ver mas</button>
-                        </div>
-                    </div>
-                </div>";*/
-
-                            
+                            </div>";                        
                 
                 $tabla .=   "<div class='modal fade' id='ModalComunidad$id_comunidad' tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>
                                 <div class='modal-dialog modal-lg'>
@@ -144,7 +124,7 @@ class Comunidad
                                                 <div class='row justify-content-center m-2'>
                                                     <div class='col-7 col-lg-auto justify-content-center m-2'>
                                                         <div class='d-flex justify-content-center'>
-                                                            <img class='rounded-circle p-1 bg-primary imagen-docentesModal' src='../img/Comunidades/$logo_comunidad' alt=''>
+                                                            <img class='rounded-circle p-1 bg-primary imagen-docentesModal' src='img/Comunidades/$logo_comunidad' alt=''>
                                                         </div>
                                                     </div>
                                                     <div class='col-12 col-lg-7 justify-content-center align-items-center m-2'>
@@ -175,21 +155,15 @@ class Comunidad
                                                 <div class='col-12'>
                                                     <div class='row'>
                                                         <div class='col-lg-6'>
-                                                            <img class='img-normalizada shadow-1-strong rounded mb-4' src='../img/$foto1' alt='' />  
+                                                            <img class='img-normalizada shadow-1-strong rounded mb-4' src='img/$foto1' alt='' />  
                                                         </div>     
                                                         <div class='col-lg-6'>
-                                                            <img class='img-normalizada shadow-1-strong rounded mb-4' src='../img/$foto2' alt='' />  
+                                                            <img class='img-normalizada shadow-1-strong rounded mb-4' src='img/$foto2' alt='' />  
                                                         </div>
                                                     </div> 
                                                 </div> 
-                                            </div>
-
-                                        
-                                          
-                                            
+                                            </div>                                            
                                         </div>
-
-
                                     </div>
                                 </div>
                             </div>";

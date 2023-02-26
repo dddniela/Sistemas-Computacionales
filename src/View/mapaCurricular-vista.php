@@ -1,6 +1,6 @@
 <div class="row g-0">
     <div class="position-relative w-100 overflow-hidden">
-        <img class="w-100 img-fluid" src="../img/IMG_3884.webp" alt="">
+        <img class="w-100 img-fluid" src="img/IMG_3884.webp" alt="">
         <div class="position-absolute top-50 start-50 translate-middle w-100">
             <div class="d-flex flex-column justify-content-center align-items-center text-center">
                 <h1 class="fw-bold text-warning">Mapa Curricular</h1>
@@ -229,7 +229,7 @@
     <div class="row g-0 py-5 align-items-center">
         <div class="col-lg-6 col-12 justify-content-center text-center">
             <div class="d-flex justify-content-center align-items-center w-100 h-100">
-                <img src="../img/ITVER-8.webp" class="w-75 h-auto py-3" alt="">
+                <img src="img/ITVER-8.webp" class="w-75 h-auto py-3" alt="">
             </div>
         </div>
         <div class="col-lg-6 col-12 px-4 text-black">
@@ -280,7 +280,7 @@
             </div>
             <div class="col-lg-6 col-12">
                 <div class="row g-0 d-flex justify-content-center text-center w-100 h-100">
-                    <img src="../img/IMG_3394.webp" class="w-75 h-auto py-3" alt="">
+                    <img src="img/IMG_3394.webp" class="w-75 h-auto py-3" alt="">
                 </div>
             </div>
         </div>
@@ -293,7 +293,7 @@
         <div class="row g-0 py-5 align-items-center">
             <div class="col-lg-6 col-12 justify-content-center text-center">
                 <div class="row g-0 d-flex justify-content-center text-center w-100 h-100">
-                    <img src="../img/Servicio social-3.webp" class="w-100 h-auto py-3" alt="">
+                    <img src="img/Servicio social-3.webp" class="w-100 h-auto py-3" alt="">
                 </div>
             </div>
             <div class="col-lg-6 col-12 px-4 text-black">
@@ -349,7 +349,7 @@
             </div>
             <div class="col-lg-6 col-12 justify-content-center text-center">
                 <div class="row g-0 d-flex justify-content-center text-center w-100 h-100">
-                    <img src="../img/gestionVinculacion.webp" class="w-75 h-auto py-3" alt="">
+                    <img src="img/gestionVinculacion.webp" class="w-75 h-auto py-3" alt="">
                 </div>
             </div>
         </div>
@@ -359,7 +359,7 @@
 <!-- Sección: Residencias Profesionales. Información relevante acerca de las residencias profesionales. -->
 <div class="azul-cielo pt-5">
     <div class="bg-dark">
-        <img src="../img/IMG_0337.webp" class="w-full" alt="">
+        <img src="img/IMG_0337.webp" class="w-full" alt="">
         <div class="px-4 text-black my-3">
             <h2 class="font-bold text-2xl text-center text-warning">Residencias Profesionales</h2>
             <p class="text-xl text-white" style="text-align: justify">Las residencias profesionales permiten al
@@ -374,15 +374,15 @@
         <div class="bg-light row rows-cols-3 g-0 py-2">
             <h2 class="text-center text-warning font-bold text-xl">Beneficios</h2>
             <div class="col-sm text-center">
-                <img class="h-20 items-center my-4" src="../img/icon1.PNG" alt="">
+                <img class="h-20 items-center my-4" src="img/icon1.PNG" alt="">
                 <p>Participar o emprender proyectos en el ámbito profesional</p>
             </div>
             <div class="col-sm text-center">
-                <img class="h-20 items-center my-4" src="../img/icon2.PNG" alt="">
+                <img class="h-20 items-center my-4" src="img/icon2.PNG" alt="">
                 <p>Adquirir experiencia profesional</p>
             </div>
             <div class="col-sm text-center">
-                <img class="h-20 items-center my-4" src="../img/icon3.PNG" alt="">
+                <img class="h-20 items-center my-4" src="img/icon3.PNG" alt="">
                 <p>Poner en prácticas los conocimientos adquiridos en el aula</p>
             </div>
         </div>
@@ -406,7 +406,7 @@
                 </div>
                 <div class="col-lg-6 col-12 justify-content-center text-center">
                     <div class="row d-flex justify-content-center text-center w-100 h-100">
-                        <img src="../img/gestionVinculacion.webp" class="w-75 h-auto py-3" alt="">
+                        <img src="img/gestionVinculacion.webp" class="w-75 h-auto py-3" alt="">
                     </div>
                 </div>
             </div>
@@ -420,7 +420,7 @@
         <div class="row g-0 py-5 align-items-center">
             <div class="col-lg-6 col-12 justify-content-center text-center">
                 <div class="row g-0 d-flex justify-content-center text-center w-100 h-100">
-                    <img src="../img/IMG_1245.webp" class="w-75 h-auto py-3" alt="">
+                    <img src="img/IMG_1245.webp" class="w-75 h-auto py-3" alt="">
                 </div>
             </div>
             <div class="col-lg-6 col-12 px-4 text-black">
@@ -455,7 +455,7 @@
             </div>
             <div class="col-lg-6 col-12">
                 <div class="row g-0 d-flex justify-content-center text-center w-100 h-100">
-                    <img src="../img/IMG_3886.webp" class="w-75 h-auto py-3" alt="">
+                    <img src="img/IMG_3886.webp" class="w-75 h-auto py-3" alt="">
                 </div>
             </div>
         </div>
@@ -465,7 +465,7 @@
 <!-- Titulación --> 
 <div class="azul-cielo pt-5">
     <div class="bg-dark">
-        <img src="../img/ITVER-7.webp" class="w-full" alt="">
+        <img src="img/ITVER-7.webp" class="w-full" alt="">
         <div class="px-4 text-black my-3">
             <h2 class="font-bold text-2xl text-center text-warning">Titulación</h2>
             <p class="text-xl text-white" style="text-align: justify">La titulación integral es la validación de las competencias (conocimientos, habilidades y actitudes)
@@ -475,17 +475,17 @@
         <div class="bg-light row rows-cols-3 g-0 py-2">
             <!-- <h2 class="text-center text-warning font-bold text-xl">Beneficios</h2> -->
             <div class="col-sm text-center">
-                <img class="h-20 items-center my-4" src="../img/icon1.PNG" alt="">
+                <img class="h-20 items-center my-4" src="img/icon1.PNG" alt="">
                 <p class="px-5">Residencia Profesional, Proyecto de Investigación y/o Desarrollo
                     Tecnológico, Proyecto Integrador, Proyecto Productivo.</p>
             </div>
             <div class="col-sm text-center">
-                <img class="h-20 items-center my-4" src="../img/icon2.PNG" alt="">
+                <img class="h-20 items-center my-4" src="img/icon2.PNG" alt="">
                 <p>Proyecto de Innovación Tecnológica, proyecto de Emprendedurismo, Proyecto Integral
                     de Educación Dual, Estancia, Tesis o Tesina</p>
             </div>
             <div class="col-sm text-center">
-                <img class="h-20 items-center my-4" src="../img/icon3.PNG" alt="">
+                <img class="h-20 items-center my-4" src="img/icon3.PNG" alt="">
                  <p class="px-5">O por la obtención de un Testimonio de Desempeño Satisfactorio o
                     Sobresaliente en el Examen General de Egreso de Licenciatura (EGEL) del
                     Centro Nacional de Evaluación para la Educación Superior, A. C. (CENEVAL).</p>
@@ -495,7 +495,7 @@
             <div class="row g-0 py-5 align-items-center">
                 <div class="col-lg-6 col-12 justify-content-center text-center">
                     <div class="row d-flex justify-content-center text-center w-100 h-100">
-                        <img src="../img/titulacion.webp" class="h-auto py-3" alt="">
+                        <img src="img/titulacion.webp" class="h-auto py-3" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 col-12 px-4 text-black">
@@ -544,7 +544,7 @@
             </div>
             <div class="col-lg-6 col-12">
                 <div class="row g-0 d-flex justify-content-center text-center w-100 h-100">
-                    <img src="../img/centroIdiomas.webp" class="w-75 h-auto py-3" alt="">
+                    <img src="img/centroIdiomas.webp" class="w-75 h-auto py-3" alt="">
                 </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 <!-- Portada -->
 <div class="row g-0">
   <div class="position-relative w-100 overflow-hidden">
-    <img class="w-100 img-fluid" src="../img/Venus-4.webp" alt="" />
+    <img class="w-100 img-fluid" src="img/Venus-4.webp" alt="" />
     <div class="position-absolute top-50 start-50 translate-middle w-100">
       <div class="d-flex flex-column justify-content-center align-items-center text-center">
         <h1 class="fw-bold text-warning">Conócenos</h1>
@@ -20,7 +20,7 @@
   <div class="row px-2 g-0">
     <div class="col-lg-6 col-12 p-2 shadow-sm">
       <div class="d-flex justify-content-center align-items-center w-100 h-100">
-        <img src="../img/IMG_2102.webp" class="img-fluid rounded" alt="" />
+        <img src="img/IMG_2102.webp" class="img-fluid rounded" alt="" />
       </div>
     </div>
 
@@ -71,7 +71,7 @@
 
           <div class="col-lg-6 col-12 p-2 shadow-sm d-lg-none d-flex">
             <div class="d-flex justify-content-center align-items-center w-100 h-100">
-              <img src="../img/Docentes/danielaHernandezBarrios.webp" class="img-fluid rounded" alt="" />
+              <img src="img/Docentes/danielaHernandezBarrios.webp" class="img-fluid rounded" alt="" />
             </div>
           </div>
 
@@ -97,7 +97,7 @@
 
     <div class="col-lg-6 col-12 p-2 shadow-sm d-none d-lg-inline-flex">
       <div class="d-flex justify-content-center align-items-center w-60 h-60">
-        <img src="../img/Docentes/danielaHernandezBarrios.webp" class="img-fluid rounded" alt="" />
+        <img src="img/Docentes/danielaHernandezBarrios.webp" class="img-fluid rounded" alt="" />
       </div>
     </div>
   </div>
@@ -111,7 +111,7 @@
   <div class="row px-2 g-0">
     <div class="col-lg-6 col-12 p-2 shadow-sm d-none d-lg-inline-flex">
       <div class="d-flex justify-content-center align-items-center w-60 h-60">
-        <img src="../img/Docentes/bereniceLagunesPadilla.webp" class="img-fluid rounded" alt="" />
+        <img src="img/Docentes/bereniceLagunesPadilla.webp" class="img-fluid rounded" alt="" />
       </div>
     </div>
 
@@ -130,7 +130,7 @@
 
           <div class="col-lg-6 col-12 p-2 shadow-sm d-lg-none d-flex">
             <div class="d-flex justify-content-center align-items-center w-100 h-100">
-              <img src="../img/Docentes/bereniceLagunesPadilla.webp" class="img-fluid rounded" alt="" />
+              <img src="img/Docentes/bereniceLagunesPadilla.webp" class="img-fluid rounded" alt="" />
             </div>
           </div>
 
@@ -200,19 +200,19 @@
         <div class="row">
           <div class="col-lg-6">
             <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage1">
-              <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="../img/IMG_3878.webp" alt="" />
+              <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/IMG_3878.webp" alt="" />
             </a>
             <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage2">
-              <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="../img/IMG_1110.webp" alt="" />
+              <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/IMG_1110.webp" alt="" />
             </a>
           </div>
 
           <div class="col-lg-6">
             <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage3">
-              <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="../img/IMG_3879.webp" alt="" />
+              <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/IMG_3879.webp" alt="" />
             </a>
             <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage4">
-              <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="../img/IMG_0959.webp" alt="" />
+              <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/IMG_0959.webp" alt="" />
             </a>
           </div>
         </div>
@@ -228,7 +228,7 @@
 <div tabindex="-1" aria-labelledby="modalImage3" aria-hidden="true" class="modal fade" id="modalImage1">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content bg-transparent text-white text-center">
-      <img src="../img/IMG_3878.webp" alt="" />
+      <img src="img/IMG_3878.webp" alt="" />
     </div>
   </div>
 </div>
@@ -237,7 +237,7 @@
 <div tabindex="-1" aria-labelledby="modalImage4" aria-hidden="true" class="modal fade" id="modalImage2">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content bg-transparent text-white text-center">
-      <img src="../img/IMG_1110.webp" alt="" />
+      <img src="img/IMG_1110.webp" alt="" />
     </div>
   </div>
 </div>
@@ -246,7 +246,7 @@
 <div tabindex="-1" aria-labelledby="modalImage5" aria-hidden="true" class="modal fade" id="modalImage3">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content bg-transparent text-white text-center">
-      <img src="../img/IMG_3879.webp" alt="" />
+      <img src="img/IMG_3879.webp" alt="" />
     </div>
   </div>
 </div>
@@ -255,7 +255,7 @@
 <div tabindex="-1" aria-labelledby="modalImage6" aria-hidden="true" class="modal fade" id="modalImage4">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content bg-transparent text-white text-center">
-      <img src="../img/IMG_0959.webp" alt="" />
+      <img src="img/IMG_0959.webp" alt="" />
     </div>
   </div>
 </div>
@@ -267,7 +267,7 @@
   <div class="row px-2 g-0">
     <div class="col-lg-6 col-12 p-2 shadow-sm">
       <div class="d-flex justify-content-center align-items-center w-100 h-100">
-        <img src="../img/IMG_1713.webp" class="img-fluid rounded" alt="" />
+        <img src="img/IMG_1713.webp" class="img-fluid rounded" alt="" />
       </div>
     </div>
 
