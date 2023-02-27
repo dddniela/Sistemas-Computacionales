@@ -38,7 +38,7 @@
               La carrera de ingeniería en sistemas computacionales pertenece al
               departamento de sistemas y computación, el objetivo principal del
               departamento es poner al alcance de los estudiantes diferentes
-              laboratorios de cómputo para el desarollo de sus materias
+              laboratorios de cómputo para el desarrollo de sus materias
               prácticas y la orientación en los diversos trámites requeridos a
               lo largo de su plan de estudios, como pueden ser la liberación de
               créditos complementarios, servicio social, residencias
@@ -88,7 +88,7 @@
               tecnológico, así mismo el desarrollo de proyectos de investigación y vinculación con el sector productivo,
               derivados de los programas mencionados, proponiendo objetivos, metas y acciones; verificar que las
               actividades de las áreas se realicen de acuerdo con las normas, lineamientos y procedimientos establecidos
-              con calidad y espiritu de servicio.
+              con calidad y espíritu de servicio.
             </p>
           </div>
         </div>
@@ -325,7 +325,7 @@
   <h5 class="font-bold">Autores de la página:</h5>
     <p class="font-semibold">Estudiantes de la Generación 2018 - 2023</p>
     <p>Daniela Castro Rodriguez, Irving Josue Naranjo Paredes, Angel Sánchez Domínguez, 
-    Gabriel Escobar Medina, Nancy Daniela Mendez Arpidez, Marco Gabriel Cortes Toledo, Yelitza Magali Rosas Jimenez,
+    Gabriel Escobar Medina, Nancy Daniela Méndez Arpidez, Marco Gabriel Cortés Toledo, Yelitza Magali Rosas Jiménez,
     Ángel Manuel Sandria Pérez, Karla Mariana Cordova Vasquez e Iván de Jesús Agame Malpica</p>
 </div>
 <!-- Fin Laboratorio de cómputo intensivo -->

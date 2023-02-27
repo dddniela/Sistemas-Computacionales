@@ -220,7 +220,7 @@
 
 
     <div class="justify-content-center text-center">
-        <p><a class="botonPrincipal w-auto btn font-bold" target="_blank" href="https://bit.ly/3XZfkOu">Descargar Retícula</a></p>
+        <p><a class="btn btn-warning w-auto btn font-bold" target="_blank" href="https://bit.ly/3XZfkOu">Descargar Retícula</a></p>
     </div>
 
 </div>
@@ -252,7 +252,7 @@
                     <li>Tutorías</li>
                     <li>Cursos de Verano</li>
                     <li>Titulación profesional</li>
-                    <li>Liberación de Idiomas</li>
+                    <li>Liberación de segunda lengua</li>
                 </ul>
             </div>
         </div>
@@ -528,10 +528,10 @@
     <div class="bg-light">
         <div class="row g-0 py-5 align-items-center">
             <div class="col-lg-6 col-12 px-4">
-                <h2 class="font-bold text-2xl text-center">Liberación de Idiomas</h2>
+                <h2 class="font-bold text-2xl text-center">Liberación de segunda lengua</h2>
                 <p class="text-xl" style="text-align: justify">
-                    Para poder hacer la liberación de idiomas, debes de cumplir con una certificación del idioma inglés o
-                    cursar los cinco niveles de inglés o algún otro idioma en el Centro de Idiomas en el ITVER.
+                    Para poder hacer la liberación de segunda lengua, debes de cumplir con una certificación externa que se encuentre avalada por la certificación
+                    nacional de nivel de idioma (CENNI) que evalúe 4 habilidades y se obtenga un nivel mínimo B1 o cursar los cinco niveles de inglés o algún otro idioma en el Centro de Idiomas en el ITVER.
                 </p>
                 <div class="p-3 text-xl gris-zinc">
                     <p class="font-bold ">Contacto del Centro de Idiomas:<br></p>
