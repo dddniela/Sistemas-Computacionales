@@ -96,13 +96,13 @@ class Comunidad
                 $num = count($array);
                 $tabla .=  "<div class='col-lg-4 col-sm-6 text-center p-3'>
                                 <div class='area shadow-sm p-4 rounded-3'>
-                                    <div class='d-flex flex-row justify-content-center my-2'>
+                                    <div class='d-flex flex-row justify-content-center my-1'>
                                         <img class='rounded-circle p-1 bg-primary imagen-docentes' src='img/Comunidades/$logo_comunidad' alt=''>
                                     </div>
-                                    <div class='d-flex flex-row justify-content-center mx-2'>
-                                        <h3 class='text-center font-bold text-xl'>$nombre_comunidad</h3>
+                                    <div class='d-flex flex-row justify-content-center'>
+                                        <h3 class='tituloAreaDocente text-center font-bold text-xl'>$nombre_comunidad</h3>
                                     </div>
-                                    <div class='d-flex flex-row justify-content-center my-2'>
+                                    <div class='d-flex flex-row justify-content-center'>
                                         <button type='button' class='btn btn-warning font-bold' data-bs-toggle='modal' data-bs-target='#ModalComunidad".$id_comunidad."'>Ver mas</button>
                                     </div>
                                 </div>

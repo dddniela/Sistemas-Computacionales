@@ -61,7 +61,7 @@
   <div class="row px-2 g-0">
     <div class="col-lg-6 col-12 p-2 shadow-sm">
       <div class="d-flex justify-content-center align-items-center w-100 h-100">
-        <img class="img-fluid rounded" src="img/Servicio social-3.webp" alt="">
+        <img class="img-fluid rounded" src="img/IMG-1234.webp" alt="">
       </div>
     </div>
 
@@ -258,7 +258,7 @@
 
     <div class="col-lg-4 col-sm-6 text-center p-3">
       <div class="area shadow-sm p-4 rounded-3">
-        <a href="http://gestion.itver.edu.mx/servicio-social/">
+        <a href="http://gestion.itver.edu.mx/servicio-social/" target="_blank" >
           <img class="img-fluid w-100 shadow-1-strong rounded mb-4 p-1" src="img/IMG_1223.webp" alt="">
         </a>
         <h3 class="areaTitle text-center font-bold text-xl">Servicio social</h3>
@@ -267,7 +267,7 @@
 
     <div class="col-lg-4 col-sm-6 text-center p-3">
       <div class="area shadow-sm p-4 rounded-3">
-        <a href="http://www.veracruz.tecnm.mx/">
+        <a href="http://www.veracruz.tecnm.mx/" target="_blank" >
           <img class="img-fluid w-100 shadow-1-strong rounded mb-4  p-1" src="img/ITVER-9.webp" alt="">
         </a>
         <h3 class="areaTitle text-center font-bold text-xl">TECNM Campus Veracruz</h3>
