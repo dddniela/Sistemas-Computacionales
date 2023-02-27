@@ -224,40 +224,81 @@
     </div>
 
 </div>
-<!-- desarrollo profesional  -->
-<div class="bg-light">
+
+<!-- especialidad -->
+<div class="bg-dark">
     <div class="row g-0 py-5 align-items-center">
         <div class="col-lg-6 col-12 justify-content-center text-center">
-            <div class="d-flex justify-content-center align-items-center w-100 h-100">
-                <img src="img/ITVER-8.webp" class="w-75 h-auto py-3" alt="">
+            <div class="row g-0 d-flex justify-content-center text-center w-100 h-100">
+                <img src="img/Servicio social-3.webp" class="w-100 h-auto py-3" alt="">
             </div>
         </div>
         <div class="col-lg-6 col-12 px-4 text-black">
-            <h2 class="font-bold text-2xl text-center">Desarrollo profesional de la carrera</h2>
-            <p class="text-xl" style="text-align: justify">La carrera de ingeniería en sistemas computacionales ofrece
-                un
-                desarrollo
-                integral y profesional para el estudiante con un plan de estudios orientado a que el estudiante sea
-                capaz de egresar con una experiencia en el ámbito laboral.
+            <h2 class="font-bold text-2xl text-center text-warning ">Especialidad</h2>
+            <p class="text-xl text-white" style="text-align: justify">La Especialidad es el espacio dentro de un
+                plan de estudios, constituido por un conjunto de
+                asignaturas diseñadas para la formación y desarrollo de competencias, que complementan la formación
+                profesional de los estudiantes de las instituciones adscritas al TecNM
             </p>
-            <h2 class="text-center font-bold text-xl">"No solo se trata de aprender, sino de crecer profesionalmente"
+            <h2 class="text-center text-warning font-bold text-xl">Especialidades que han existido en la carrera
             </h2>
             <div class="gris-zinc py-2">
                 <ul class="text-xl m-3">
-                    <li>Retícula de asignaturas orientada a los tópicos de la carrera</li>
-                    <li>Actividades complementarias</li>
-                    <li>Especialidad</li>
-                    <li>Servicio Social</li>
-                    <li>Residencia profesional</li>
-                    <li>Tutorías</li>
-                    <li>Cursos de Verano</li>
-                    <li>Titulación profesional</li>
-                    <li>Liberación de segunda lengua</li>
+                     <li>Concurrencia computacional avanzada</li>
+                    <li>Procesamiento distribuido de alto desempeño</li>
                 </ul>
             </div>
         </div>
     </div>
+    <h2 class="font-bold text-center text-warning">Concurrencia Computacional Avanzada</h2>
+    <div class="bg-zinc-300" id="tab-especialidad">
+        <div class="container">
+            <?php
+                   
+                    echo $materia->imprimirEspecialidad();
+                    
+            ?>
+        </div>
+    </div>
 </div>
+
+<!-- desarrollo profesional  -->
+<div class="azul-cielo pt-5">
+    <div class="bg-light">
+        <div class="row g-0 py-5 align-items-center">
+            <div class="col-lg-6 col-12 justify-content-center text-center">
+                <div class="d-flex justify-content-center align-items-center w-100 h-100">
+                    <img src="img/ITVER-8.webp" class="w-75 h-auto py-3" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 px-4 text-black">
+                <h2 class="font-bold text-2xl text-center">Desarrollo profesional de la carrera</h2>
+                <p class="text-xl" style="text-align: justify">La carrera de ingeniería en sistemas computacionales ofrece
+                    un
+                    desarrollo
+                    integral y profesional para el estudiante con un plan de estudios orientado a que el estudiante sea
+                    capaz de egresar con una experiencia en el ámbito laboral.
+                </p>
+                <h2 class="text-center font-bold text-xl">"No solo se trata de aprender, sino de crecer profesionalmente"
+                </h2>
+                <div class="gris-zinc py-2">
+                    <ul class="text-xl m-3">
+                        <li>Retícula de asignaturas orientada a los tópicos de la carrera</li>
+                        <li>Actividades complementarias</li>
+                        <li>Especialidad</li>
+                        <li>Servicio Social</li>
+                        <li>Residencia profesional</li>
+                        <li>Tutorías</li>
+                        <li>Cursos de Verano</li>
+                        <li>Titulación profesional</li>
+                        <li>Liberación de segunda lengua</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+
 
 <!-- Créditos complementarios -->
 <div class="azul-cielo pt-5">
@@ -287,50 +328,15 @@
     </div>
 </div>
 
-<!-- especialidad -->
-<div class="azul-cielo pt-5">
-    <div class="bg-dark">
-        <div class="row g-0 py-5 align-items-center">
-            <div class="col-lg-6 col-12 justify-content-center text-center">
-                <div class="row g-0 d-flex justify-content-center text-center w-100 h-100">
-                    <img src="img/Servicio social-3.webp" class="w-100 h-auto py-3" alt="">
-                </div>
-            </div>
-            <div class="col-lg-6 col-12 px-4 text-black">
-                <h2 class="font-bold text-2xl text-center text-warning ">Especialidad</h2>
-                <p class="text-xl text-white" style="text-align: justify">La Especialidad es el espacio dentro de un
-                    plan de estudios, constituido por un conjunto de
-                    asignaturas diseñadas para la formación y desarrollo de competencias, que complementan la formación
-                    profesional de los estudiantes de las instituciones adscritas al TecNM
-                </p>
-                <h2 class="text-center text-warning font-bold text-xl">Especialidades que han existido en la carrera
-                </h2>
-                <div class="gris-zinc py-2">
-                    <ul class="text-xl m-3">
-                        <li>Concurrencia computacional avanzada</li>
-                        <li>Procesamiento distribuido de alto desempeño</li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-        <h2 class="font-bold text-center text-warning">Concurrencia Computacional Avanzada</h2>
-        <div class="bg-zinc-300" id="tab-especialidad">
-            <div class="container">
-                <?php
-                   
-                        echo $materia->imprimirEspecialidad();
-                    
-                ?>
-            </div>
-        </div>
-    </div>
-</div>
-
 <!-- Servicio social -->
 <div class="azul-cielo pt-5">
     <div class="bg-light">
         <div class="row g-0 py-5 align-items-center">
+            <div class="col-lg-6 col-12 justify-content-center text-center">
+                <div class="row g-0 d-flex justify-content-center text-center w-100 h-100">
+                    <img src="img/gestionVinculacion.webp" class="w-75 h-auto py-3" alt="">
+                </div>
+            </div>
             <div class="col-lg-6 col-12 px-4 text-black">
                 <h2 class="font-bold text-2xl text-center">Servicio Social</h2>
                 <p class="text-xl" style="text-align: justify">Se entiende por servicio social al trabajo de
@@ -345,11 +351,6 @@
                         <li>Tener acreditadas las actividades complementarias</li>
                         <li>Tener aprobado al menos el 70% de créditos de su plan de estudios</li>
                     </ul>
-                </div>
-            </div>
-            <div class="col-lg-6 col-12 justify-content-center text-center">
-                <div class="row g-0 d-flex justify-content-center text-center w-100 h-100">
-                    <img src="img/gestionVinculacion.webp" class="w-75 h-auto py-3" alt="">
                 </div>
             </div>
         </div>
@@ -530,8 +531,7 @@
             <div class="col-lg-6 col-12 px-4">
                 <h2 class="font-bold text-2xl text-center">Liberación de segunda lengua</h2>
                 <p class="text-xl" style="text-align: justify">
-                    Para poder hacer la liberación de segunda lengua, debes de cumplir con una certificación externa que se encuentre avalada por la certificación
-                    nacional de nivel de idioma (CENNI) que evalúe 4 habilidades y se obtenga un nivel mínimo B1 o cursar los cinco niveles de inglés o algún otro idioma en el Centro de Idiomas en el ITVER.
+                    Para poder hacer la liberación del idioma extranjero, debes de cumplir con una certificación externa que se encuentre avalada por la certificación nacional de nivel de idioma (CENNI) que evalúe 4 habilidades y se obtenga un nivel mínimo B1 o cursar los cinco niveles de inglés o algún otro idioma en el Centro de Idiomas en el ITVER.
                 </p>
                 <div class="p-3 text-xl gris-zinc">
                     <p class="font-bold ">Contacto del Centro de Idiomas:<br></p>
