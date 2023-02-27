@@ -21,6 +21,30 @@
       </div>
     </div>
 
+    <!--
+        <div class="col-lg-6 col-sm-12">
+      <div class="galleryContainer bg-light">
+        <div class="row g-0">
+          <div class="col-4 px-2">
+            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="img/IMG_1335.JPG" alt="">
+            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="img/IMG_1394.JPG" alt="">
+          </div>
+
+          <div class="col-4 px-2">
+            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="img/IMG_1407.JPG" alt="">
+            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="img/IMG_1337.JPG" alt="">
+          </div>
+
+          <div class="col-4 px-2">
+            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="img/IMG_1363.JPG" alt="">
+            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="img/IMG_1380.JPG" alt="">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    -->
+
     <div class="seccionSistemasAmarillo col-lg-6 col-12 p-4">
       <div class="d-flex justify-content-center align-items-center w-100 h-100">
         <div class="row g-0">

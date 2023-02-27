@@ -112,7 +112,7 @@ function imprimir($NumeroSemestre){
                 <div class='row bg-light'>
                     <div class='col-12 my-2 justify-content-center'>
                         <div class='d-flex p-2 justify-content-center align-items-center'>
-                        <button type='button' class='btn btn-warning' data-bs-toggle='modal'
+                        <button type='button' class='btn btn-warning font-bold' data-bs-toggle='modal'
                             data-bs-target='#modalReticula' 
                                     data-materia ='$nombre_materia' 
                                     data-videoMateria ='$url_materia' 
@@ -211,7 +211,7 @@ function imprimirEspecialidad(){
                 <div class='row bg-light'>
                     <div class='col-12 my-2 justify-content-center'>
                         <div class='d-flex p-2 justify-content-center align-items-center'>
-                        <button type='button' class='btn btn-warning' data-bs-toggle='modal'
+                        <button type='button' class='btn btn-warning font-bold' data-bs-toggle='modal'
                             data-bs-target='#modalReticula' 
                                     data-materia ='$nombre_materia' 
                                     data-videoMateria ='$url_materia' 
