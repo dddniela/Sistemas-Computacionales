@@ -32,7 +32,6 @@ $comunidad->setConnection($conn->getDB());
     <link rel="icon" href="img/itver-logo.png"/>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/style.css">
-    <script src="assets/js/bootstrap.bundle.js"></script>
     <title>Ingeniería en Sistemas Computacionales</title>
 </head>
     <?php
@@ -49,5 +48,4 @@ $comunidad->setConnection($conn->getDB());
 <?php
     include_once "src/View/footer.php";
 ?>
-<script src="assets/js/bootstrap.js"></script>
 </html>

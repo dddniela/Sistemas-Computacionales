@@ -243,7 +243,7 @@ class Docente
                 $Paginacion .= '<li class="page-item"><a class="page-link" href="?option=2&inferior='.$LI.'&superior='.$LS.'">Siguiente</a></li>';
             } 
         } else{
-            $Paginacion .= '<li class="page-item"><a class="page-link" href="?option=2&inferior=7&superior=12">Siguiente</a></li>';
+            $Paginacion .= '<li class="page-item"><a class="page-link" href="?option=2&inferior=13&superior=24">Siguiente</a></li>';
         }
         $Paginacion .= '</ul>';
         $Paginacion .= '</nav>';

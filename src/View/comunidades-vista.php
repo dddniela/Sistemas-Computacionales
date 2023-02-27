@@ -4,7 +4,7 @@
         <div class="position-absolute top-50 start-50 translate-middle w-100">
             <div class="d-flex flex-column justify-content-center align-items-center text-center">
                 <h1 class="fw-bold text-warning">Comunidades Estudiantiles</h1>
-                <h1 class="fw-bold text-light">
+                <h1 class="fw-bold text-light d-md-flex d-none">
                     Ingeniería en Sistemas Computacionales
                 </h1>
             </div>

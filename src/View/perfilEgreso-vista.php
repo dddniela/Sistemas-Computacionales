@@ -5,7 +5,7 @@
         <div class="position-absolute top-50 start-50 translate-middle w-100">
             <div class="d-flex flex-column justify-content-center align-items-center text-center">
                 <h1 class="fw-bold text-warning">Perfil de Egreso</h1>
-                <h1 class="fw-bold text-light">Ingeniería en Sistemas Computacionales</h1>
+                <h1 class="fw-bold text-light d-md-flex d-none">Ingeniería en Sistemas Computacionales</h1>
             </div>
         </div>
     </div>
@@ -173,7 +173,7 @@
             <div class="col-lg-8 col-sm-12">
                 <div class="galleryContainer bg-dark">
                     <div class="row g-0">
-                    <div class="col-4 px-2">
+                    <div class="col-md-4 px-2">
                         <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage1">
                             <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/IMG_4446.webp" alt="">
                         </a>
@@ -185,7 +185,7 @@
                         </a>
                     </div>
 
-                    <div class="col-4 px-2">
+                    <div class="col-md-4 px-2">
                         <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage4">
                             <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/IMG_2253.webp" alt="">
                         </a>
@@ -197,7 +197,7 @@
                         </a>
                     </div>
 
-                    <div class="col-4 px-2">
+                    <div class="col-md-4 px-2">
                         <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage7">
                             <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/IMG_1110.webp" alt="">
                         </a>

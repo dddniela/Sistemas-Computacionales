@@ -5,7 +5,7 @@
     <div class="position-absolute top-50 start-50 translate-middle w-100">
       <div class="d-flex flex-column justify-content-center align-items-center text-center">
         <h1 class="fw-bold text-warning">Conócenos</h1>
-        <h1 class="fw-bold text-light">
+        <h1 class="fw-bold text-light d-md-flex d-none">
           Ingeniería en Sistemas Computacionales
         </h1>
       </div>
@@ -16,23 +16,23 @@
 
 <!-- Departamento de Sistemas -->
 <div class="bg-primary pt-5"></div>
-<section class="lightSection bg-light p-2 px-4">
-  <div class="row mb-4 px-2 g-0">
+<section class="lightSection bg-light">
+  <div class="row px-2 g-0">
 
-  <div class="col-lg-6 col-12 p-4 shadow-sm">
+  <div class="col-lg-6 col-12 p-2 shadow-sm">
     <div class="d-flex justify-content-center align-items-center w-100 h-100">
-        <img class="img-fluid basicImage rounded" src="img/IMG_2102.webp" alt="">
+        <img class="img-fluid rounded" src="img/IMG_2102.webp" alt="">
       </div>
     </div>
 
-    <div class="col-lg-6 col-12 py-4">
+    <div class="col-lg-6 col-12 p-4">
       <div class="d-flex justify-content-center align-items-center w-100 h-100">
         <div class="row g-0">
           <div class="col-12">
             <h2 class="sectionTitle text-center font-bold m-3">Departamento de Sistemas y Computación</h2>
             <div class="sectionSeparator"></div>
           </div>
-          <div class="col-12 px-4" style="text-align: center;">
+          <div class="col-12" style="text-align: center;">
             <p style="text-align: justify;"> La carrera de ingeniería en sistemas computacionales pertenece al
               departamento de sistemas y computación, el objetivo principal del
               departamento es poner al alcance de los estudiantes diferentes
@@ -53,12 +53,9 @@
 
 <!-- Descripción Jefa/e del departamento -->
 <div class="bg-primary pt-5"></div>
-<section class="lightSection bg-light p-2 px-4">
-  <div class="row mb-4 px-2 g-0">
-
-    
-
-    <div class="col-lg-6 col-12 py-4">
+<section class="lightSection bg-light">
+  <div class="row px-2 g-0">
+    <div class="col-lg-6 col-12 p-4">
       <div class="d-flex justify-content-center align-items-center w-100 h-100">
         <div class="row g-0">
           <div class="col-12">
@@ -68,7 +65,7 @@
               Jefa del Departamento de Sistemas y Computación
             </h4>
           </div>
-          <div class="col-12 px-4" style="text-align: center;">
+          <div class="col-12" style="text-align: center;">
             <h6 class="text-center fw-bold fs-6">
               “La inteligencia consiste no solo en el conocimiento, sino también
               en la destreza de aplicarlos en la práctica”<br />
@@ -88,9 +85,9 @@
       </div>
     </div>
 
-    <div class="col-lg-6 col-12 p-4 shadow-sm">
-    <div class="d-flex justify-content-center align-items-center w-100 h-100">
-        <img class="img-fluid basicImage rounded" src="img/Docentes/danielaHernandezBarrios.webp" alt="">
+    <div class="col-lg-6 col-12 p-2 shadow-sm">
+      <div class="d-flex justify-content-center align-items-center w-100 h-100">
+        <img class="img-fluid rounded" src="img/Docentes/danielaHernandezBarrios.webp" alt="">
       </div>
     </div>
 
@@ -100,16 +97,16 @@
 
 <!-- Descripción Jefa/e del departamento -->
 <div class="bg-primary pt-5"></div>
-<section class="lightSection bg-light p-2 px-4">
-  <div class="row mb-4 px-2 g-0">
+<section class="lightSection bg-light">
+  <div class="row px-2 g-0">
 
-  <div class="col-lg-6 col-12 p-4 shadow-sm">
+  <div class="col-lg-6 col-12 p-2 shadow-sm">
     <div class="d-flex justify-content-center align-items-center w-100 h-100">
-        <img class="img-fluid basicImage rounded" src="img/Docentes/bereniceLagunesPadilla.webp" alt="">
+        <img class="img-fluid rounded" src="img/Docentes/bereniceLagunesPadilla.webp" alt="">
       </div>
     </div>
 
-    <div class="col-lg-6 col-12 py-4">
+    <div class="col-lg-6 col-12 p-4">
       <div class="d-flex justify-content-center align-items-center w-100 h-100">
         <div class="row g-0">
           <div class="col-12">
@@ -146,8 +143,8 @@
 
 
 <!-- Instalaciones -->
-<div class="azul-medio g-0 pt-5"></div>
-<section class="seccionInstalaciones bg-dark p-2 px-4">
+<div class="bg-primary pt-5"></div>
+<section class="seccionInstalaciones bg-dark">
   <div class="row px-2 g-0">
     <div class="col-lg-6 col-12 py-4">
       <div class="d-flex justify-content-center align-items-center w-100 h-100">
@@ -250,7 +247,7 @@
 <!-- Fin Modals de la galería-->
 
 <!-- Laboratorio de cómputo intensivo -->
-<div class="azul-medio g-0 pt-5"></div>
+<div class="bg-primary pt-5"></div>
 <section class="seccionInstalaciones bg-dark p-2">
   <div class="row px-2 g-0">
     <div class="col-lg-6 col-12 p-2 shadow-sm">
@@ -261,7 +258,7 @@
 
     <div class="col-lg-6 col-12 p-4">
       <div class="d-flex justify-content-center align-items-center w-100 h-100">
-        <div class="row">
+        <div class="row g-0">
           <div class="col-12">
             <h2 class="tituloSeccionOscura text-center font-bold m-3">
               Laboratorio de Cómputo Intensivo
@@ -309,6 +306,7 @@
   </div>
 </section>
 
+<div class="bg-primary pt-5"></div>
 <div class="p-4 text-center">
   <h5 class="font-bold">Autores de la página:</h5>
     <p class="font-semibold">Estudiantes de la Generación 2018 - 2023</p>

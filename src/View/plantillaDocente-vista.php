@@ -6,7 +6,7 @@
         class="d-flex flex-column justify-content-center align-items-center text-center"
       >
         <h1 class="fw-bold text-warning">Plantilla Docente</h1>
-        <h1 class="fw-bold text-light">
+        <h1 class="fw-bold text-light d-md-flex d-none">
           Ingeniería en Sistemas Computacionales
         </h1>
       </div>
