@@ -12,48 +12,40 @@
 </div>
 <!-- Fin Portada-->
 
-<!-- Inicio Objetivo-->
+<!-- Objetivo general -->
 <section class="p-2">
   <div class="row px-2 g-0">
-    <div class="col-lg-6 col-12 p-2 shadow-sm">
-      <div class="d-flex justify-content-center align-items-center w-100 h-100">
-        <img src="img/IMG_1245.webp" class="img-fluid rounded" alt="">
-      </div>
-    </div>
-
-    <!--
-        <div class="col-lg-6 col-sm-12">
+    <div class="col-lg-6 col-sm-12">
       <div class="galleryContainer bg-light">
         <div class="row g-0">
           <div class="col-4 px-2">
-            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="img/IMG_1335.JPG" alt="">
-            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="img/IMG_1394.JPG" alt="">
+            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="img/IMG_1335.webp" alt="">
+            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="img/IMG_1394.webp" alt="">
           </div>
 
           <div class="col-4 px-2">
-            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="img/IMG_1407.JPG" alt="">
-            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="img/IMG_1337.JPG" alt="">
+            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="img/IMG_1407.webp" alt="">
+            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="img/IMG_1337.webp" alt="">
           </div>
 
           <div class="col-4 px-2">
-            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="img/IMG_1363.JPG" alt="">
-            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="img/IMG_1380.JPG" alt="">
+            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="img/IMG_1363.webp" alt="">
+            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="img/IMG_1380.webp" alt="">
           </div>
 
         </div>
       </div>
     </div>
-    -->
 
-    <div class="seccionSistemasAmarillo col-lg-6 col-12 p-4">
+    <div class="lightSection col-lg-6 col-12 p-4">
       <div class="d-flex justify-content-center align-items-center w-100 h-100">
         <div class="row g-0">
           <div class="col-12">
-            <h2 class="tituloSeccionAmarillo text-center font-bold m-3">Objetivo general</h2>
-            <div class="separadorSeccionAmarillo"></div>
+            <h2 class="sectionTitle text-center font-bold m-3">Objetivo general</h2>
+            <div class="sectionSeparator"></div>
           </div>
-          <div class="col-12 bg-primary py-2" style="text-align: center;">
-            <p class="text-xl m-3 text-white" style="text-align: justify;"> Formar profesionistas líderes con visión
+          <div class="col-12" style="text-align: center;">
+            <p style="text-align: justify;"> Formar profesionistas líderes con visión
                 estratégica y amplio sentido ético; capaz de diseñar, desarrollar, implementar y administrar tecnología
                 computacional para aportar soluciones innovadoras en beneficio de la sociedad; en un contexto global,
                 multidisciplinario y sostenible.
@@ -64,23 +56,22 @@
     </div>
   </div>
 </section>
-<!-- Fin Objetivo-->
+<!--Fin Objetivo general -->
 
-<!-- Perfil de egreso-->
-<div class="contenedor-informacion">
+
+<!-- Perfil de egreso -->
+<div class="informationContainer">
     <div class="row g-0 align-items-center">
-        <div class="col-lg-6">
-            <!-- Areas de aprendizaje -->
-            <section class="seccionArea bg-light p-2">
-                <h2 class="tituloSeccion text-center font-bold m-3">Perfil de egreso</h2>
-                <div class="separadorSeccion"></div>
+        <div class="col-lg-12">
+            <!-- Puntos del perfil de egreso -->
+            <section class="lightSection bg-light p-2">
+                <h2 class="sectionTitle text-center font-bold m-3">Perfil de egreso</h2>
+                <div class="sectionSeparator"></div>
 
                 <div class="row g-0">
                     <div class="col-lg-4 col-sm-6 text-center p-3">
                         <div class="area shadow-sm p-4">
-                            <a href="ofertaEducativa.php">
-                                <img class="imagenArea items-center" src="img/iconos/ingenieria.PNG" alt="">
-                            </a>
+                            <img class="imagenArea items-center" src="img/iconos/ingenieria.PNG" alt="">
                             <p class="textoArea">Implementa aplicaciones computacionales para solucionar problemas de
                                 diversos contextos,
                                 integrando diferentes tecnologías, plataformas o dispositivos.</p>
@@ -89,9 +80,7 @@
 
                     <div class="col-lg-4 col-sm-6 text-center p-3">
                         <div class="area shadow-sm p-4">
-                            <a href="ofertaEducativa.php">
-                                <img class="imagenArea items-center" src="img/topicos/ing-software-icono.PNG" alt="">
-                            </a>
+                            <img class="imagenArea items-center" src="img/topicos/ing-software-icono.PNG" alt="">
                             <p class="textoArea">Diseña, desarrolla y aplica modelos computacionales para solucionar
                                 problemas, mediante
                                 la selección y uso de herramientas matemáticas.</p>
@@ -100,9 +89,16 @@
 
                     <div class="col-lg-4 col-sm-6 text-center p-3">
                         <div class="area shadow-sm p-4">
-                            <a href="ofertaEducativa.php">
-                                <img class="imagenArea items-center" src="img/topicos/admon-bd-icono.PNG" alt="">
-                            </a>
+                            <img class="imagenArea items-center" src="img/iconos/redes.PNG" alt="">
+                            <p class="textoArea">Diseña, configura y administra redes de computadoras para crear soluciones de
+                                conectividad en la organización, aplicando las normas y estándares vigentes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 text-center p-3">
+                        <div class="area shadow-sm p-4">
+                            <img class="imagenArea items-center" src="img/topicos/admon-bd-icono.PNG" alt="">
                             <p class="textoArea">Diseña e implementa interfaces para la implementación y automatización
                                 de sistemas de hardware y
                                 desarrollo del software asociado.</p>
@@ -111,10 +107,7 @@
 
                     <div class="col-lg-4 col-sm-6 text-center p-3">
                         <div class="area shadow-sm p-4">
-                            <a href="ofertaEducativa.php">
-                                <img class="imagenArea items-center" src="img/topicos/programacion-web-icono.PNG"
-                                    alt="">
-                            </a>
+                            <img class="imagenArea items-center" src="img/topicos/programacion-web-icono.PNG" alt="">
                             <p class="textoArea">Coordina y participa en equipos multidisciplinarios para la aplicación
                                 de soluciones
                                 innovadoras en diferentes contextos del mundo laboral.</p>
@@ -123,9 +116,7 @@
 
                     <div class="col-lg-4 col-sm-6 text-center p-3">
                         <div class="area shadow-sm p-4">
-                            <a href="ofertaEducativa.php">
-                                <img class="imagenArea items-center" src="img/iconos/distribuidas.PNG" alt="">
-                            </a>
+                            <img class="imagenArea items-center" src="img/iconos/distribuidas.PNG" alt="">
                             <p class="textoArea">Diseña, implementa y administra bases de datos optimizando los recursos
                                 disponibles,
                                 bajo las normas de manejo y seguridad de la información.</p>
@@ -134,109 +125,163 @@
 
                     <div class="col-lg-4 col-sm-6 text-center p-3">
                         <div class="area shadow-sm p-4">
-                            <a href="ofertaEducativa.php">
-                                <img class="imagenArea items-center" src="img/iconos/administracion.PNG" alt="">
-                            </a>
-                            <p class="textoArea">Desarrolla y administra software para apoyar la productividad y
-                                competitividad de las
-                                organizaciones cumpliendo con estándares de calidad.</p>
+                            <img class="imagenArea items-center" src="img/iconos/administracion.PNG" alt="">
+                            <p class="textoArea">Desarrolla y administra software para apoyar la productividad y competitividad de 
+                                las organizaciones cumpliendo con estándares de calidad.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 text-center p-3">
+                        <div class="area shadow-sm p-4">
+                            <img class="imagenArea items-center" src="img/iconos/blockchain.PNG" alt="">
+                            <p class="textoArea">Evalúa tecnologías de hardware para soportar aplicaciones de manera efectiva.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 text-center p-3">
+                        <div class="area shadow-sm p-4">
+                            <img class="imagenArea items-center" src="img/iconos/programacion.PNG" alt="">
+                            <p class="textoArea">Detecta áreas de oportunidad empleando una visión empresarial para crear proyectos
+                                aplicando las Tecnologías de la Información y Comunicación.</p>
                         </div>
                     </div>
 
                 </div>
             </section>
-            <!-- Fin Áreas de aprendizaje-->
+            <!-- Fin Puntos del perfil de egreso -->
 
         </div>
-        <div class="col-lg-6 col-12 justify-content-center text-center">
+
+        <!--<div class="col-lg-4 col-12 justify-content-center text-center">
             <div class="d-flex justify-content-center align-items-center w-100 h-100">
-                <img src="img/IMG_08.PNG" class="w-75 h-auto py-3" alt="">
+                <img src="../img/IMG_08.PNG" class="w-75 h-auto py-3" alt="">
             </div>
-        </div>
+        </div>-->
+
     </div>
 </div>
 <!-- Fin Perfil de egreso-->
 
-<!-- Galería con modal -->
-<div class="contenedor-galeria">
-    <div class="row g-0">
-        <div class="col-12">
-            <h2 class="tituloSeccionOscura text-center font-bold m-3">Galerías de imágenes</h2>
-            <div class="separadorSeccionOscura"></div>
-        </div>
-        <div class="col-lg-4 px-2">
-            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage1">
-                <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/IMG_1713.webp" alt="">
-            </a>
-            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage2">
-                <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/IMG_2102.webp" alt="">
-            </a>
-        </div>
+<!-- Especialidad -->
+<section class="darkSection bg-dark p-2 px-4">
+        <div class="row mb-4 px-2 g-0">
+            <div class="darkSection bg-dark">
+                <h2 class="titleDarkSection text-center font-bold">Galería de imágenes</h2>
+                <div class="darkSectionSeparator"></div>
+            </div>
 
-        <div class="col-lg-4 px-2">
-            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage3">
-                <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/IMG_1110.webp" alt="">
-            </a>
-            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage4">
-                <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/IMG_0323.webp" alt="">
-            </a>
-        </div>
+            <div class="col-lg-8 col-sm-12">
+                <div class="galleryContainer bg-dark">
+                    <div class="row g-0">
+                    <div class="col-4 px-2">
+                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage1">
+                            <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/IMG_4446.webp" alt="">
+                        </a>
+                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage2">
+                            <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/Venus.webp" alt="">
+                        </a>
+                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage3">
+                            <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/ITVER.webp" alt="">
+                        </a>
+                    </div>
 
-        <div class="col-lg-4 px-2">
-            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage5">
-                <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/IMG_0579.webp" alt="">
-            </a>
-            <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage6">
-                <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/IMG_0456.webp" alt="">
-            </a>
+                    <div class="col-4 px-2">
+                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage4">
+                            <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/IMG_2253.webp" alt="">
+                        </a>
+                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage5">
+                            <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/IMG_0456.webp" alt="">
+                        </a>
+                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage6">
+                            <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/IMG_0579.webp" alt="">
+                        </a>
+                    </div>
+
+                    <div class="col-4 px-2">
+                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage7">
+                            <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/IMG_1110.webp" alt="">
+                        </a>
+                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage8">
+                            <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/IMG_1713.webp" alt="">
+                        </a>
+                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage9">
+                            <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/IMG_3879.webp" alt="">
+                        </a>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12">
+                <div class="galleryContainer bg-dark">
+                    <div class="row g-0">
+                    <div class="col-12 px-2">
+                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage10">
+                            <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/IMG_2102.webp" alt="">
+                        </a>
+                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage11">
+                            <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/IMG_3878.webp" alt="">
+                        </a>
+                    </div>
+
+
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </div>
-</div>
-<!-- Fin Galería con modal -->
+</section>
+<!-- Fin Especialidad -->
+
 
 <!-- Modals de la galería-->
-<!-- Imagen 1 -->
 <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage1">
     <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content bg-transparent text-white text-center">
-            <img src="img/IMG_1713.webp" alt="">
-            <p>Laboratorio de Servidores</p>
+            <img src="img/IMG_4446.webp" alt="">
+            <p>Logo del Instituto Tecnológico de México Campus Veracruz</p>
         </div>
     </div>
 </div>
 
-<!-- Imagen 2 -->
 <div tabindex="-1" aria-labelledby="modalImage2" aria-hidden="true" class="modal fade" id="modalImage2">
     <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content bg-transparent text-white text-center">
-            <img src="img/IMG_2102.webp" alt="">
-            <p>Edificio U - Laboratorio de Sistemas</p>
+            <img src="img/Venus.webp" alt="">
+            <p>Estatua Venus</p>
         </div>
     </div>
 </div>
 
-<!-- Imagen 3 -->
 <div tabindex="-1" aria-labelledby="modalImage3" aria-hidden="true" class="modal fade" id="modalImage3">
     <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content bg-transparent text-white text-center">
-            <img src="img/IMG_1110.webp" alt="">
-            <p>Pantallas en el Laboratorio de Servidores</p>
+            <img src="img/ITVER.webp" alt="">
+            <p>Letras del Instituto Tecnológico de México Campus Veracruz</p>
         </div>
     </div>
 </div>
 
-<!-- Imagen 4 -->
 <div tabindex="-1" aria-labelledby="modalImage4" aria-hidden="true" class="modal fade" id="modalImage4">
     <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content bg-transparent text-white text-center">
-            <img src="img/IMG_0323.webp" alt="">
-            <p>Pasillo del edificio E</p>
+            <img src="img/IMG_2253.webp" alt="">
+            <p>Áreas recreativas</p>
         </div>
     </div>
 </div>
 
-<!-- Imagen 5 -->
 <div tabindex="-1" aria-labelledby="modalImage5" aria-hidden="true" class="modal fade" id="modalImage5">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-transparent text-white text-center">
+            <img src="img/IMG_0456.webp" alt="">
+            <p>Áreas recreativas</p>
+        </div>
+    </div>
+</div>
+
+<div tabindex="-1" aria-labelledby="modalImage6" aria-hidden="true" class="modal fade" id="modalImage6">
     <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content bg-transparent text-white text-center">
             <img src="img/IMG_0579.webp" alt="">
@@ -245,13 +290,49 @@
     </div>
 </div>
 
-<!-- Imagen 6 -->
-<div tabindex="-1" aria-labelledby="modalImage6" aria-hidden="true" class="modal fade" id="modalImage6">
+<div tabindex="-1" aria-labelledby="modalImage7" aria-hidden="true" class="modal fade" id="modalImage7">
     <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content bg-transparent text-white text-center">
-            <img src="img/IMG_0456.webp" alt="">
-            <p>Atardecer frente al edificio U</p>
+            <img src="img/IMG_1110.webp" alt="">
+            <p>Clúster del Laboratorio de Cómputo Intensivo</p>
         </div>
     </div>
 </div>
+
+<div tabindex="-1" aria-labelledby="modalImage8" aria-hidden="true" class="modal fade" id="modalImage8">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-transparent text-white text-center">
+            <img src="img/IMG_1713.webp" alt="">
+            <p>Laboratorio de Cómputo Intensivo</p>
+        </div>
+    </div>
+</div>
+
+<div tabindex="-1" aria-labelledby="modalImage9" aria-hidden="true" class="modal fade" id="modalImage9">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-transparent text-white text-center">
+            <img src="img/IMG_3879.webp" alt="">
+            <p>Laboratorio de cómputo</p>
+        </div>
+    </div>
+</div>
+
+<div tabindex="-1" aria-labelledby="modalImage10" aria-hidden="true" class="modal fade" id="modalImage10">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-transparent text-white text-center">
+            <img src="img/IMG_2102.webp" alt="">
+            <p>Edificio U: Sistemas</p>
+        </div>
+    </div>
+</div>
+
+<div tabindex="-1" aria-labelledby="modalImage11" aria-hidden="true" class="modal fade" id="modalImage11">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-transparent text-white text-center">
+            <img src="img/IMG_3878.webp" alt="">
+            <p>Laboratorio de cómputo</p>
+        </div>
+    </div>
+</div>
+
 <!-- Fin Modals de la galería-->

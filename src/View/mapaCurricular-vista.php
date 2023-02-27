@@ -327,7 +327,7 @@
 <!--Fin Desarollo profesional -->
 
 <!-- Actividades complementarias -->
-<section class="lightSection bg-light p-2 px-4">
+<section class="lightSection p-2 px-4">
   <div class="row mb-4 px-2 g-0">
 
     <div class="col-lg-6 col-12 py-4">
@@ -538,7 +538,7 @@
 <!--Fin Tutorías -->
 
 <!-- Cursos de verano -->
-<section class="lightSection bg-light p-2 px-4">
+<section class="lightSection p-2 px-4">
   <div class="row mb-4 px-2 g-0">
 
     <div class="col-lg-6 col-12 py-4">
