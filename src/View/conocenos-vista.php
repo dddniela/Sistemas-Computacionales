@@ -14,28 +14,26 @@
 </div>
 <!-- Fin Portada-->
 
-<!-- Introducción al departamento-->
-<div class="azul-medio g-0 pt-5"></div>
-<section class="p-2">
-  <div class="row px-2 g-0">
-    <div class="col-lg-6 col-12 p-2 shadow-sm">
-      <div class="d-flex justify-content-center align-items-center w-100 h-100">
-        <img src="img/IMG_2102.webp" class="img-fluid rounded" alt="" />
+<!-- Departamento de Sistemas -->
+<div class="bg-primary pt-5"></div>
+<section class="lightSection bg-light p-2 px-4">
+  <div class="row mb-4 px-2 g-0">
+
+  <div class="col-lg-6 col-12 p-4 shadow-sm">
+    <div class="d-flex justify-content-center align-items-center w-100 h-100">
+        <img class="img-fluid basicImage rounded" src="img/IMG_2102.webp" alt="">
       </div>
     </div>
 
-    <div class="seccionSistemas col-lg-6 col-12 p-4">
+    <div class="col-lg-6 col-12 py-4">
       <div class="d-flex justify-content-center align-items-center w-100 h-100">
         <div class="row g-0">
           <div class="col-12">
-            <h2 class="tituloSeccion text-center font-bold m-3">
-              Departamento de Sistemas y Computación
-            </h2>
-            <div class="separadorSeccion"></div>
+            <h2 class="sectionTitle text-center font-bold m-3">Departamento de Sistemas y Computación</h2>
+            <div class="sectionSeparator"></div>
           </div>
-          <div class="col-12">
-            <p style="text-align: justify">
-              La carrera de ingeniería en sistemas computacionales pertenece al
+          <div class="col-12 px-4" style="text-align: center;">
+            <p style="text-align: justify;"> La carrera de ingeniería en sistemas computacionales pertenece al
               departamento de sistemas y computación, el objetivo principal del
               departamento es poner al alcance de los estudiantes diferentes
               laboratorios de cómputo para el desarrollo de sus materias
@@ -48,34 +46,29 @@
         </div>
       </div>
     </div>
+
   </div>
 </section>
-<!-- Fin Introducción al departamento-->
+<!--Fin Departamento de Sistemas -->
 
 <!-- Descripción Jefa/e del departamento -->
-<div class="azul-medio g-0 pt-5"></div>
-<section class="p-2">
-  <div class="row px-2 g-0">
-    <div class="seccionSistemas col-lg-6 col-12 p-4">
+<div class="bg-primary pt-5"></div>
+<section class="lightSection bg-light p-2 px-4">
+  <div class="row mb-4 px-2 g-0">
+
+    
+
+    <div class="col-lg-6 col-12 py-4">
       <div class="d-flex justify-content-center align-items-center w-100 h-100">
         <div class="row g-0">
           <div class="col-12">
-            <h2 class="tituloSeccion text-center font-bold m-3">
-              Daniela Hernández Barrios
-            </h2>
-            <div class="separadorSeccion"></div>
+            <h2 class="sectionTitle text-center font-bold m-3">Daniela Hernández Barrios</h2>
+            <div class="sectionSeparator"></div>
             <h4 class="text-center fw-bold fs-3">
               Jefa del Departamento de Sistemas y Computación
             </h4>
           </div>
-
-          <div class="col-lg-6 col-12 p-2 shadow-sm d-lg-none d-flex">
-            <div class="d-flex justify-content-center align-items-center w-100 h-100">
-              <img src="img/Docentes/danielaHernandezBarrios.webp" class="img-fluid rounded" alt="" />
-            </div>
-          </div>
-
-          <div class="col-12 mt-2">
+          <div class="col-12 px-4" style="text-align: center;">
             <h6 class="text-center fw-bold fs-6">
               “La inteligencia consiste no solo en el conocimiento, sino también
               en la destreza de aplicarlos en la práctica”<br />
@@ -95,46 +88,38 @@
       </div>
     </div>
 
-    <div class="col-lg-6 col-12 p-2 shadow-sm d-none d-lg-inline-flex">
-      <div class="d-flex justify-content-center align-items-center w-60 h-60">
-        <img src="img/Docentes/danielaHernandezBarrios.webp" class="img-fluid rounded" alt="" />
+    <div class="col-lg-6 col-12 p-4 shadow-sm">
+    <div class="d-flex justify-content-center align-items-center w-100 h-100">
+        <img class="img-fluid basicImage rounded" src="img/Docentes/danielaHernandezBarrios.webp" alt="">
       </div>
     </div>
+
   </div>
 </section>
-<!-- Fin Descripción Jefa/e del departamento -->
+<!--Fin Descripción Jefa/e del departamento -->
 
+<!-- Descripción Jefa/e del departamento -->
+<div class="bg-primary pt-5"></div>
+<section class="lightSection bg-light p-2 px-4">
+  <div class="row mb-4 px-2 g-0">
 
-<!-- Descripción Coordinadora -->
-<div class="azul-medio g-0 pt-5"></div>
-<section class="p-2">
-  <div class="row px-2 g-0">
-    <div class="col-lg-6 col-12 p-2 shadow-sm d-none d-lg-inline-flex">
-      <div class="d-flex justify-content-center align-items-center w-60 h-60">
-        <img src="img/Docentes/bereniceLagunesPadilla.webp" class="img-fluid rounded" alt="" />
+  <div class="col-lg-6 col-12 p-4 shadow-sm">
+    <div class="d-flex justify-content-center align-items-center w-100 h-100">
+        <img class="img-fluid basicImage rounded" src="img/Docentes/bereniceLagunesPadilla.webp" alt="">
       </div>
     </div>
 
-    <div class="seccionSistemas col-lg-6 col-12 p-4">
+    <div class="col-lg-6 col-12 py-4">
       <div class="d-flex justify-content-center align-items-center w-100 h-100">
         <div class="row g-0">
           <div class="col-12">
-            <h2 class="tituloSeccion text-center font-bold m-3">
-              Berenice Lagunes Padilla
-            </h2>
-            <div class="separadorSeccion"></div>
+            <h2 class="sectionTitle text-center font-bold m-3">Berenice Lagunes Padilla</h2>
+            <div class="sectionSeparator"></div>
             <h4 class="text-center fw-bold fs-3">
-              Coordinadora de Ingeniería en Sistemas Computacionales
+            Coordinadora de Ingeniería en Sistemas Computacionales
             </h4>
           </div>
-
-          <div class="col-lg-6 col-12 p-2 shadow-sm d-lg-none d-flex">
-            <div class="d-flex justify-content-center align-items-center w-100 h-100">
-              <img src="img/Docentes/bereniceLagunesPadilla.webp" class="img-fluid rounded" alt="" />
-            </div>
-          </div>
-
-          <div class="col-12 mt-2">
+          <div class="col-12 px-4" style="text-align: center;">
             <p class="" style="text-align: justify">
               Berenice Lagunes Padilla, coordinadora de la carrera ingeniería en
               Sistemas Computacionales en el Tecnológico de Veracruz; licenciada
@@ -153,9 +138,12 @@
         </div>
       </div>
     </div>
+
+
   </div>
 </section>
-<!-- Fin Descripción Coordinadora -->
+<!--Fin Descripción Jefa/e del departamento -->
+
 
 <!-- Instalaciones -->
 <div class="azul-medio g-0 pt-5"></div>
@@ -293,14 +281,14 @@
             </p>
           </div>
           <div class="col-12">
-            <div class="gris-zinc w-100 h-100">
-              <ul class="py-3">
+            <div class="bg-dark">
+                <ul class="m-3 text-warning font-bold" style="text-align: justify">
                 <li>Agave: Clúster de alto procesamiento.</li>
                 <li>Peyote: Clúster de visualización en 4K.</li>
                 <li>Saguar: Clúster de servicios de virtualización.</li>
                 <li>Nopal: Clúster de alto rendimiento.</li>
-              </ul>
-            </div>
+                </ul>
+                </div>
           </div>
           <div class="col-12">
             <p class="text-light" style="text-align: justify">

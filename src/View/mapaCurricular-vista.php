@@ -250,7 +250,7 @@
                                 <li>Concurrencia computacional avanzada</li>
                                 <li>Procesamiento distribuido de alto desempeño</li>
                             </ul>
-                    </div>
+                            </div>
                         </div>
                     </div>
                 </div>
