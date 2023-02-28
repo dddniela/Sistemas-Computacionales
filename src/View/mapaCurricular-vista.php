@@ -454,7 +454,7 @@
     </section>
 
     <section class="lightSection bg-light p-2">
-        <h5 class="font-bold text-dark" style="text-align: center">Objetivos de las residencias profesionales</h5>
+        <h5 class="font-bold text-dark py-4" style="text-align: center">Objetivos de las residencias profesionales</h5>
         <div class="row g-0">
 
             <div class="col-lg-4 col-sm-6 text-center p-3">
@@ -638,7 +638,7 @@
     </section>
 
     <section class="lightSection bg-light">
-        <h5 class="font-bold text-dark" style="text-align: center">Formas de obtener la titulación</h5>
+        <h5 class="font-bold text-dark py-4" style="text-align: center">Formas de obtener la titulación</h5>
         <div class="row g-0">
 
             <div class="col-lg-4 col-sm-6 text-center p-3">
