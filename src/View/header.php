@@ -115,6 +115,7 @@
                           <li><a class="dropdown-item hover-blue" target="_blank" href="http://www.veracruz.tecnm.mx/index.php/mapa-del-tecnm-veracruz">Mapa virtual 3D del ITVER</a></li>
                           <li><a class="dropdown-item hover-blue" target="_blank" href="https://elibro.net/es/lc/itver/login_usuario/">Biblioteca eLibro</a></li>
                           <li><a class="dropdown-item hover-blue" target="_blank" href="https://www.veracruz.tecnm.mx/index.php/normateca/documentos-operativos/manuales">Manuales del ITVER</a></li>
+                          <li><a class="dropdown-item hover-blue" target="_blank" href="https://bit.ly/3KVYAol">Reglamento de Estudiantes del TecNM</a></li>
                         </ul>
                       </li>
                 </ul>

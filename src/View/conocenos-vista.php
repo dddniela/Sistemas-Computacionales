@@ -174,6 +174,10 @@
               herramientas de aprendizaje y apoyo didáctico tanto para los
               docentes como los alumnos.
             </p>
+            <div class="justify-content-center text-center">
+              <p><a class="btn-warning w-auto btn font-bold" target="_blank" href="https://bit.ly/3ZrhDeQ">
+                Reglamento de Laboratorio</a></p>
+            </div>
           </div>
         </div>
       </div>
