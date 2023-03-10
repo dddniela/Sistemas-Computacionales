@@ -18,7 +18,7 @@ class Comunidad
 
     public function setId($id)
     {
-        $this->agentID = $id;
+        $this->id = $id;
     }
 
     public function getId()

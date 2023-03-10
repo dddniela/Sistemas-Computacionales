@@ -638,7 +638,7 @@
     </section>
 
     <section class="lightSection bg-light">
-        <h5 class="font-bold text-dark py-4" style="text-align: center">Formas de obtener la titulación</h5>
+        <h5 class="font-bold text-dark py-4" style="text-align: center">Posibles formas de obtener la titulación*</h5>
         <div class="row g-0">
 
             <div class="col-lg-4 col-sm-6 text-center p-3">
@@ -711,6 +711,9 @@
                                 <li>Presentar acto protocolario del proyecto de titulación integral.</li>
                             </ul>
                         </div>
+                        <p class="text-dark" style="text-align: justify;">
+                                *Puede variar según el plan de estudios
+                        </p>
                     </div>
                 </div>
             </div>
@@ -747,7 +750,7 @@
                         <p class="text-dark" style="text-align: justify;">
                             Correo electrónico: coo_cle@vercaruz.tecnm.mx <br>
                             FB: <a class="text-decoration-none" href="https://www.facebook.com/LenguaExtranjeraItver"
-                                target="_blank"> Centro de Idiomas Itver</a><br>
+                                target="_blank"> Centro de Idiomas ITVERr</a><br>
                         </p>
                     </div>
 
