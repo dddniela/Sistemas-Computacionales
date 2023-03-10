@@ -270,7 +270,7 @@
         <a href="http://www.veracruz.tecnm.mx/" target="_blank" >
           <img class="img-fluid w-100 shadow-1-strong rounded mb-4  p-1" src="img/ITVER-9.webp" alt="">
         </a>
-        <h3 class="areaTitle text-center font-bold text-xl">TECNM Campus Veracruz</h3>
+        <h3 class="areaTitle text-center font-bold text-xl">TECNM Veracruz</h3>
       </div>
     </div>
 

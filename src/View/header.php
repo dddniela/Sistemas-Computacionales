@@ -73,7 +73,7 @@
     </div>
 
 <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="background-color: #312e81;">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="background-color: #1B396A;">
         <div class="container-fluid">
             <!-- Botón de navegación para pantallas SM y MD -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"

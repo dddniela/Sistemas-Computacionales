@@ -1,10 +1,10 @@
 </div>
 
 <footer>
-    <div class="row g-0 gap-4 p-5" style="background-color: #312e81;">
+    <div class="row g-0 gap-4 p-5" style="background-color: #1B396A;">
         <div class="col-sm text-white">
             <h5>Dirección:</h5>
-            <p>Tecnológico Nacional de México Campus Veracruz<br>
+            <p>Tecnológico Nacional de México Veracruz<br>
                 Calz. Miguel Angel de Quevedo 2779<br>
                 Col. Formando Hogar, Veracruz, Ver. MEXICO CP 91897<br>
                 Contacto:<br>

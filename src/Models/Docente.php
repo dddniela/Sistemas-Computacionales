@@ -97,24 +97,26 @@ class Docente
 
     function obtenerInformacion($LimiteInferior, $LimiteSuperior){
         $cn = $this->connection;
-        $sqlSelect = "SELECT * FROM docente WHERE id_docente>='$LimiteInferior' AND id_docente<='$LimiteSuperior' ORDER BY nombre_docente ASC";
-        $ResultSet = $cn->query($sqlSelect);
-        return $ResultSet;
+        $stmt = $cn->prepare("SELECT * FROM docente WHERE id_docente>=? AND id_docente<=? ORDER BY nombre_docente ASC");
+        $stmt->bind_param('ii', $LimiteInferior, $LimiteSuperior);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $docentes = $result->fetch_all(MYSQLI_ASSOC);
+        return $result;
     }
 
     function imprimirDatos($LimInferior, $LimSuperior){
-        $ResultSet = $this->obtenerInformacion($LimInferior,$LimSuperior);
+        $docentes = $this->obtenerInformacion($LimInferior,$LimSuperior);
         $Codigo = "";
         $cont = 1;
-        if($ResultSet->num_rows > 0){
-            while($row = $ResultSet->fetch_assoc()){
-                $id_docente = $row['id_docente'];
-                $nombre_docente = $row['nombre_docente'];
-                $palabras_docente = $row['palabras_docente'];
-                $informacion_docente = $row['informacion_docente'];
-                $materias_docente = $row['materias_docente'];
-                $contacto_docente = $row['contacto_docente'];
-                $url_imagen = $row['url_imagen'];
+        foreach ($docentes as $key => $docente) {
+                $id_docente = $docente['id_docente'];
+                $nombre_docente = $docente['nombre_docente'];
+                $palabras_docente = $docente['palabras_docente'];
+                $informacion_docente = $docente['informacion_docente'];
+                $materias_docente = $docente['materias_docente'];
+                $contacto_docente = $docente['contacto_docente'];
+                $url_imagen = $docente['url_imagen'];
                 $Codigo .= "<div class='col-lg-4 col-sm-6 text-center p-3'>
                                 <div class='area shadow-sm p-4 rounded-3'>
                                     <div class='d-flex flex-row justify-content-center my-1'>
@@ -184,7 +186,6 @@ class Docente
                                     </div>
                                 </div>
                             </div>";
-            }
         }
         return $Codigo;
     }
