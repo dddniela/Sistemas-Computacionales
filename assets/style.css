@@ -278,6 +278,17 @@
   color: #18181b;
 }
 
+.btnCambioTexto{
+  background-color: #FFFFFF;
+  color: #FFFFFF;
+  border-radius: 15px;
+  border-style: none;
+  color: #000;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
 /*.botonPrincipal{
   background-color: #1d4ed8;
   color: #FFFFFF;

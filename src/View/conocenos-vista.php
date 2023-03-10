@@ -315,7 +315,7 @@
   <h5 class="font-bold">Autores de la página:</h5>
     <p class="font-semibold">Estudiantes de la Generación 2018 - 2023</p>
     <p>Daniela Castro Rodriguez, Irving Josue Naranjo Paredes, Angel Sánchez Domínguez, 
-    Gabriel Escobar Medina, Nancy Daniela Méndez Arpidez, Marco Gabriel Cortés Toledo, Yelitza Magali Rosas Jiménez,
+    Gabriel Escobar Medina, Nancy Daniela Mendez Arpidez, Marco Gabriel Cortés Toledo, Yelitza Magali Rosas Jiménez,
     Ángel Manuel Sandria Pérez, Karla Mariana Cordova Vasquez e Iván de Jesús Agame Malpica</p>
 </div>
 <!-- Fin Laboratorio de cómputo intensivo -->
