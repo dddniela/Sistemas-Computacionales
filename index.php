@@ -30,7 +30,7 @@ $comunidad->setConnection($conn->getDB());
     Gabriel Escobar Medina, Nancy Daniela Mendez Arpidez, Marco Gabriel Cortes Toledo, Yelitza Magali Rosas Jimenez,
     Ángel Manuel Sandria Pérez, Karla Mariana Cordova Vasquez, Iván de Jesús Agame Malpica">
     <link rel="icon" href="img/itver-logo.png"/>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/style.css">
     <title>Ingeniería en Sistemas Computacionales</title>
 </head>

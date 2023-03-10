@@ -70,6 +70,8 @@
                 </a>
             </div>
         </div>
+        <button onclick="return cambiarTexto('+')">+</button>
+        <button onclick="return cambiarTexto('-')">-</button>
     </div>
 
 <!-- Barra de navegación -->

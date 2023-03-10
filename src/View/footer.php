@@ -99,11 +99,48 @@
     <div class="row g-0">
         <img src="img/pleca-gob.svg" alt="">
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/bootstrap.bundle.js"></script>
+    <script>
+        const elementsAList = document.getElementsByTagName('a');
+        const elementsPList = document.getElementsByTagName('p');
+        const elementsLIList = document.getElementsByTagName('li');
+        const elementsH1List = document.getElementsByTagName('h1');
+        const elementsH2List = document.getElementsByTagName('h2');
+        const elementsH3List = document.getElementsByTagName('h3');
+        const elementsH4List = document.getElementsByTagName('h4');
+        const elementsH5List = document.getElementsByTagName('h5');
+        const elementsH6List = document.getElementsByTagName('h6');
+
+        function getElementFontSize(element){
+        //getComputedStyle nos devuelve las propiedades css de cada párrafo(elemento)
+        const elementFontSize = window.getComputedStyle(element, null).getPropertyValue('font-size');
+        return parseFloat(elementFontSize);  //Devolvemos el total de pixeles
+        }
+
+        function cambiarTexto(operador) {
+            cambioElementos(operador, elementsAList);
+            cambioElementos(operador, elementsPList);
+            cambioElementos(operador, elementsLIList);
+            cambioElementos(operador, elementsH1List);
+            cambioElementos(operador, elementsH2List);
+            cambioElementos(operador, elementsH3List);
+            cambioElementos(operador, elementsH4List);
+            cambioElementos(operador, elementsH5List);
+            cambioElementos(operador, elementsH6List);
+        }
+
+        function cambioElementos(operador, list){
+            for(let element of list) {
+                //Obtener el total de pixel de cada párrafo.
+                const currentSize = getElementFontSize(element);
+                
+                //Restar o sumar, dependiendo del operador.
+                const newFontSize = (operador === '+' ? (currentSize + 2) : (currentSize - 1)) + 'px';
+                //Aplicarle al parrafo actual el nuevo tamaño.
+                element.style.fontSize = newFontSize
+            }
+        }
+    </script>
     </footer>
 </body>
 
