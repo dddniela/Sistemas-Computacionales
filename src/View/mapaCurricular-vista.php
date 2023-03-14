@@ -478,7 +478,7 @@
 
             <div class="col-lg-4 col-sm-6 text-center p-3">
                 <div class="area shadow-sm p-4">
-                    <img class="areaImage items-center" src="img/icoN3.PNG" alt="">
+                    <img class="areaImage items-center" src="img/icon3.PNG" alt="">
                     <h3 class="areaTitle text-center font-bold text-xl">Experiencia</h3>
                     <p class="areaText">Desarrollar habilidades y competencias para diagnosticar, planear, ejecutar y
                         evaluar
@@ -662,7 +662,7 @@
 
             <div class="col-lg-4 col-sm-6 text-center p-3">
                 <div class="area shadow-sm p-4">
-                    <img class="areaImage items-center" src="img/icoN2.PNG" alt="">
+                    <img class="areaImage items-center" src="img/icon2.PNG" alt="">
                     <h3 class="areaTitle text-center font-bold text-xl">Tesis</h3>
                     <p class="areaText">Proyecto de Innovación Tecnológica, proyecto de Emprendedurismo, Proyecto
                         Integral
