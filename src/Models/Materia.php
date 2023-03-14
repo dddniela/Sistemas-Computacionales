@@ -179,7 +179,7 @@ function imprimirEspecialidad(){
 
     if($ResultSet->num_rows > 0){
         $tabla .= "<div class='row justify-content-md-start h-100 justify-content-center'>";
-        $ruta_img = ['img/iconos/concurrentes.png','img/iconos/distribuidas.png','img/iconos/concurrentes.png','img/iconos/distribuidas.png','img/iconos/blockchain.png','img/iconos/distribuidas.png'];
+        $ruta_img = ['img/iconos/concurrentes.PNG','img/iconos/distribuidas.PNG','img/iconos/concurrentes.PNG','img/iconos/distribuidas.PNG','img/iconos/blockchain.PNG','img/iconos/distribuidas.PNG'];
         $i = 0;
         while($row = $ResultSet->fetch_assoc()){
             $id_materia = $row['id_materia'];

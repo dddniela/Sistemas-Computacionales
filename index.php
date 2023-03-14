@@ -41,7 +41,7 @@ $comunidad->setConnection($conn->getDB());
                 include_once "src/View/inicio.php";     
             }
         }
-        if(!empty($_GET['option'])){
+        if(isset($_GET['option'])){
             include_once "src/Controllers/page-controller.php";
         }
     ?>

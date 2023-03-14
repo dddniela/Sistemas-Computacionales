@@ -7,11 +7,11 @@ Using $_GET we can send and recive informatino from the url.
 */
 
 
-if(!empty($_GET['option']) && isset($_GET['option'])){
+if(isset($_GET['option'])){
     switch ($_GET['option']) {
         case 0:
-           
-            include_once "index.php";             
+           echo $_GET['option'];
+            include_once "src/View/inicio.php";  
             break;
 
         case 1:
@@ -35,7 +35,7 @@ if(!empty($_GET['option']) && isset($_GET['option'])){
             break;
         
         default:
-            include_once "src/View/index.php";
+            include_once "src/View/inicio.php";
             break;
     }
 
