@@ -29,7 +29,8 @@ $comunidad->setConnection($conn->getDB());
     <meta name="author" content="Daniela Castro Rodriguez, Irving Josue Naranjo Paredes, Angel Sánchez Domínguez, 
     Gabriel Escobar Medina, Nancy Daniela Mendez Arpidez, Marco Gabriel Cortes Toledo, Yelitza Magali Rosas Jimenez,
     Ángel Manuel Sandria Pérez, Karla Mariana Cordova Vasquez, Iván de Jesús Agame Malpica">
-    <link rel="icon" href="img/itver-logo.png"/>
+    <link rel="icon" href="img/itver-logo.PNG"/>
+
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/style.css">
     <title>Ingeniería en Sistemas Computacionales</title>
@@ -43,6 +44,8 @@ $comunidad->setConnection($conn->getDB());
         }
         if(isset($_GET['option'])){
             include_once "src/Controllers/page-controller.php";
+        } else {
+            include_once "src/View/inicio.php";
         }
     ?>
 <?php
