@@ -78,6 +78,9 @@
             <a class="text-decoration-none" href="https://login.microsoftonline.com/?whr=tecnm.mx" target="_blank">
 				<img style="height:40%;" src="img/iconos/correo-icono.png" alt="Buzón">
 			</a>
+            <a class="text-decoration-none" href="https://www.tecnm.mx/" target="_blank">
+                <img src="img/idiomas.png" height="40" alt="Gobierno de México">
+            </a>
             <button class="btnCambioTexto" onclick="return cambiarTexto('+')">A+</button>
             <button class="btnCambioTexto" onclick="return cambiarTexto('-')">A-</button>
         </div>
