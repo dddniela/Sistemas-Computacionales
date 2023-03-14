@@ -8,7 +8,6 @@ Using $_GET we can send and recive informatino from the url.
 
 
 if(isset($_GET['option'])){
-    echo $_GET['option'];
     switch ($_GET['option']) {
         case 0:
             include_once "src/View/inicio.php";  
