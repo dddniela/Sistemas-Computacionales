@@ -13,6 +13,10 @@
         {
             try {
                 $this->db = new mysqli(host, user, pass, nameDB, port);
+                $this->db->query('set character_set_client=utf8');
+                $this->db->query('set character_set_connection=utf8');
+                $this->db->query('set character_set_results=utf8');
+                $this->db->query('set character_set_server=utf8');
             } catch (Exception $err) {
                 die($err);
             }
