@@ -74,7 +74,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-auto justify-content-end d-none d-md-block">
+        <div class="col-sm-auto justify-content-end d-none d-xl-block">
             <a class="text-decoration-none" href="https://login.microsoftonline.com/?whr=tecnm.mx" target="_blank">
 				<img style="height:40%;" src="img/iconos/correo-icono.png" alt="Buzón">
 			</a>
