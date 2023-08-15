@@ -151,13 +151,6 @@
             <!-- Fin Puntos del perfil de egreso -->
 
         </div>
-
-        <!--<div class="col-lg-4 col-12 justify-content-center text-center">
-            <div class="d-flex justify-content-center align-items-center w-100 h-100">
-                <img src="../img/IMG_08.PNG" class="w-75 h-auto py-3" alt="">
-            </div>
-        </div>-->
-
     </div>
 </div>
 <!-- Fin Perfil de egreso-->

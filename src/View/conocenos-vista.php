@@ -1,3 +1,11 @@
+<?php
+require_once("src/Models/Administrativo.php");
+$administrativos = new Administrativo();
+$administrativos->setConnection($conn->getDB());
+
+$coordinador = $administrativos->getCoordinador();
+$jefeDepartamento =  $administrativos->getJefeDepartamento();
+?>
 <!-- Portada -->
 <div class="row g-0">
   <div class="position-relative w-100 overflow-hidden">
@@ -19,8 +27,8 @@
 <section class="lightSection bg-light">
   <div class="row px-2 g-0">
 
-  <div class="col-lg-6 col-12 p-2 shadow-sm">
-    <div class="d-flex justify-content-center align-items-center w-100 h-100">
+    <div class="col-lg-6 col-12 p-2 shadow-sm">
+      <div class="d-flex justify-content-center align-items-center w-100 h-100">
         <img class="img-fluid rounded" src="img/IMG_2102.webp" alt="">
       </div>
     </div>
@@ -51,6 +59,7 @@
 </section>
 <!--Fin Departamento de Sistemas -->
 
+
 <!-- Descripción Jefa/e del departamento -->
 <div class="bg-primary pt-5"></div>
 <section class="lightSection bg-light">
@@ -59,26 +68,29 @@
       <div class="d-flex justify-content-center align-items-center w-100 h-100">
         <div class="row g-0">
           <div class="col-12">
-            <h2 class="sectionTitle text-center font-bold m-3">Daniela Hernández Barrios</h2>
+            <h2 class="sectionTitle text-center font-bold m-3">
+              <?php
+              if ($jefeDepartamento) {
+                echo $jefeDepartamento->nombre;
+              }
+              ?>
+            </h2>
             <div class="sectionSeparator"></div>
             <h4 class="text-center fw-bold fs-3">
-              Jefa del Departamento de Sistemas y Computación
+              <?php
+              if ($jefeDepartamento) {
+                echo $jefeDepartamento->nombrePuesto . " de Sistemas Computacionales";
+              }
+              ?>
             </h4>
           </div>
           <div class="col-12" style="text-align: center;">
-            <h6 class="text-center fw-bold fs-6">
-              “La inteligencia consiste no solo en el conocimiento, sino también
-              en la destreza de aplicarlos en la práctica”<br />
-            </h6>
             <p class="" style="text-align: justify">
-              Daniela Hernández Barrios, Jefa del departamento de Sistemas y Computación de la carrera Ingeniería en
-              Sistemas Computacionales en el Tecnológico de Veracruz; Ingeniero en Sistemas Computacionales, En el cargo
-              de jefatura del departamento, su función principal, es coordinar la aplicación de programas de estudio
-              relacionados con las áreas de sistemas y computación de las carreras que se imparten en el instituto
-              tecnológico, así mismo el desarrollo de proyectos de investigación y vinculación con el sector productivo,
-              derivados de los programas mencionados, proponiendo objetivos, metas y acciones; verificar que las
-              actividades de las áreas se realicen de acuerdo con las normas, lineamientos y procedimientos establecidos
-              con calidad y espíritu de servicio.
+              <?php
+              if ($jefeDepartamento) {
+                echo $jefeDepartamento->descripcion;
+              }
+              ?>
             </p>
           </div>
         </div>
@@ -87,7 +99,7 @@
 
     <div class="col-lg-6 col-12 p-2 shadow-sm">
       <div class="d-flex justify-content-center align-items-center w-100 h-100">
-        <img class="img-fluid rounded" src="img/Docentes/danielaHernandezBarrios.webp" alt="">
+        <img class="img-fluid rounded" src='<?php if ($jefeDepartamento)  echo $jefeDepartamento->imagen; ?>' alt="">
       </div>
     </div>
 
@@ -95,14 +107,14 @@
 </section>
 <!--Fin Descripción Jefa/e del departamento -->
 
-<!-- Descripción Jefa/e del departamento -->
+<!-- Descripción Coordinador -->
 <div class="bg-primary pt-5"></div>
 <section class="lightSection bg-light">
   <div class="row px-2 g-0">
 
-  <div class="col-lg-6 col-12 p-2 shadow-sm">
-    <div class="d-flex justify-content-center align-items-center w-100 h-100">
-        <img class="img-fluid rounded" src="img/Docentes/bereniceLagunesPadilla.webp" alt="">
+    <div class="col-lg-6 col-12 p-2 shadow-sm">
+      <div class="d-flex justify-content-center align-items-center w-100 h-100">
+        <img class="img-fluid rounded" src='<?php if ($coordinador) echo $coordinador->imagen; ?>' alt="">
       </div>
     </div>
 
@@ -110,36 +122,38 @@
       <div class="d-flex justify-content-center align-items-center w-100 h-100">
         <div class="row g-0">
           <div class="col-12">
-            <h2 class="sectionTitle text-center font-bold m-3">Berenice Lagunes Padilla</h2>
+            <h2 class="sectionTitle text-center font-bold m-3">
+              <?php
+              if ($coordinador) {
+                echo $coordinador->nombre;
+              }
+              ?>
+            </h2>
             <div class="sectionSeparator"></div>
             <h4 class="text-center fw-bold fs-3">
-            Coordinadora de Ingeniería en Sistemas Computacionales
+              <?php
+              if ($coordinador) {
+                echo $coordinador->nombrePuesto . " de " . $coordinador->nombreCarrera;
+              }
+              ?>
             </h4>
           </div>
           <div class="col-12 px-4" style="text-align: center;">
             <p class="" style="text-align: justify">
-              Berenice Lagunes Padilla, coordinadora de la carrera ingeniería en
-              Sistemas Computacionales en el Tecnológico de Veracruz; licenciada
-              en Ciencias de la Educación, con maestría en Educación por
-              competencias. En el cargo de coordinación, su función principal,
-              es la orientación académica de los alumnos estudiantes de dicha
-              licenciatura a lo largo de su estancia en la Institución, para un
-              correcto avance y aprovechamiento de su programa de estudios. Así
-              mismo se realizan diferentes funciones en la coordinación, como lo
-              son: consulta y cambio de NIP, realizar la estructura académica
-              con base en las estadísticas de la población inscrita y las
-              necesidades de grupos que así se generen dentro de los periodos
-              semestrales así como de cursos de verano.
+              <?php
+              if ($coordinador) {
+                echo $coordinador->descripcion;
+              }
+              ?>
             </p>
           </div>
         </div>
       </div>
     </div>
 
-
   </div>
 </section>
-<!--Fin Descripción Jefa/e del departamento -->
+<!--Fin Descripción Coordinador -->
 
 
 <!-- Instalaciones -->
@@ -176,7 +190,7 @@
             </p>
             <div class="justify-content-center text-center">
               <p><a class="btn-warning w-auto btn font-bold" target="_blank" href="https://bit.ly/3ZrhDeQ">
-                Reglamento de Laboratorio</a></p>
+                  Reglamento de Laboratorio</a></p>
             </div>
           </div>
         </div>
@@ -283,13 +297,13 @@
           </div>
           <div class="col-12">
             <div class="bg-dark">
-                <ul class="m-3 text-warning font-bold" style="text-align: justify">
+              <ul class="m-3 text-warning font-bold" style="text-align: justify">
                 <li>Agave: Clúster de alto procesamiento.</li>
                 <li>Peyote: Clúster de visualización en 4K.</li>
                 <li>Saguar: Clúster de servicios de virtualización.</li>
                 <li>Nopal: Clúster de alto rendimiento.</li>
-                </ul>
-                </div>
+              </ul>
+            </div>
           </div>
           <div class="col-12">
             <p class="text-light" style="text-align: justify">
@@ -313,8 +327,8 @@
 <div class="bg-primary pt-5"></div>
 <div class="p-4 text-center">
   <h5 class="font-bold">Autores de la página:</h5>
-    <p class="font-semibold">Estudiantes de la Generación 2018 - 2023</p>
-    <p>Daniela Castro Rodriguez, Irving Josue Naranjo Paredes, Angel Sánchez Domínguez, 
+  <p class="font-semibold">Estudiantes de la Generación 2018 - 2023</p>
+  <p>Daniela Castro Rodriguez, Irving Josue Naranjo Paredes, Angel Sánchez Domínguez,
     Gabriel Escobar Medina, Nancy Daniela Mendez Arpidez, Marco Gabriel Cortés Toledo, Yelitza Magali Rosas Jiménez,
     Ángel Manuel Sandria Pérez, Karla Mariana Cordova Vasquez e Iván de Jesús Agame Malpica</p>
 </div>
