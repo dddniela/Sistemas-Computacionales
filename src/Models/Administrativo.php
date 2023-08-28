@@ -16,56 +16,38 @@ class Administrativo
         $this->connection = $conn;
     }
 
-    public function getAdministrativos()
+    public function getAdministrativo($puestoId)
     {
-        $cn = $this->connection;
-        $sql = 'SELECT tbl_administrativo.nombre, tbl_administrativo.descripcion, tbl_administrativo.imagen, tbl_puesto_administrativo.nombrePuesto
-        FROM tbl_administrativo AS tbl_administrativo 
-        INNER JOIN tbl_administrativo_carrera  AS tbl_administrativo_carrera
-        ON tbl_administrativo.administrativoId = tbl_administrativo_carrera.administrativoId,
-        INNER JOIN tbl_puesto_administrativo  AS tbl_puesto_administrativo
-        ON tbl_administrativo.puestoId = tbl_puesto_administrativo.puestoId 
-        AND tbl_administrativo_carrera.status = 1
-        AND tbl_administrativo_carrera.carreraId=' . $GLOBALS['carreraID'];
-        $admins = mysqli_query($this->connection, $sql);
-        return $admins;
+        $url =  $GLOBALS['api'] . '/api/administrativo/getAdministrativo';
+
+        $headers = ['Content-Type: application/json'];
+        $data = [
+            'carreraId' => $GLOBALS['carreraID'],
+            'puestoId' => $puestoId
+        ];
+
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+        $result = curl_exec($ch);
+        curl_close($ch);
+
+        return json_decode($result, true);
     }
 
     public function getJefeDepartamento()
     {
-        $cn = $this->connection;
-        $sql = "SELECT tbl_administrativo.nombre, tbl_administrativo.descripcion, tbl_administrativo.imagen, tbl_puesto_administrativo.nombrePuesto, 
-        tbl_carrera.nombre as 'nombreCarrera' FROM tbl_administrativo AS tbl_administrativo
-        INNER JOIN tbl_administrativo_carrera AS tbl_administrativo_carrera 
-        ON tbl_administrativo.administrativoId = tbl_administrativo_carrera.administrativoId 
-        INNER JOIN tbl_puesto_administrativo AS tbl_puesto_administrativo 
-        ON tbl_administrativo.puestoId = tbl_puesto_administrativo.puestoId 
-        INNER JOIN tbl_carrera AS tbl_carrera 
-        ON tbl_administrativo_carrera.carreraId = tbl_carrera.carreraId 
-        AND tbl_administrativo_carrera.status = 1 
-        AND tbl_administrativo_carrera.carreraId = " . $GLOBALS['carreraID'] ."
-        AND tbl_administrativo.puestoId = 1;";
-        $jefeDep = mysqli_query($this->connection, $sql);
-        $jefeDep = $jefeDep->fetch_object();
-        return $jefeDep;
+        $jefeDep = $this->getAdministrativo(1);
+        return $jefeDep['data'];
     }
 
     public function getCoordinador()
     {
-        $cn = $this->connection;
-        $sql = "SELECT tbl_administrativo.nombre, tbl_administrativo.descripcion, tbl_administrativo.imagen, tbl_puesto_administrativo.nombrePuesto, 
-        tbl_carrera.nombre as 'nombreCarrera' FROM tbl_administrativo AS tbl_administrativo
-        INNER JOIN tbl_administrativo_carrera AS tbl_administrativo_carrera 
-        ON tbl_administrativo.administrativoId = tbl_administrativo_carrera.administrativoId 
-        INNER JOIN tbl_puesto_administrativo AS tbl_puesto_administrativo 
-        ON tbl_administrativo.puestoId = tbl_puesto_administrativo.puestoId 
-        INNER JOIN tbl_carrera AS tbl_carrera 
-        ON tbl_administrativo_carrera.carreraId = tbl_carrera.carreraId 
-        AND tbl_administrativo_carrera.status = 1 
-        AND tbl_administrativo_carrera.carreraId = " . $GLOBALS['carreraID'] ."
-        AND tbl_administrativo.puestoId = 4;";
-        $coordinador = mysqli_query($this->connection, $sql);
-        $coordinador = $coordinador->fetch_object();
-        return $coordinador;
+        $coordinador = $this->getAdministrativo(4);
+        return $coordinador['data'];
     }
 }

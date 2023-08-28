@@ -772,7 +772,14 @@
                 document.getElementById("descReticula").innerHTML = `${descripcion}`;
                 $("#videoReticula iframe").attr('src', videoReticula);
                 $("#urlReticula").attr('href', url);
+                document.getElementById("videoReticula").removeAttribute("hidden");
 
+                if (url && videoReticula) {
+                    $("#videoReticula iframe").attr('src', videoReticula);
+                    $("#urlReticula").attr('href', url);
+                } else {
+                    document.getElementById("videoReticula").setAttribute("hidden", true);
+                }
             });
 
         $("#modalReticula").on('hidden.bs.modal', function(e) {

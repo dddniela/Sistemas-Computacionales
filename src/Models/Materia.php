@@ -31,18 +31,20 @@ class Materia
             case 'Asignaturas Comunes':
                 $ruta_img = 'img/iconos/asignaturas-comunes.PNG';
                 break;
-            case 'Diseño':
-                $ruta_img = 'img/iconos/diseño.PNG';
+            case 'Redes':
+                $ruta_img = 'img/iconos/redes.PNG';
                 break;
-            case 'Eléctrica/Electrónica':
+            case 'Bases de datos':
+                $ruta_img = 'img/iconos/bases-datos.PNG';
+                break;
             case 'Electronica':
-                $ruta_img = 'img/iconos/electrica.PNG';
+                $ruta_img = 'img/iconos/electronica.PNG';
                 break;
             case 'Ingenieria':
                 $ruta_img = 'img/iconos/ingenieria.PNG';
                 break;
-            case 'Integración de conocimientos':
-                $ruta_img = 'img/iconos/integracion.PNG';
+            case 'Sistemas operativos':
+                $ruta_img = 'img/iconos/sistemasop.PNG';
                 break;
             case 'Calculo':
                 $ruta_img = 'img/iconos/calculo.PNG';
@@ -50,27 +52,23 @@ class Materia
             case 'Estadistica':
                 $ruta_img = 'img/iconos/estadistica.PNG';
                 break;
-            case 'Mecánica':
-                $ruta_img = 'img/iconos/mecanica.PNG';
+            case 'Automatas':
+                $ruta_img = 'img/iconos/automatas.PNG';
                 break;
             case 'Investigacion':
                 $ruta_img = 'img/iconos/investigacion.PNG';
                 break;
-            case 'Matematicas Aplicadas':
-            case 'Matemáticas aplicadas':
+            case 'Matematicas Aplicada':
                 $ruta_img = 'img/iconos/algebra.PNG';
                 break;
-            case 'Sustentabilidad':
-                $ruta_img = 'img/iconos/sustentabilidad.PNG';
+            case 'Web':
+                $ruta_img = 'img/iconos/programacion-web.PNG';
                 break;
             case 'Administracion':
                 $ruta_img = 'img/iconos/administracion.PNG';
                 break;
-            case 'Instrumentación':
-                $ruta_img = 'img/iconos/instrumentacion.PNG';
-                break;
-            default:
-                $ruta_img = 'img/extraescolares/circuloDeLectura.PNG';
+            case 'IA':
+                $ruta_img = 'img/iconos/inteligencia-artificial.PNG';
                 break;
         }
         return $ruta_img;
@@ -184,5 +182,4 @@ class Materia
     {
         return $this->imprimir(9);
     }
-
 }

@@ -23,54 +23,18 @@ class Especialidad
         return $data;
     }
 
-
     function icono($Area)
     {
         $ruta_img = "";
         switch ($Area) {
-            case 'Programacion':
-                $ruta_img = 'img/iconos/programacion.PNG';
+            case 'Distribuidas':
+                $ruta_img = 'img/iconos/distribuidas.PNG';
                 break;
-            case 'Asignaturas Comunes':
-                $ruta_img = 'img/iconos/asignaturas-comunes.PNG';
+            case 'Concurrentes':
+                $ruta_img = 'img/iconos/concurrentess.PNG';
                 break;
-            case 'Diseño':
-                $ruta_img = 'img/iconos/diseño.PNG';
-                break;
-            case 'Eléctrica/Electrónica':
-            case 'Electronica':
-                $ruta_img = 'img/iconos/electrica.PNG';
-                break;
-            case 'Ingenieria':
-                $ruta_img = 'img/iconos/ingenieria.PNG';
-                break;
-            case 'Integración de conocimientos':
-                $ruta_img = 'img/iconos/integracion.PNG';
-                break;
-            case 'Calculo':
-                $ruta_img = 'img/iconos/calculo.PNG';
-                break;
-            case 'Estadistica':
-                $ruta_img = 'img/iconos/estadistica.PNG';
-                break;
-            case 'Mecánica':
-                $ruta_img = 'img/iconos/mecanica.PNG';
-                break;
-            case 'Investigacion':
-                $ruta_img = 'img/iconos/investigacion.PNG';
-                break;
-            case 'Matematicas Aplicadas':
-            case 'Matemáticas aplicadas':
-                $ruta_img = 'img/iconos/algebra.PNG';
-                break;
-            case 'Sustentabilidad':
-                $ruta_img = 'img/iconos/sustentabilidad.PNG';
-                break;
-            case 'Administracion':
-                $ruta_img = 'img/iconos/administracion.PNG';
-                break;
-            case 'Instrumentación':
-                $ruta_img = 'img/iconos/instrumentacion.PNG';
+            case 'blockchain':
+                $ruta_img = 'img/iconos/blockchain.PNG';
                 break;
             default:
                 $ruta_img = 'img/extraescolares/circuloDeLectura.PNG';
