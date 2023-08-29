@@ -212,8 +212,8 @@
           </div>
 
           <div class="col-4 px-2">
-            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src='<?php echo $GLOBALS['PATH_DOCENTE'] . 'ernestoGarciaPerez.webp'; ?>' alt="">
-            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src='<?php echo $GLOBALS['PATH_DOCENTE'] . 'normaFaviolaGarciaGomez.webp'; ?>' alt="">
+            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src='<?php echo $GLOBALS['PATH_DOCENTE'] . 'almeida.webp'; ?>' alt="">
+            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src='<?php echo $GLOBALS['PATH_DOCENTE'] . 'noemiDelCarmenTenorioPrieto.webp'; ?>' alt="">
           </div>
 
         </div>
