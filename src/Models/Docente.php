@@ -153,7 +153,7 @@ class Docente
                                             <div class='row justify-content-center m-2'>
                                                 <div class='col-7 col-lg-auto justify-content-center m-2'>
                                                     <div class='d-flex justify-content-center'>
-                                                        <img class='rounded-circle p-1 bg-primary imagen-docentesModal' src='img/Docentes/" . $urlImagen . "' alt=''>
+                                                        <img class='rounded-circle p-1 bg-primary imagen-docentesModal' src='" . $urlImagen . "' alt=''>
                                                     </div>
                                                 </div>
                                                 <div class='col-12 col-lg-7 justify-content-center align-items-center m-2'>
