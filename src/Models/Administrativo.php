@@ -47,7 +47,7 @@ class Administrativo
 
     public function getCoordinador()
     {
-        $coordinador = $this->getAdministrativo(4);
+        $coordinador = $this->getAdministrativo(5);
         return $coordinador['data'];
     }
 }
