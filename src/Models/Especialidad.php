@@ -31,13 +31,13 @@ class Especialidad
                 $ruta_img = 'img/iconos/distribuidas.PNG';
                 break;
             case 'Concurrentes':
-                $ruta_img = 'img/iconos/concurrentess.PNG';
+                $ruta_img = 'img/iconos/concurrentes.PNG';
                 break;
-            case 'blockchain':
+            case 'Blockchain':
                 $ruta_img = 'img/iconos/blockchain.PNG';
                 break;
             default:
-                $ruta_img = 'img/extraescolares/circuloDeLectura.PNG';
+                $ruta_img = 'img/iconos/circuloDeLectura.PNG';
                 break;
         }
         return $ruta_img;
