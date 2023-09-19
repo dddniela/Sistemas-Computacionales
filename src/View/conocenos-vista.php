@@ -5,8 +5,8 @@ $administrativos = new Administrativo();
 $coordinador = $administrativos->getCoordinador();
 $jefeDepartamento =  $administrativos->getJefeDepartamento();
 
-$imagenCoordinador = $GLOBALS['PATH_DOCENTE'] . $jefeDepartamento['imagen'];
-$imagenJefeDep = $GLOBALS['PATH_DOCENTE'] . $coordinador['imagen'];
+$imagenJefeDep = $GLOBALS['PATH_DOCENTE'] . $jefeDepartamento['imagen'];
+$imagenCoordinador = $GLOBALS['PATH_DOCENTE'] . $coordinador['imagen'];
 ?>
 <!-- Portada -->
 <div class="row g-0">
@@ -135,7 +135,7 @@ $imagenJefeDep = $GLOBALS['PATH_DOCENTE'] . $coordinador['imagen'];
             <h4 class="text-center fw-bold fs-3">
               <?php
               if ($coordinador) {
-                echo $coordinador['nombrePuesto'] . " de " . $coordinador['nombreCarrera'];
+                echo $coordinador['nombrePuesto'] . " de Sistemas Computacionales";
               }
               ?>
             </h4>

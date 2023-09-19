@@ -5,7 +5,7 @@ require_once "Conexion.php";
 class Docente
 {
     private $docenteId;
-    private $carreraId;
+    private $programaId;
     private $nombre;
     private $descripcion;
     private $informacionAcademica;
@@ -91,11 +91,11 @@ class Docente
 
     public static function getDocentes($limiteInferior, $limiteSuperior)
     {
-        $url =  $GLOBALS['api'] . '/api/docente/getDocentesByCarreraId';
+        $url =  $GLOBALS['api'] . '/api/docente/getDocentesByprogramaId';
 
         $headers = ['Content-Type: application/json'];
         $data = [
-            'carreraId' => $GLOBALS['carreraID'],
+            'programaId' => $GLOBALS['programaId'],
             'offset' => $limiteInferior ? (int)$limiteInferior : null,
             'limit' => $limiteSuperior ? $limiteSuperior : null
         ];

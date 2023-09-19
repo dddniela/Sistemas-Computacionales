@@ -22,7 +22,7 @@ class Administrativo
 
         $headers = ['Content-Type: application/json'];
         $data = [
-            'carreraId' => $GLOBALS['carreraID'],
+            'programaId' => $GLOBALS['programaId'],
             'puestoId' => $puestoId
         ];
 
