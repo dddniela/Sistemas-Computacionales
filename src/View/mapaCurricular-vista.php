@@ -215,8 +215,7 @@
                                 profesional de los estudiantes de las instituciones adscritas al Tecnológico Nacional de
                                 México.
                             </p>
-                            <h5 class="font-bold text-warning" style="text-align: justify">Especialidades que han
-                                existido:</h5>
+                            <h5 class="font-bold text-warning" style="text-align: justify">Especialidades vigentes:</h5>
                             <div class="bg-dark">
                                 <ul class="m-3 text-light font-bold" style="text-align: justify">
                                     <?php
@@ -694,7 +693,7 @@
                                     *Puede variar según el plan de estudios.
                                 </p>
                                 <p class="text-dark" style="text-align: left;">
-                                    Solicita información en: coor_titulacion@veracruz.tecnm.mx/titulacion_electronica@veracruz.tecnm.mx
+                                    Solicita información en: coor_titulacion@veracruz.tecnm.mx/titulacion_sistemas@veracruz.tecnm.mx
                                 </p>
                                 <div class="justify-content-center text-center">
                                     <p><a class="btn-warning w-auto btn font-bold" target="_blank" href="https://tinyurl.com/3kpuhew9">Formas de titulación</a></p>

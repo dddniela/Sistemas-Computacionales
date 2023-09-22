@@ -228,10 +228,7 @@
             <div class="sectionSeparator"></div>
           </div>
           <div class="col-12" style="text-align: center;">
-            <p style="text-align: justify;"> Nuestros profesores son impulsores de cambio, son el elemento esencial de
-              nuestra institución, contamos con profesores y profesoras de diversas disciplinas, quienes demuestran diariamente
-              su compromiso más allá de las aulas. Son profesionales que tienen la facultad de transformar vidas, de impactar a
-              las futuras generaciones de estudiantes.
+            <p style="text-align: justify;"> Nuestros docentes son impulsores de cambio, son el elemento esencial de nuestra institución, contamos con profesionales de diversas disciplinas, quienes demuestran diariamente su compromiso más allá de las aulas. Son personas que tienen la facultad de transformar vidas e impactar a las futuras generaciones de estudiantes.
             </p>
             <a class="btn btn-warning font-bold" href="?option=2" role="button">¡Conocer docentes!</a>
           </div>
@@ -347,6 +344,8 @@
       </div>
     </div>
   </div>
+
+  <!--
   <div class="row g-0">
     <h4 class="sectionTitle  text-center font-bold">Departamento de Sistemas Computacionales</h4>
     <div class="d-flex flex-row justify-content-center">
@@ -362,5 +361,6 @@
       </a>
     </div>
   </div>
+-->
 </section>
 <!-- Fin Área de redes sociales -->

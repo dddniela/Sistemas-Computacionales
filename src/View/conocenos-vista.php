@@ -309,7 +309,7 @@ $imagenCoordinador = $GLOBALS['PATH_DOCENTE'] . $coordinador['imagen'];
           </div>
           <div class="col-12">
             <p class="text-light" style="text-align: justify">
-              El Dr. Abelardo Rodríguez León (responsable del laboratorio de
+              Abelardo Rodríguez León (responsable del laboratorio de
               servidores) pone a disposición el equipo a aquellos alumnos que
               deseen realizar proyectos, experimentos, investigaciones, realizar
               servicio social o residencias profesionales dentro del
@@ -325,13 +325,4 @@ $imagenCoordinador = $GLOBALS['PATH_DOCENTE'] . $coordinador['imagen'];
     </div>
   </div>
 </section>
-
-<div class="bg-primary pt-5"></div>
-<div class="p-4 text-center">
-  <h5 class="font-bold">Autores de la página:</h5>
-  <p class="font-semibold">Estudiantes de la Generación 2018 - 2023</p>
-  <p>Daniela Castro Rodriguez, Irving Josue Naranjo Paredes, Angel Sánchez Domínguez,
-    Gabriel Escobar Medina, Nancy Daniela Mendez Arpidez, Marco Gabriel Cortés Toledo, Yelitza Magali Rosas Jiménez,
-    Ángel Manuel Sandria Pérez, Karla Mariana Cordova Vasquez e Iván de Jesús Agame Malpica</p>
-</div>
 <!-- Fin Laboratorio de cómputo intensivo -->
