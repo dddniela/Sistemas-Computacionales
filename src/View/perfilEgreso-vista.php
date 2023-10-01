@@ -1,3 +1,11 @@
+<?php
+require_once("src/Models/Seccion.php");
+$seccion = new Seccion();
+$seccion->setConnection($conn->getDB());
+
+$objetivo = $seccion->getObjetivo();
+$objetivo = $objetivo['data'];
+?>
 <!-- Portada -->
 <div class="row g-0">
     <div class="position-relative w-100 overflow-hidden">
@@ -14,47 +22,49 @@
 
 <!-- Objetivo general -->
 <section class="p-2">
-  <div class="row px-2 g-0">
-    <div class="col-lg-6 col-sm-12">
-      <div class="galleryContainer bg-light">
-        <div class="row g-0">
-          <div class="col-4 px-2">
-            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="img/IMG_1335.webp" alt="">
-            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="img/IMG_1394.webp" alt="">
-          </div>
+    <div class="row px-2 g-0">
+        <div class="col-lg-6 col-sm-12">
+            <div class="galleryContainer bg-light">
+                <div class="row g-0">
+                    <div class="col-4 px-2">
+                        <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="img/IMG_1335.webp" alt="">
+                        <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="img/IMG_1394.webp" alt="">
+                    </div>
 
-          <div class="col-4 px-2">
-            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="img/IMG_1407.webp" alt="">
-            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="img/IMG_1337.webp" alt="">
-          </div>
+                    <div class="col-4 px-2">
+                        <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="img/IMG_1407.webp" alt="">
+                        <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="img/IMG_1337.webp" alt="">
+                    </div>
 
-          <div class="col-4 px-2">
-            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="img/IMG_1363.webp" alt="">
-            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="img/IMG_1380.webp" alt="">
-          </div>
+                    <div class="col-4 px-2">
+                        <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="img/IMG_1363.webp" alt="">
+                        <img class="img-fluid w-100 shadow-1-strong rounded m-2" src="img/IMG_1380.webp" alt="">
+                    </div>
 
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-    <div class="lightSection col-lg-6 col-12 p-4">
-      <div class="d-flex justify-content-center align-items-center w-100 h-100">
-        <div class="row g-0">
-          <div class="col-12">
-            <h2 class="sectionTitle text-center font-bold m-3">Objetivo general</h2>
-            <div class="sectionSeparator"></div>
-          </div>
-          <div class="col-12" style="text-align: center;">
-            <p style="text-align: justify;"> Formar profesionistas líderes con visión
-                estratégica y amplio sentido ético; capaz de diseñar, desarrollar, implementar y administrar tecnología
-                computacional para aportar soluciones innovadoras en beneficio de la sociedad; en un contexto global,
-                multidisciplinario y sostenible.
-            </p>
-          </div>
+        <div class="lightSection col-lg-6 col-12 p-4">
+            <div class="d-flex justify-content-center align-items-center w-100 h-100">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <h2 class="sectionTitle text-center font-bold m-3">Objetivo general</h2>
+                        <div class="sectionSeparator"></div>
+                    </div>
+                    <div class="col-12" style="text-align: center;">
+                        <p style="text-align: justify;">
+                            <?php
+                            if ($objetivo) {
+                                echo $objetivo['descripcion'];
+                            }
+                            ?>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </section>
 <!--Fin Objetivo general -->
 
@@ -69,83 +79,9 @@
                 <div class="sectionSeparator"></div>
 
                 <div class="row g-0">
-                    <div class="col-lg-4 col-sm-6 text-center p-3">
-                        <div class="area shadow-sm p-4">
-                            <img class="imagenArea items-center" src="img/iconos/ingenieria.PNG" alt="">
-                            <p class="textoArea">Implementa aplicaciones computacionales para solucionar problemas de
-                                diversos contextos,
-                                integrando diferentes tecnologías, plataformas o dispositivos.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6 text-center p-3">
-                        <div class="area shadow-sm p-4">
-                            <img class="imagenArea items-center" src="img/topicos/ing-software-icono.PNG" alt="">
-                            <p class="textoArea">Diseña, desarrolla y aplica modelos computacionales para solucionar
-                                problemas, mediante
-                                la selección y uso de herramientas matemáticas.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6 text-center p-3">
-                        <div class="area shadow-sm p-4">
-                            <img class="imagenArea items-center" src="img/iconos/redes.PNG" alt="">
-                            <p class="textoArea">Diseña, configura y administra redes de computadoras para crear soluciones de
-                                conectividad en la organización, aplicando las normas y estándares vigentes.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6 text-center p-3">
-                        <div class="area shadow-sm p-4">
-                            <img class="imagenArea items-center" src="img/topicos/admon-bd-icono.PNG" alt="">
-                            <p class="textoArea">Diseña e implementa interfaces para la implementación y automatización
-                                de sistemas de hardware y
-                                desarrollo del software asociado.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6 text-center p-3">
-                        <div class="area shadow-sm p-4">
-                            <img class="imagenArea items-center" src="img/topicos/programacion-web-icono.PNG" alt="">
-                            <p class="textoArea">Coordina y participa en equipos multidisciplinarios para la aplicación
-                                de soluciones
-                                innovadoras en diferentes contextos del mundo laboral.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6 text-center p-3">
-                        <div class="area shadow-sm p-4">
-                            <img class="imagenArea items-center" src="img/iconos/distribuidas.PNG" alt="">
-                            <p class="textoArea">Diseña, implementa y administra bases de datos optimizando los recursos
-                                disponibles,
-                                bajo las normas de manejo y seguridad de la información.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6 text-center p-3">
-                        <div class="area shadow-sm p-4">
-                            <img class="imagenArea items-center" src="img/iconos/administracion.PNG" alt="">
-                            <p class="textoArea">Desarrolla y administra software para apoyar la productividad y competitividad de 
-                                las organizaciones cumpliendo con estándares de calidad.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6 text-center p-3">
-                        <div class="area shadow-sm p-4">
-                            <img class="imagenArea items-center" src="img/iconos/blockchain.PNG" alt="">
-                            <p class="textoArea">Evalúa tecnologías de hardware para soportar aplicaciones de manera efectiva.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6 text-center p-3">
-                        <div class="area shadow-sm p-4">
-                            <img class="imagenArea items-center" src="img/iconos/programacion.PNG" alt="">
-                            <p class="textoArea">Detecta áreas de oportunidad empleando una visión empresarial para crear proyectos
-                                aplicando las Tecnologías de la Información y Comunicación.</p>
-                        </div>
-                    </div>
-
+                    <?php
+                    echo $seccion->imprimirPerfilEgreso();
+                    ?>
                 </div>
             </section>
             <!-- Fin Puntos del perfil de egreso -->
@@ -157,15 +93,15 @@
 
 <!-- Especialidad -->
 <section class="darkSection bg-dark p-2 px-4">
-        <div class="row mb-4 px-2 g-0">
-            <div class="darkSection bg-dark">
-                <h2 class="titleDarkSection text-center font-bold">Galería de imágenes</h2>
-                <div class="darkSectionSeparator"></div>
-            </div>
+    <div class="row mb-4 px-2 g-0">
+        <div class="darkSection bg-dark">
+            <h2 class="titleDarkSection text-center font-bold">Galería de imágenes</h2>
+            <div class="darkSectionSeparator"></div>
+        </div>
 
-            <div class="col-lg-8 col-sm-12">
-                <div class="galleryContainer bg-dark">
-                    <div class="row g-0">
+        <div class="col-lg-8 col-sm-12">
+            <div class="galleryContainer bg-dark">
+                <div class="row g-0">
                     <div class="col-md-4 px-2">
                         <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage1">
                             <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/IMG_4446.webp" alt="">
@@ -202,13 +138,13 @@
                         </a>
                     </div>
 
-                    </div>
                 </div>
             </div>
+        </div>
 
-            <div class="col-lg-4 col-sm-12">
-                <div class="galleryContainer bg-dark">
-                    <div class="row g-0">
+        <div class="col-lg-4 col-sm-12">
+            <div class="galleryContainer bg-dark">
+                <div class="row g-0">
                     <div class="col-12 px-2">
                         <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage10">
                             <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="img/IMG_2102.webp" alt="">
@@ -219,11 +155,11 @@
                     </div>
 
 
-                    </div>
                 </div>
             </div>
-
         </div>
+
+    </div>
 </section>
 <!-- Fin Especialidad -->
 

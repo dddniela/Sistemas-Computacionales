@@ -70,25 +70,33 @@ class Comunidad
 
     public function getComunidades()
     {
-        $cn = $this->connection;
-        $sql = 'SELECT * FROM tbl_comunidad WHERE programaId=' . $GLOBALS['programaId'] . ' AND status = 1 ORDER BY nombre ASC';
-        $comunidades = mysqli_query($this->connection, $sql);
-        return $comunidades;
+        $url =  $GLOBALS['api'] . '/api/comunidad/getComunidadByProgramaId?programaId=' .$GLOBALS['programaId'];
+
+        $headers = ['Content-Type: application/json'];
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_HTTPGET, true);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        $result = curl_exec($ch);
+        curl_close($ch);
+
+        return json_decode($result, true);
     }
 
     function imprimirDatos()
     {
-        $ResultSet = $this->getComunidades();
+        $comunidades = $this->getComunidades();
         $tabla = "";
 
-        if ($ResultSet->num_rows > 0) {
-            while ($row = $ResultSet->fetch_assoc()) {
-                $comunidadId = $row['comunidadId'];
-                $nombre = $row['nombre'];
-                $logo = $row['logo'];
-                $quienesSomos = $row['quienesSomos'];
-                $queHacemos = $row['queHacemos'];
-                $fotosComunidad = $row['fotosComunidad'];
+        foreach ($comunidades['data'] as $comunidad) {
+                $comunidadId = $comunidad['comunidadId'];
+                $nombre = $comunidad['nombre'];
+                $logo = $comunidad['logo'];
+                $quienesSomos = $comunidad['quienesSomos'];
+                $queHacemos = $comunidad['queHacemos'];
+                $fotosComunidad = $comunidad['fotosComunidad'];
                 $array = explode(',', $fotosComunidad);
                 $num = count($array);
                 $tabla .=  "<div class='col-lg-4 col-sm-6 text-center p-3'>
@@ -166,7 +174,7 @@ class Comunidad
                                 </div>
                             </div>";
             }
-        }
+        
         return $tabla;
     }
 }
