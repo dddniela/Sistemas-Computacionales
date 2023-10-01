@@ -81,14 +81,13 @@ class Seccion
         return json_decode($result, true);
     }
 
-    public function getReticula($especialidadId)
+    public function getReticula()
     {
         $url =  $GLOBALS['api'] . '/api/seccion/getReticulaByProgramaId';
 
         $headers = ['Content-Type: application/json'];
         $data = [
-            'programaId' => $GLOBALS['programaId'],
-            'especialidadId' => $especialidadId
+            'programaId' => $GLOBALS['programaId']
         ];
 
         $ch = curl_init();
@@ -105,19 +104,20 @@ class Seccion
     }
 
 
-    public function imprimirBotonReticula($especialidadId)
+    public function imprimirBotonReticula()
     {
-        $reticula = $this->getReticula($especialidadId);
+        $reticula = $this->getReticula();
         $reticula = $reticula['data'];
 
-        $titulo = $reticula['titulo'];
         $url = $reticula['url'];
 
-        $boton =  "<p>
-            <a class='btn-warning w-auto btn font-bold' target='_blank'
-            href='$url'>$titulo</a>
-            </p>";
-
+        $boton = '';
+        if ($reticula) {
+            $boton .=  "<p>
+                <a class='btn-warning w-auto btn font-bold' target='_blank'
+                href='$url'>Ver plan de estudio</a>
+                </p>";
+        }
         return $boton;
     }
 

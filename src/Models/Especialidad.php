@@ -1,5 +1,4 @@
 <?php
-require_once("src/Models/Seccion.php");
 require_once "Conexion.php";
 
 class Especialidad
@@ -32,9 +31,9 @@ class Especialidad
         return json_decode($result, true);
     }
 
-    public function getMateriasByEspecialidadId($especialidadId)
+    public function getEspecialidadByProgramaId($especialidadId)
     {
-        $url =  $GLOBALS['api'] . '/api/materia/getMateriasByEspecialidadId';
+        $url =  $GLOBALS['api'] . '/api/especialidad/getEspecialidadByProgramaId';
 
         $headers = ['Content-Type: application/json'];
         $data = [
@@ -157,19 +156,18 @@ class Especialidad
 
     function imprimirEspecialidad($especialidadId)
     {
-        $especialidades = $this->getMateriasByEspecialidadId($especialidadId);
-        $seccion = new Seccion();
-
+        $especialidad = $this->getEspecialidadByProgramaId($especialidadId);
+        $especialidad =  $especialidad['data'];
         $tabla = "<div class='row justify-content-md-start h-100 justify-content-center'>";
 
-        foreach ($especialidades['data'] as $especialidad) {
-            $materiaId = $especialidad['materiaId'];
-            $nombre = $especialidad['nombre'];
-            $competencia = $especialidad['competencia'];
-            $area = $especialidad['area'];
+        foreach ($especialidad['materias'] as $materia) {
+            $materiaId = $materia['materiaId'];
+            $nombre = $materia['nombre'];
+            $competencia = $materia['competencia'];
+            $area = $materia['area'];
             $ruta_img = $this->icono($area);
-            $urlVideo = $especialidad['urlVideo'];
-            $urlPrograma = $especialidad['urlPrograma'];
+            $urlVideo = $materia['urlVideo'];
+            $urlPrograma = $materia['urlPrograma'];
 
             // Cuadro de materia
             $tabla .= "<div class='col-lg-4 col-md-6 col-sm-9 col-9 p-4 h-100 justify-content-center rounded-3'>
@@ -208,16 +206,13 @@ class Especialidad
                     </div>";
         }
 
-        $botonReticula = $seccion->getReticula($especialidadId);
-        $botonReticula = $botonReticula['data'];
-        if ($botonReticula) {
-            $titulo = $botonReticula['titulo'];
-            $url = $botonReticula['url'];
+        if ($especialidad['url']) {
+            $url = $especialidad['url'];
 
             $tabla .=  "<div class='justify-content-center text-center'>
                             <p>
                                 <a class='btn-warning w-auto btn font-bold' target='_blank'
-                                href='$url'>$titulo</a>
+                                href='$url'>Ver plan de estudio</a>
                             </p>
                         </div>";
         }

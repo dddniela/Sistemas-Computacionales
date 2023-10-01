@@ -3,7 +3,7 @@ require_once("src/Models/Seccion.php");
 $seccion = new Seccion();
 $seccion->setConnection($conn->getDB());
 
-$reticula = $seccion->imprimirBotonReticula(null);
+$reticula = $seccion->imprimirBotonReticula();
 ?>
 
 <div class="row g-0">
@@ -269,8 +269,6 @@ $reticula = $seccion->imprimirBotonReticula(null);
         <div class="tab-content" id="pills-tabContent">
             <?php
             echo $especialidad->imprimirPills();
-            ?>
-            ?>
             ?>
         </div>
     </div>
