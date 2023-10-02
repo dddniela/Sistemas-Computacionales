@@ -14,6 +14,7 @@ $_SERVER['SERVER_NAME']."/Sistemas-Computacionales/?option=0");
 $programaId = 11;
 $api = 'http://localhost:3010';
 $PATH_DOCENTE =  $GLOBALS['api'] . '/imagenes/Ing-SistemasComputacionales/docentes/';
+$PATH_COMUNIDAD =  $GLOBALS['api'] . '/imagenes/Ing-SistemasComputacionales/comunidades/';
 
 $conn = new Conexion();
 $conn->connect();
