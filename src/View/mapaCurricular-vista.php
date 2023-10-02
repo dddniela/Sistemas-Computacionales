@@ -698,12 +698,12 @@ $reticula = $seccion->imprimirBotonReticula();
                                         Departamento Académico.</li>
                                     <li>Presentar acto protocolario del proyecto de titulación integral.</li>
                                 </ul>
-                                <p class="text-dark" style="text-align: justify;">
-                                    *Puede variar según el plan de estudios.
-                                </p>
-                                <p class="text-dark" style="text-align: left;">
-                                    Solicita información en: coor_titulacion@veracruz.tecnm.mx/titulacion_sistemas@veracruz.tecnm.mx
-                                </p>
+                                <p class="text-dark text-break" style="text-align: left;">
+                                *Puede variar según el plan de estudios.<br><br>
+                                Solicita información en:<br>
+                                coor_titulacion@veracruz.tecnm.mx <br>
+                                titulacion_sistemas@veracruz.tecnm.mx.
+                            </p>
                                 <div class="justify-content-center text-center">
                                     <p><a class="btn-warning w-auto btn font-bold" target="_blank" href="https://tinyurl.com/3kpuhew9">Formas de titulación</a></p>
                                 </div>
