@@ -5,6 +5,10 @@
   --bs-body-font-family: 'Montserrat', sans-serif!important;;
 }
 
+.shadow-text {
+  text-shadow: 2px 2px 10px black;
+}
+
 /*Paleta de colores*/
 .amarillo {
   background-color: #facc15;
