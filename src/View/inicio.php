@@ -1,3 +1,36 @@
+<?php
+
+$docenteImagen1 = $GLOBALS['PATH_DOCENTE'] . 'abelardoRodriguezLeon.webp';
+$type = pathinfo($docenteImagen1, PATHINFO_EXTENSION);
+$docenteImagen1 = file_get_contents($docenteImagen1);
+$docenteImagen1 = 'data:image/' . $type . ';base64,' . base64_encode($docenteImagen1);
+
+$docenteImagen2 = $GLOBALS['PATH_DOCENTE'] . 'juliaGuadalupeTrujilloSalamanca.webp';
+$type = pathinfo($docenteImagen2, PATHINFO_EXTENSION);
+$docenteImagen2 = file_get_contents($docenteImagen2);
+$docenteImagen2 = 'data:image/' . $type . ';base64,' . base64_encode($docenteImagen2);
+
+$docenteImagen3 = $GLOBALS['PATH_DOCENTE'] . 'bereniceLagunesPadilla.webp';
+$type = pathinfo($docenteImagen3, PATHINFO_EXTENSION);
+$docenteImagen3 = file_get_contents($docenteImagen3);
+$docenteImagen3 = 'data:image/' . $type . ';base64,' . base64_encode($docenteImagen3);
+
+$docenteImagen4 = $GLOBALS['PATH_DOCENTE'] . 'rafaelRiveraLopez.webp';
+$type = pathinfo($docenteImagen4, PATHINFO_EXTENSION);
+$docenteImagen4 = file_get_contents($docenteImagen4);
+$docenteImagen4 = 'data:image/' . $type . ';base64,' . base64_encode($docenteImagen4);
+
+$docenteImagen5 = $GLOBALS['PATH_DOCENTE'] . 'almeida.webp';
+$type = pathinfo($docenteImagen5, PATHINFO_EXTENSION);
+$docenteImagen5 = file_get_contents($docenteImagen5);
+$docenteImagen5 = 'data:image/' . $type . ';base64,' . base64_encode($docenteImagen5);
+
+$docenteImagen6 = $GLOBALS['PATH_DOCENTE'] . 'noemiDelCarmenTenorioPrieto.webp';
+$type = pathinfo($docenteImagen6, PATHINFO_EXTENSION);
+$docenteImagen6 = file_get_contents($docenteImagen6);
+$docenteImagen6 = 'data:image/' . $type . ';base64,' . base64_encode($docenteImagen6);
+
+?>
 <!-- Carrusel de portada -->
 <section>
   <div id="myCarousel" class="carousel slide col-lg-12 col-sm-12" data-bs-ride="carousel">
@@ -202,18 +235,18 @@
       <div class="galleryContainer bg-light">
         <div class="row g-0">
           <div class="col-4 px-2">
-            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src='<?php echo $GLOBALS['PATH_DOCENTE'] . 'abelardoRodriguezLeon.webp'; ?>' alt="">
-            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src='<?php echo $GLOBALS['PATH_DOCENTE'] . 'juliaGuadalupeTrujilloSalamanca.webp'; ?>' alt="">
+            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src='<?php echo $docenteImagen1; ?>' alt="">
+            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src='<?php echo $docenteImagen2; ?>' alt="">
           </div>
 
           <div class="col-4 px-2">
-            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src='<?php echo $GLOBALS['PATH_DOCENTE'] . 'bereniceLagunesPadilla.webp'; ?>' alt="">
-            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src='<?php echo $GLOBALS['PATH_DOCENTE'] . 'rafaelRiveraLopez.webp'; ?>' alt="">
+            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src='<?php echo $docenteImagen3; ?>' alt="">
+            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src='<?php echo $docenteImagen4; ?>' alt="">
           </div>
 
           <div class="col-4 px-2">
-            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src='<?php echo $GLOBALS['PATH_DOCENTE'] . 'almeida.webp'; ?>' alt="">
-            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src='<?php echo $GLOBALS['PATH_DOCENTE'] . 'noemiDelCarmenTenorioPrieto.webp'; ?>' alt="">
+            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src='<?php echo $docenteImagen5; ?>' alt="">
+            <img class="img-fluid w-100 shadow-1-strong rounded m-2" src='<?php echo $docenteImagen6; ?>' alt="">
           </div>
 
         </div>

@@ -125,7 +125,7 @@ class Docente
             $informacionAcademica = $docente['informacionAcademica'];
             $materias = $docente['materias'];
             $contacto = $docente['contacto'];
-            // Extensión de la imagen
+
             $type = pathinfo($docente['urlImagen'], PATHINFO_EXTENSION);
             $urlImagen = file_get_contents($GLOBALS['PATH_DOCENTE'] . $docente['urlImagen']);
             $urlImagen = 'data:image/' . $type . ';base64,' . base64_encode($urlImagen);
