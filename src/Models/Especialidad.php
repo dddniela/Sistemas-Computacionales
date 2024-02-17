@@ -59,19 +59,23 @@ class Especialidad
         $ruta_img = "";
         switch ($Area) {
             case 'Distribuidas':
-                $ruta_img = 'img/iconos/distribuidas.PNG';
+                $ruta_img = 'distribuidas.PNG';
                 break;
             case 'Concurrentes':
-                $ruta_img = 'img/iconos/concurrentes.PNG';
+                $ruta_img = 'concurrentes.PNG';
                 break;
             case 'Blockchain':
-                $ruta_img = 'img/iconos/blockchain.PNG';
+                $ruta_img = 'blockchain.PNG';
                 break;
             default:
-                $ruta_img = 'img/iconos/circuloDeLectura.PNG';
+                $ruta_img = 'circuloDeLectura.PNG';
                 break;
         }
-        return $ruta_img;
+        
+        $type = pathinfo($ruta_img, PATHINFO_EXTENSION);
+        $urlImagen = file_get_contents($GLOBALS['PATH_ICONO'] . $ruta_img);
+        $urlImagen = 'data:image/' . $type . ';base64,' . base64_encode($urlImagen);
+        return $urlImagen;
     }
 
     function imprimirNombres()
